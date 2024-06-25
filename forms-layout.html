@@ -1,0 +1,1765 @@
+<!DOCTYPE html>
+<html lang="en" class="relative scroll-smooth leading-default font-sans tab-size-4 text-size-adjust font-feature-settings font-variation-settings">
+   <head>
+      <meta charset="utf-8">
+      <title>Form Layout | Konrix - Responsive Tailwind Admin Dashboard</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description">
+      <meta content="coderthemes" name="author">
+      <!-- App favicon -->
+      <link rel="shortcut icon" href="assets/images/favicon.ico">
+      <!-- Icons css -->
+      <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css">
+      <!-- Theme Config Js -->
+      <script src="assets/js/config.js"></script>
+      <link rel="stylesheet" href="./src/output.css">
+      <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css">
+   </head>
+   <body class="overflow-x-hidden text-[--tw-body-color] bg-[--tw-body-bg] font-inter font-normal text-[0.875rem] leading-[1.5] antialiased">
+      <div class="flex wrapper">
+         <!-- Sidenav Menu Start-->
+         <div id="app-menu" class="app-menu w-[--tw-sidenav-width] min-w-[--tw-sidenav-width] z-40 h-screen shadow transition-all duration-300 ease-in-out sticky top-0">
+            <!-- Sidenav Brand Logo -->
+            <a href="index.html" id="logo-box" class="logo-box h-[--tw-topbar-height] text-[--tw-menu-item-color] sticky top-0 flex items-center justify-center transition-all duration-300 ease-in-out">
+               <!-- Light Brand Logo -->
+               <div class="logo-light hidden">
+                  <img src="assets/images/logo-light.png" class="logo-lg h-6" alt="Light logo">
+                  <img src="assets/images/logo-sm.png" class="logo-sm h-8" alt="Small logo">
+               </div>
+               <!-- Dark Brand Logo -->
+               <div class="logo-dark block">
+                  <img src="assets/images/logo-dark.png" class="logo-lg h-6" alt="Dark logo">
+                  <img src="assets/images/logo-sm.png" class="logo-sm h-8" alt="Small logo">
+               </div>
+            </a>
+            <!-- Sidenav Menu Toggle Button -->
+            <button id="button-hover-toggle" class="absolute top-5 end-2 rounded-full p-1.5">
+            <span class="sr-only">Menu Toggle Button</span>
+            <i class="mgc_round_line text-xl"></i>
+            </button>
+            <!--- Menu -->
+            <div id="scrollbar" class="h-[calc(100%-var(--tw-topbar-height))] border-t border-dashed border-gray-500 border-opacity-25" data-simplebar>
+               <ul id="menu" class="menu flex flex-col gap-[--tw-menu-item-gap] py-[--tw-menu-item-gap] px-0" data-fc-type="accordion">
+                  <li class="menu-title p-[--calculated-menu-title-padding] text-menu-item-color text-menu-title-size cursor-default whitespace-nowrap font-medium tracking-widest opacity-75">Menu</li>
+                  <li class="menu-item py-0 px-[--tw-menu-item-padding-x]">
+                     <a href="index.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] py-[--tw-menu-link-padding-y] px-[--tw-menu-link-padding-x] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:bg-[--tw-menu-item-active-bg] hover:text-[--tw-menu-item-hover-color]">
+                        <span class="menu-icon w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] inline-flex items-center justify-center">
+                           <svg class="w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] fill-[var(--tw-menu-item-color)] stroke-inherit transition transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color]" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
+                              <path d="M23.121,9.069,15.536,1.483a5.008,5.008,0,0,0-7.072,0L.879,9.069A2.978,2.978,0,0,0,0,11.19v9.817a3,3,0,0,0,3,3H21a3,3,0,0,0,3-3V11.19A2.978,2.978,0,0,0,23.121,9.069ZM15,22.007H9V18.073a3,3,0,0,1,6,0Zm7-1a1,1,0,0,1-1,1H17V18.073a5,5,0,0,0-10,0v3.934H3a1,1,0,0,1-1-1V11.19a1.008,1.008,0,0,1,.293-.707L9.878,2.9a3.008,3.008,0,0,1,4.244,0l7.585,7.586A1.008,1.008,0,0,1,22,11.19Z"/>
+                           </svg>
+                        </span>
+                        <span class="menu-text text-menu-font-size leading-[--tw-menu-item-font-size] whitespace-nowrap ml-1"> Dashboard </span>
+                     </a>
+                  </li>
+                  <li class="menu-title p-[--calculated-menu-title-padding] text-menu-item-color text-menu-title-size cursor-default whitespace-nowrap font-medium tracking-widest opacity-75">Apps</li>
+                  <li class="menu-item py-0 px-[--tw-menu-item-padding-x]">
+                     <a href="apps-calendar.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] py-[--tw-menu-link-padding-y] px-[--tw-menu-link-padding-x] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:bg-[--tw-menu-item-active-bg] hover:text-[--tw-menu-item-hover-color]">
+                        <span class="menu-icon w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] inline-flex items-center justify-center">
+                           <svg class="w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] fill-[var(--tw-menu-item-color)] stroke-inherit transition transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color]" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
+                              <path d="m7.5,12h-2c-.827,0-1.5.673-1.5,1.5v2c0,.827.673,1.5,1.5,1.5h2c.827,0,1.5-.673,1.5-1.5v-2c0-.827-.673-1.5-1.5-1.5Zm.5,3.5c0,.276-.225.5-.5.5h-2c-.275,0-.5-.224-.5-.5v-2c0-.276.225-.5.5-.5h2c.275,0,.5.224.5.5v2ZM19.5,2h-1.5V.5c0-.276-.224-.5-.5-.5s-.5.224-.5.5v1.5H7V.5c0-.276-.224-.5-.5-.5s-.5.224-.5.5v1.5h-1.5C2.019,2,0,4.019,0,6.5v13c0,2.481,2.019,4.5,4.5,4.5h15c2.481,0,4.5-2.019,4.5-4.5V6.5c0-2.481-2.019-4.5-4.5-4.5Zm-15,1h15c1.93,0,3.5,1.57,3.5,3.5v1.5H1v-1.5c0-1.93,1.57-3.5,3.5-3.5Zm15,20H4.5c-1.93,0-3.5-1.57-3.5-3.5v-10.5h22v10.5c0,1.93-1.57,3.5-3.5,3.5Z"/>
+                           </svg>
+                        </span>
+                        <span class="menu-text text-menu-font-size leading-[--tw-menu-item-font-size] whitespace-nowrap ml-1"> Calendar </span>
+                     </a>
+                  </li>
+                  <li class="menu-item py-0 px-[--tw-menu-item-padding-x]">
+                     <a href="apps-tickets.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] py-[--tw-menu-link-padding-y] px-[--tw-menu-link-padding-x] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:bg-[--tw-menu-item-active-bg] hover:text-[--tw-menu-item-hover-color]">
+                        <span class="menu-icon w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] inline-flex items-center justify-center">
+                           <svg class="w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] fill-[var(--tw-menu-item-color)] stroke-inherit transition transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color]" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
+                              <path d="M19.5,21l-15-.004c-2.481,0-4.5-2.019-4.5-4.5v-1.423c0-.136,.055-.266,.153-.36,.098-.094,.225-.145,.365-.14h.007c1.42,0,2.556-1.139,2.556-2.537s-1.14-2.541-2.541-2.541c-.276,0-.541-.22-.541-.496v-1.504C0,5.015,2.019,2.996,4.5,2.996l15,.004c2.481,0,4.5,2.019,4.5,4.5v1.5c0,.276-.224,.5-.5,.5-1.378,0-2.5,1.122-2.5,2.5s1.122,2.5,2.5,2.5c.276,0,.5,.224,.5,.5v1.5c0,2.481-2.019,4.5-4.5,4.5ZM1,15.548v.948c0,1.93,1.57,3.5,3.5,3.5l15,.004c1.93,0,3.5-1.57,3.5-3.5v-1.036c-1.694-.243-3-1.704-3-3.464s1.306-3.221,3-3.464v-1.036c0-1.93-1.57-3.5-3.5-3.5l-15-.004c-1.93,0-3.5,1.57-3.5,3.5v1.037c1.752,.237,3.082,1.718,3.082,3.504,0,1.797-1.345,3.286-3.082,3.511Z"/>
+                           </svg>
+                        </span>
+                        <span class="menu-text text-menu-font-size leading-[--tw-menu-item-font-size] whitespace-nowrap ml-1"> Tickets </span>
+                     </a>
+                  </li>
+                  <li class="menu-item py-0 px-[--tw-menu-item-padding-x]">
+                     <a href="apps-file-manager.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] py-[--tw-menu-link-padding-y] px-[--tw-menu-link-padding-x] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:bg-[--tw-menu-item-active-bg] hover:text-[--tw-menu-item-hover-color]">
+                        <span class="menu-icon w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] inline-flex items-center justify-center transition-all ease-in-out duration-150">
+                           <svg class="w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] fill-[var(--tw-menu-item-color)] stroke-inherit transition transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color]" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
+                              <path d="M19.5,3h-7.03c-.23,0-.46-.05-.67-.16l-3.16-1.58c-.34-.17-.73-.26-1.12-.26h-3.03C2.02,1,0,3.02,0,5.5v13c0,2.48,2.02,4.5,4.5,4.5H12.5c.28,0,.5-.22,.5-.5s-.22-.5-.5-.5H4.5c-1.93,0-3.5-1.57-3.5-3.5V8H23v6.5c0,.28,.22,.5,.5,.5s.5-.22,.5-.5V7.5c0-2.48-2.02-4.5-4.5-4.5ZM1,5.5c0-1.93,1.57-3.5,3.5-3.5h3.03c.23,0,.46,.05,.67,.16l3.16,1.58c.34,.17,.73,.26,1.12,.26h7.03c1.76,0,3.22,1.31,3.46,3H1v-1.5Zm23,14s0,0,0,0c0,.5-.19,1-.58,1.38l-2.57,2.52c-.1,.1-.22,.14-.35,.14s-.26-.05-.36-.15c-.19-.2-.19-.51,0-.71l2.57-2.52c.06-.06,.1-.12,.14-.18H13.5c-.28,0-.5-.22-.5-.5s.22-.5,.5-.5h9.36c-.04-.07-.09-.13-.15-.19l-2.57-2.51c-.2-.19-.2-.51,0-.71,.19-.2,.51-.2,.71,0l2.57,2.52c.38,.38,.58,.89,.58,1.39,0,0,0,0,0,0Z"/>
+                           </svg>
+                        </span>
+                        <span class="menu-text text-menu-font-size leading-[--tw-menu-item-font-size] whitespace-nowrap ml-1"> File Manager </span>
+                     </a>
+                  </li>
+                  <li class="menu-item py-0 px-[--tw-menu-item-padding-x]">
+                     <a href="apps-kanban.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] py-[--tw-menu-link-padding-y] px-[--tw-menu-link-padding-x] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:bg-[--tw-menu-item-active-bg] hover:text-[--tw-menu-item-hover-color]">
+                        <span class="menu-icon w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] inline-flex items-center justify-center">
+                           <svg class="w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] fill-[var(--tw-menu-item-color)] stroke-inherit transition transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color]" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
+                              <path d="M17.5,24H6.5c-2.481,0-4.5-2.019-4.5-4.5V4.5C2,2.019,4.019,0,6.5,0h11c2.481,0,4.5,2.019,4.5,4.5v15c0,2.481-2.019,4.5-4.5,4.5ZM6.5,1c-1.93,0-3.5,1.57-3.5,3.5v15c0,1.93,1.57,3.5,3.5,3.5h11c1.93,0,3.5-1.57,3.5-3.5V4.5c0-1.93-1.57-3.5-3.5-3.5H6.5Zm11.5,4.5c0-.276-.224-.5-.5-.5h-6c-.276,0-.5,.224-.5,.5s.224,.5,.5,.5h6c.276,0,.5-.224,.5-.5Zm0,6c0-.276-.224-.5-.5-.5h-6c-.276,0-.5,.224-.5,.5s.224,.5,.5,.5h6c.276,0,.5-.224,.5-.5Zm0,6c0-.276-.224-.5-.5-.5h-6c-.276,0-.5,.224-.5,.5s.224,.5,.5,.5h6c.276,0,.5-.224,.5-.5ZM8.5,7h-2c-.276,0-.5-.224-.5-.5v-2c0-.276,.224-.5,.5-.5h2c.276,0,.5,.224,.5,.5v2c0,.276-.224,.5-.5,.5Zm-1.5-1h1v-1h-1v1Zm1.5,7h-2c-.276,0-.5-.224-.5-.5v-2c0-.276,.224-.5,.5-.5h2c.276,0,.5,.224,.5,.5v2c0,.276-.224,.5-.5,.5Zm-1.5-1h1v-1h-1v1Zm1.5,7h-2c-.276,0-.5-.224-.5-.5v-2c0-.276,.224-.5,.5-.5h2c.276,0,.5,.224,.5,.5v2c0,.276-.224,.5-.5,.5Zm-1.5-1h1v-1h-1v1Z"/>
+                           </svg>
+                        </span>
+                        <span class="menu-text text-menu-font-size leading-[--tw-menu-item-font-size] whitespace-nowrap ml-1">Kanban</span>
+                     </a>
+                  </li>
+                  <li class="menu-item py-0 px-[--tw-menu-item-padding-x]">
+                     <a href="javascript:void(0)" data-fc-type="collapse" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] py-[--tw-menu-link-padding-y] px-[--tw-menu-link-padding-x] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:bg-[--tw-menu-item-active-bg] hover:text-[--tw-menu-item-hover-color]">
+                        <span class="menu-icon w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] inline-flex items-center justify-center">
+                           <svg class="w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] fill-[var(--tw-menu-item-color)] stroke-inherit transition transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color]" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
+                              <path d="m6,4V0h-3C1.346,0,0,1.346,0,3v18c0,1.654,1.346,3,3,3h21V4H6ZM1,3c0-1.103.897-2,2-2h2v17h-2c-.768,0-1.469.29-2,.766V3Zm22,20H3c-1.103,0-2-.897-2-2s.897-2,2-2h3V5h17v18Zm-2-2h-13V7h3v1h-2v3h2v1h-2v8h5v-5h-2v-1h5v1h-2v5h5v-12h-5v3h-1v-4h7v14Z"/>
+                           </svg>
+                        </span>
+                        <span class="menu-text text-menu-font-size leading-[--tw-menu-item-font-size] whitespace-nowrap ml-1"> Project </span>
+                        <span class="menu-arrow ms-auto">
+                           <svg class="w-[--tw-menu-item-font-size] h-[--tw-menu-item-font-size] fill-[--tw-menu-item-color] stroke-inherit transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color]" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
+                              <path d="M15.4,9.88,10.81,5.29a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L14,11.29a1,1,0,0,1,0,1.42L9.4,17.29a1,1,0,0,0,1.41,1.42l4.59-4.59A3,3,0,0,0,15.4,9.88Z"/>
+                           </svg>
+                        </span>
+                     </a>
+                     <ul class="sub-menu hidden w-full overflow-hidden transition-all duration-300 ps-[--submenu-padding-inline-start]">
+                        <li class="menu-item mt-[--submenu-first-item-margin-top]">
+                           <a href="apps-project-list.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">List</span>
+                           </a>
+                        </li>
+                        <li class="menu-item">
+                           <a href="apps-project-detail.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Detail</span>
+                           </a>
+                        </li>
+                        <li class="menu-item mb-[--submenu-last-item-margin-bottom]">
+                           <a href="apps-project-create.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Create</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="menu-title p-[--calculated-menu-title-padding] text-menu-item-color text-menu-title-size cursor-default whitespace-nowrap font-medium tracking-widest opacity-75">Custom</li>
+                  <li class="menu-item py-0 px-[--tw-menu-item-padding-x]">
+                     <a href="javascript:void(0)" data-fc-type="collapse" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] py-[--tw-menu-link-padding-y] px-[--tw-menu-link-padding-x] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:bg-[--tw-menu-item-active-bg] hover:text-[--tw-menu-item-hover-color]">
+                        <span class="menu-icon w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] inline-flex items-center justify-center">
+                           <svg class="w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] fill-[var(--tw-menu-item-color)] stroke-inherit transition transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color]" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
+                              <path d="M12,12A6,6,0,1,0,6,6,6.006,6.006,0,0,0,12,12ZM12,2A4,4,0,1,1,8,6,4,4,0,0,1,12,2Z"/>
+                              <path d="M12,14a9.01,9.01,0,0,0-9,9,1,1,0,0,0,2,0,7,7,0,0,1,14,0,1,1,0,0,0,2,0A9.01,9.01,0,0,0,12,14Z"/>
+                           </svg>
+                        </span>
+                        <span class="menu-text text-menu-font-size leading-[--tw-menu-item-font-size] whitespace-nowrap ml-1"> Auth Pages </span>
+                        <span class="menu-arrow ms-auto">
+                           <svg class="w-[--tw-menu-item-font-size] h-[--tw-menu-item-font-size] fill-[--tw-menu-item-color] stroke-inherit transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color]" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
+                              <path d="M15.4,9.88,10.81,5.29a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L14,11.29a1,1,0,0,1,0,1.42L9.4,17.29a1,1,0,0,0,1.41,1.42l4.59-4.59A3,3,0,0,0,15.4,9.88Z"/>
+                           </svg>
+                        </span>
+                     </a>
+                     <ul class="sub-menu hidden w-full overflow-hidden transition-all duration-300 ps-[--submenu-padding-inline-start]">
+                        <li class="menu-item mt-[--submenu-first-item-margin-top]">
+                           <a href="auth-login.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Log In</span>
+                           </a>
+                        </li>
+                        <li class="menu-item">
+                           <a href="auth-register.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Register</span>
+                           </a>
+                        </li>
+                        <li class="menu-item">
+                           <a href="auth-recoverpw.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Recover Password</span>
+                           </a>
+                        </li>
+                        <li class="menu-item mb-[--submenu-last-item-margin-bottom]">
+                           <a href="auth-lock-screen.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Lock Screen</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="menu-item py-0 px-[--tw-menu-item-padding-x]">
+                     <a href="javascript:void(0)" data-fc-type="collapse" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] py-[--tw-menu-link-padding-y] px-[--tw-menu-link-padding-x] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:bg-[--tw-menu-item-active-bg] hover:text-[--tw-menu-item-hover-color]">
+                        <span class="menu-icon w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] inline-flex items-center justify-center">
+                           <svg class="w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] fill-[var(--tw-menu-item-color)] stroke-inherit transition transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color]" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
+                              <path d="m12,0L1.5,6v12l10.5,6,10.5-6V6L12,0Zm9.087,6.344l-9.109,5.08L3.1,6.237,12,1.152l9.087,5.192Zm-18.587.701l9,5.259v10.258l-9-5.142V7.045Zm10,15.517v-10.284l9-5.02v10.162l-9,5.142Z"/>
+                           </svg>
+                        </span>
+                        <span class="menu-text text-menu-font-size leading-[--tw-menu-item-font-size] whitespace-nowrap ml-1"> Extra Pages </span>
+                        <span class="menu-arrow ms-auto">
+                           <svg class="w-[--tw-menu-item-font-size] h-[--tw-menu-item-font-size] fill-[--tw-menu-item-color] stroke-inherit transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color]" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
+                              <path d="M15.4,9.88,10.81,5.29a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L14,11.29a1,1,0,0,1,0,1.42L9.4,17.29a1,1,0,0,0,1.41,1.42l4.59-4.59A3,3,0,0,0,15.4,9.88Z"/>
+                           </svg>
+                        </span>
+                     </a>
+                     <ul class="sub-menu hidden w-full overflow-hidden transition-all duration-300 ps-[--submenu-padding-inline-start]">
+                        <li class="menu-item mt-[--submenu-first-item-margin-top]">
+                           <a href="pages-starter.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Starter</span>
+                           </a>
+                        </li>
+                        <li class="menu-item">
+                           <a href="pages-timeline.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Timeline</span>
+                           </a>
+                        </li>
+                        <li class="menu-item">
+                           <a href="pages-invoice.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-sm-[var(--tw-menu-item-font-size)] whitespace-nowrap transition transition-color delay-75 group-hover:tw-menu-item-hover-color">Invoice</span>
+                           </a>
+                        </li>
+                        <li class="menu-item">
+                           <a href="pages-gallery.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Gallery</span>
+                           </a>
+                        </li>
+                        <li class="menu-item">
+                           <a href="pages-faqs.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">FAQs</span>
+                           </a>
+                        </li>
+                        <li class="menu-item">
+                           <a href="pages-pricing.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Pricing</span>
+                           </a>
+                        </li>
+                        <li class="menu-item">
+                           <a href="pages-maintenance.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Maintenance</span>
+                           </a>
+                        </li>
+                        <li class="menu-item">
+                           <a href="pages-coming-soon.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Coming Soon</span>
+                           </a>
+                        </li>
+                        <li class="menu-item">
+                           <a href="pages-404.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Error 404</span>
+                           </a>
+                        </li>
+                        <li class="menu-item">
+                           <a href="pages-404-alt.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Error 404-alt</span>
+                           </a>
+                        </li>
+                        <li class="menu-item mb-[--submenu-last-item-margin-bottom]">
+                           <a href="pages-500.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Error 500</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="menu-item py-0 px-[--tw-menu-item-padding-x]">
+                     <a href="javascript:void(0)" data-fc-type="collapse" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] py-[--tw-menu-link-padding-y] px-[--tw-menu-link-padding-x] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:bg-[--tw-menu-item-active-bg] hover:text-[--tw-menu-item-hover-color]">
+                        <span class="menu-icon w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] inline-flex items-center justify-center">
+                           <svg class="w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] fill-[var(--tw-menu-item-color)] stroke-inherit transition transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color]" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
+                              <path d="M21.5,2H2.5C1.122,2,0,3.121,0,4.5V22H24V4.5c0-1.379-1.122-2.5-2.5-2.5ZM2.5,3H21.5c.827,0,1.5,.673,1.5,1.5v2.5H1v-2.5c0-.827,.673-1.5,1.5-1.5Zm-1.5,5H7v13H1V8Zm7,13V8h15v13H8Z"/>
+                           </svg>
+                        </span>
+                        <span class="menu-text text-menu-font-size leading-[--tw-menu-item-font-size] whitespace-nowrap ml-1"> Layout </span>
+                        <span class="menu-arrow ms-auto">
+                           <svg class="w-[--tw-menu-item-font-size] h-[--tw-menu-item-font-size] fill-[--tw-menu-item-color] stroke-inherit transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color]" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
+                              <path d="M15.4,9.88,10.81,5.29a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L14,11.29a1,1,0,0,1,0,1.42L9.4,17.29a1,1,0,0,0,1.41,1.42l4.59-4.59A3,3,0,0,0,15.4,9.88Z"/>
+                           </svg>
+                        </span>
+                     </a>
+                     <ul class="sub-menu hidden w-full overflow-hidden transition-all duration-300 ps-[--submenu-padding-inline-start]">
+                        <li class="menu-item mt-[--submenu-first-item-margin-top]">
+                           <a href="layout-hover-view.html" target="_blank" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Hovered Menu</span>
+                           </a>
+                        </li>
+                        <li class="menu-item">
+                           <a href="layout-icon-view.html" target="_blank" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Icon View Menu</span>
+                           </a>
+                        </li>
+                        <li class="menu-item">
+                           <a href="layout-compact-view.html" target="_blank" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Compact Menu</span>
+                           </a>
+                        </li>
+                        <li class="menu-item">
+                           <a href="layout-mobile-view.html" target="_blank" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Mobile View Menu</span>
+                           </a>
+                        </li>
+                        <li class="menu-item mb-[--submenu-last-item-margin-bottom]">
+                           <a href="layout-hidden.html" target="_blank" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Hidden Menu</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="menu-title p-[--calculated-menu-title-padding] text-menu-item-color text-menu-title-size cursor-default whitespace-nowrap font-medium tracking-widest opacity-75">Elements</li>
+                  <li class="menu-item p-[var(--tw-menu-item-padding-x)]">
+                     <a href="javascript:void(0)" data-fc-type="collapse" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] py-[--tw-menu-link-padding-y] px-[--tw-menu-link-padding-x] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:bg-[--tw-menu-item-active-bg] hover:text-[--tw-menu-item-hover-color]">
+                        <span class="menu-icon w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] inline-flex items-center justify-center">
+                           <svg class="w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] fill-[var(--tw-menu-item-color)] stroke-inherit transition transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color]" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
+                              <g id="_01_align_center" data-name="01 align center">
+                                 <path d="M11,11H0V3A3,3,0,0,1,3,0h8ZM2,9H9V2H3A1,1,0,0,0,2,3Z"/>
+                                 <path d="M24,11H13V0h8a3,3,0,0,1,3,3ZM15,9h7V3a1,1,0,0,0-1-1H15Z"/>
+                                 <path d="M11,24H3a3,3,0,0,1-3-3V13H11ZM2,15v6a1,1,0,0,0,1,1H9V15Z"/>
+                                 <path d="M21,24H13V13H24v8A3,3,0,0,1,21,24Zm-6-2h6a1,1,0,0,0,1-1V15H15Z"/>
+                              </g>
+                           </svg>
+                        </span>
+                        <span class="menu-text text-menu-font-size leading-[--tw-menu-item-font-size] whitespace-nowrap ml-1"> Components </span>
+                        <span class="menu-arrow ms-auto">
+                           <svg class="w-[--tw-menu-item-font-size] h-[--tw-menu-item-font-size] fill-[--tw-menu-item-color] stroke-inherit transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color]" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
+                              <path d="M15.4,9.88,10.81,5.29a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L14,11.29a1,1,0,0,1,0,1.42L9.4,17.29a1,1,0,0,0,1.41,1.42l4.59-4.59A3,3,0,0,0,15.4,9.88Z"/>
+                           </svg>
+                        </span>
+                     </a>
+                     <ul class="sub-menu hidden w-full overflow-hidden transition-all duration-300 ps-[--submenu-padding-inline-start]">
+                        <li class="menu-item mt-[--submenu-first-item-margin-top]">
+                           <a href="ui-accordions.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Accordions</span>
+                           </a>
+                        </li>
+                        <li class="menu-item">
+                           <a href="ui-alerts.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Alerts</span>
+                           </a>
+                        </li>
+                        <li class="menu-item">
+                           <a href="ui-avatars.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Avatars</span>
+                           </a>
+                        </li>
+                        <li class="menu-item">
+                           <a href="ui-buttons.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Buttons</span>
+                           </a>
+                        </li>
+                        <li class="menu-item">
+                           <a href="ui-badges.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Badges</span>
+                           </a>
+                        </li>
+                        <li class="menu-item">
+                           <a href="ui-breadcrumbs.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Breadcrumb</span>
+                           </a>
+                        </li>
+                        <li class="menu-item">
+                           <a href="ui-cards.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Cards</span>
+                           </a>
+                        </li>
+                        <li class="menu-item">
+                           <a href="ui-collapse.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Collapse</span>
+                           </a>
+                        </li>
+                        <li class="menu-item">
+                           <a href="ui-dismissible.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Dismissible</span>
+                           </a>
+                        </li>
+                        <li class="menu-item">
+                           <a href="ui-dropdowns.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Dropdowns</span>
+                           </a>
+                        </li>
+                        <li class="menu-item">
+                           <a href="ui-progress.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Progress</span>
+                           </a>
+                        </li>
+                        <li class="menu-item">
+                           <a href="ui-skeleton.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Skeleton</span>
+                           </a>
+                        </li>
+                        <li class="menu-item">
+                           <a href="ui-spinners.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Spinners</span>
+                           </a>
+                        </li>
+                        <li class="menu-item">
+                           <a href="ui-list-group.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">List Group</span>
+                           </a>
+                        </li>
+                        <li class="menu-item">
+                           <a href="ui-ratio.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Ratio</span>
+                           </a>
+                        </li>
+                        <li class="menu-item">
+                           <a href="ui-tabs.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Tab</span>
+                           </a>
+                        </li>
+                        <li class="menu-item">
+                           <a href="ui-modals.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Modals</span>
+                           </a>
+                        </li>
+                        <li class="menu-item">
+                           <a href="ui-offcanvas.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Offcanvas</span>
+                           </a>
+                        </li>
+                        <li class="menu-item">
+                           <a href="ui-popovers.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Popovers</span>
+                           </a>
+                        </li>
+                        <li class="menu-item">
+                           <a href="ui-tooltips.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Tooltips</span>
+                           </a>
+                        </li>
+                        <li class="menu-item mb-[--submenu-last-item-margin-bottom]">
+                           <a href="ui-typography.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Typography</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="menu-item py-0 px-[--tw-menu-item-padding-x]">
+                     <a href="javascript:void(0)" data-fc-type="collapse" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] py-[--tw-menu-link-padding-y] px-[--tw-menu-link-padding-x] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:bg-[--tw-menu-item-active-bg] hover:text-[--tw-menu-item-hover-color]">
+                        <span class="menu-icon w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] inline-flex items-center justify-center">
+                           <svg class="w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] fill-[var(--tw-menu-item-color)] stroke-inherit transition transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color]" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
+                              <path d="m12,0L1.5,6v12l10.5,6,10.5-6V6L12,0Zm9.087,6.344l-9.109,5.08L3.1,6.237,12,1.152l9.087,5.192Zm-18.587.701l9,5.259v10.258l-9-5.142V7.045Zm10,15.517v-10.284l9-5.02v10.162l-9,5.142Z"/>
+                           </svg>
+                        </span>
+                        <span class="menu-text text-menu-font-size leading-[--tw-menu-item-font-size] whitespace-nowrap ml-1"> Extended </span>
+                        <span class="menu-arrow ms-auto">
+                           <svg class="w-[--tw-menu-item-font-size] h-[--tw-menu-item-font-size] fill-[--tw-menu-item-color] stroke-inherit transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color]" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
+                              <path d="M15.4,9.88,10.81,5.29a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L14,11.29a1,1,0,0,1,0,1.42L9.4,17.29a1,1,0,0,0,1.41,1.42l4.59-4.59A3,3,0,0,0,15.4,9.88Z"/>
+                           </svg>
+                        </span>
+                     </a>
+                     <ul class="sub-menu hidden w-full overflow-hidden transition-all duration-300 ps-[--submenu-padding-inline-start]">
+                        <li class="menu-item mt-[--submenu-first-item-margin-top]">
+                           <a href="extended-swiper.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Swiper</span>
+                           </a>
+                        </li>
+                        <li class="menu-item">
+                           <a href="extended-nestable.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Nestable List</span>
+                           </a>
+                        </li>
+                        <li class="menu-item">
+                           <a href="extended-ratings.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Ratings</span>
+                           </a>
+                        </li>
+                        <li class="menu-item">
+                           <a href="extended-animation.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Animation</span>
+                           </a>
+                        </li>
+                        <li class="menu-item">
+                           <a href="extended-player.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Player</span>
+                           </a>
+                        </li>
+                        <li class="menu-item">
+                           <a href="extended-scrollbar.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Scrollbar</span>
+                           </a>
+                        </li>
+                        <li class="menu-item">
+                           <a href="extended-sweet-alert.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Sweet Alert</span>
+                           </a>
+                        </li>
+                        <li class="menu-item">
+                           <a href="extended-tour.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Tour Page</span>
+                           </a>
+                        </li>
+                        <li class="menu-item">
+                           <a href="extended-tippy-tooltips.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Tippy Tooltip</span>
+                           </a>
+                        </li>
+                        <li class="menu-item mb-[--submenu-last-item-margin-bottom]">
+                           <a href="extended-lightbox.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Lightbox</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="menu-item py-0 px-[--tw-menu-item-padding-x]">
+                     <a href="javascript:void(0)" data-fc-type="collapse" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] py-[--tw-menu-link-padding-y] px-[--tw-menu-link-padding-x] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:bg-[--tw-menu-item-active-bg] hover:text-[--tw-menu-item-hover-color]">
+                        <span class="menu-icon w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] inline-flex items-center justify-center">
+                           <svg class="w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] fill-[var(--tw-menu-item-color)] stroke-inherit transition transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color]" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
+                              <path d="m19.828 3.414-2.242-2.242a3.975 3.975 0 0 0 -2.829-1.172h-8.757a3 3 0 0 0 -3 3v21h18v-17.758a4.022 4.022 0 0 0 -1.172-2.828zm-1.414 1.414a1.923 1.923 0 0 1 .141.172h-2.555v-2.555a1.923 1.923 0 0 1 .172.141zm-13.414 17.172v-19a1 1 0 0 1 1-1h8v5h5v15zm2-6h10v-6h-10zm2-4h6v2h-6zm-2 6h10v2h-10z"/>
+                           </svg>
+                        </span>
+                        <span class="menu-text text-menu-font-size leading-[--tw-menu-item-font-size] whitespace-nowrap ml-1"> Forms </span>
+                        <span class="menu-arrow ms-auto">
+                           <svg class="w-[--tw-menu-item-font-size] h-[--tw-menu-item-font-size] fill-[--tw-menu-item-color] stroke-inherit transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color]" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
+                              <path d="M15.4,9.88,10.81,5.29a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L14,11.29a1,1,0,0,1,0,1.42L9.4,17.29a1,1,0,0,0,1.41,1.42l4.59-4.59A3,3,0,0,0,15.4,9.88Z"/>
+                           </svg>
+                        </span>
+                     </a>
+                     <ul class="sub-menu hidden w-full overflow-hidden transition-all duration-300 ps-[--submenu-padding-inline-start]">
+                        <li class="menu-item mt-[--submenu-first-item-margin-top]">
+                           <a href="forms-elements.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Form Elements</span>
+                           </a>
+                        </li>
+                        <li class="menu-item">
+                           <a href="forms-select.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Select</span>
+                           </a>
+                        </li>
+                        <li class="menu-item">
+                           <a href="forms-range.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Range</span>
+                           </a>
+                        </li>
+                        <li class="menu-item">
+                           <a href="forms-pickers.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Pickers</span>
+                           </a>
+                        </li>
+                        <li class="menu-item">
+                           <a href="forms-masks.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Masks</span>
+                           </a>
+                        </li>
+                        <li class="menu-item">
+                           <a href="forms-editor.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Editor</span>
+                           </a>
+                        </li>
+                        <li class="menu-item">
+                           <a href="forms-file-uploads.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">File Uploads</span>
+                           </a>
+                        </li>
+                        <li class="menu-item">
+                           <a href="forms-validation.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Validation</span>
+                           </a>
+                        </li>
+                        <li class="menu-item mb-[--submenu-last-item-margin-bottom]">
+                           <a href="forms-layout.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Form Layout</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="menu-item py-0 px-[--tw-menu-item-padding-x]">
+                     <a href="javascript:void(0)" data-fc-type="collapse" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] py-[--tw-menu-link-padding-y] px-[--tw-menu-link-padding-x] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:bg-[--tw-menu-item-active-bg] hover:text-[--tw-menu-item-hover-color]">
+                        <span class="menu-icon w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] inline-flex items-center justify-center">
+                           <svg class="w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] fill-[var(--tw-menu-item-color)] stroke-inherit transition transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color]" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
+                              <g id="_01_align_center" data-name="01 align center">
+                                 <path d="M11,11H0V3A3,3,0,0,1,3,0h8ZM2,9H9V2H3A1,1,0,0,0,2,3Z"/>
+                                 <path d="M24,11H13V0h8a3,3,0,0,1,3,3ZM15,9h7V3a1,1,0,0,0-1-1H15Z"/>
+                                 <path d="M11,24H3a3,3,0,0,1-3-3V13H11ZM2,15v6a1,1,0,0,0,1,1H9V15Z"/>
+                                 <path d="M21,24H13V13H24v8A3,3,0,0,1,21,24Zm-6-2h6a1,1,0,0,0,1-1V15H15Z"/>
+                              </g>
+                           </svg>
+                        </span>
+                        <span class="menu-text text-menu-font-size leading-[--tw-menu-item-font-size] whitespace-nowrap ml-1"> Tables </span>
+                        <span class="menu-arrow ms-auto">
+                           <svg class="w-[--tw-menu-item-font-size] h-[--tw-menu-item-font-size] fill-[--tw-menu-item-color] stroke-inherit transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color]" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
+                              <path d="M15.4,9.88,10.81,5.29a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L14,11.29a1,1,0,0,1,0,1.42L9.4,17.29a1,1,0,0,0,1.41,1.42l4.59-4.59A3,3,0,0,0,15.4,9.88Z"/>
+                           </svg>
+                        </span>
+                     </a>
+                     <ul class="sub-menu hidden w-full overflow-hidden transition-all duration-300 ps-[--submenu-padding-inline-start]">
+                        <li class="menu-item mt-[--submenu-first-item-margin-top]">
+                           <a href="tables-basic.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Basic Tables</span>
+                           </a>
+                        </li>
+                        <li class="menu-item mb-[--submenu-last-item-margin-bottom]">
+                           <a href="tables-datatables.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Data Tables</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="menu-item py-0 px-[--tw-menu-item-padding-x]">
+                     <a href="javascript:void(0)" data-fc-type="collapse" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] py-[--tw-menu-link-padding-y] px-[--tw-menu-link-padding-x] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:bg-[--tw-menu-item-active-bg] hover:text-[--tw-menu-item-hover-color]">
+                        <span class="menu-icon w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] inline-flex items-center justify-center">
+                           <svg class="w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] fill-[var(--tw-menu-item-color)] stroke-inherit transition transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color]" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
+                              <path d="M12,0A12,12,0,1,0,24,12,12.013,12.013,0,0,0,12,0Zm8.647,7H17.426a19.676,19.676,0,0,0-2.821-4.644A10.031,10.031,0,0,1,20.647,7ZM16.5,12a10.211,10.211,0,0,1-.476,3H7.976A10.211,10.211,0,0,1,7.5,12a10.211,10.211,0,0,1,.476-3h8.048A10.211,10.211,0,0,1,16.5,12ZM8.778,17h6.444A19.614,19.614,0,0,1,12,21.588,19.57,19.57,0,0,1,8.778,17Zm0-10A19.614,19.614,0,0,1,12,2.412,19.57,19.57,0,0,1,15.222,7ZM9.4,2.356A19.676,19.676,0,0,0,6.574,7H3.353A10.031,10.031,0,0,1,9.4,2.356ZM2.461,9H5.9a12.016,12.016,0,0,0-.4,3,12.016,12.016,0,0,0,.4,3H2.461a9.992,9.992,0,0,1,0-6Zm.892,8H6.574A19.676,19.676,0,0,0,9.4,21.644,10.031,10.031,0,0,1,3.353,17Zm11.252,4.644A19.676,19.676,0,0,0,17.426,17h3.221A10.031,10.031,0,0,1,14.605,21.644ZM21.539,15H18.1a12.016,12.016,0,0,0,.4-3,12.016,12.016,0,0,0-.4-3h3.437a9.992,9.992,0,0,1,0,6Z"/>
+                           </svg>
+                        </span>
+                        <span class="menu-text text-menu-font-size leading-[--tw-menu-item-font-size] whitespace-nowrap ml-1"> Icons </span>
+                        <span class="menu-arrow ms-auto">
+                           <svg class="w-[--tw-menu-item-font-size] h-[--tw-menu-item-font-size] fill-[--tw-menu-item-color] stroke-inherit transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color]" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
+                              <path d="M15.4,9.88,10.81,5.29a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L14,11.29a1,1,0,0,1,0,1.42L9.4,17.29a1,1,0,0,0,1.41,1.42l4.59-4.59A3,3,0,0,0,15.4,9.88Z"/>
+                           </svg>
+                        </span>
+                     </a>
+                     <ul class="sub-menu hidden w-full overflow-hidden transition-all duration-300 ps-[--submenu-padding-inline-start]">
+                        <li class="menu-item mt-[--submenu-first-item-margin-top]">
+                           <a href="icons-mingcute.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Mingcute</span>
+                           </a>
+                        </li>
+                        <li class="menu-item">
+                           <a href="icons-feather.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Feather</span>
+                           </a>
+                        </li>
+                        <li class="menu-item mb-[--submenu-last-item-margin-bottom]">
+                           <a href="icons-material-symbols.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Material Symbols </span>
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="menu-item py-0 px-[--tw-menu-item-padding-x]">
+                     <a href="charts.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] py-[--tw-menu-link-padding-y] px-[--tw-menu-link-padding-x] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:bg-[--tw-menu-item-active-bg] hover:text-[--tw-menu-item-hover-color]">
+                        <span class="menu-icon w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] inline-flex items-center justify-center">
+                           <svg class="w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] fill-[var(--tw-menu-item-color)] stroke-inherit transition transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color]" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
+                              <path d="M12,0c-1.65,0-3,1.35-3,3V21c0,1.65,1.35,3,3,3s3-1.35,3-3V3c0-1.65-1.35-3-3-3Zm2,21c0,1.1-.9,2-2,2s-2-.9-2-2V3c0-1.1,.9-2,2-2s2,.9,2,2V21Zm7-15c-1.65,0-3,1.35-3,3v12c0,1.65,1.35,3,3,3s3-1.35,3-3V9c0-1.65-1.35-3-3-3Zm2,15c0,1.1-.9,2-2,2s-2-.9-2-2V9c0-1.1,.9-2,2-2s2,.9,2,2v12ZM3,12c-1.65,0-3,1.35-3,3v6c0,1.65,1.35,3,3,3s3-1.35,3-3v-6c0-1.65-1.35-3-3-3Zm2,9c0,1.1-.9,2-2,2s-2-.9-2-2v-6c0-1.1,.9-2,2-2s2,.9,2,2v6Z"/>
+                           </svg>
+                        </span>
+                        <span class="menu-text text-menu-font-size leading-[--tw-menu-item-font-size] whitespace-nowrap ml-1"> Chart </span>
+                     </a>
+                  </li>
+                  <li class="menu-item py-0 px-[--tw-menu-item-padding-x]">
+                     <a href="javascript:void(0)" data-fc-type="collapse" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] py-[--tw-menu-link-padding-y] px-[--tw-menu-link-padding-x] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:bg-[--tw-menu-item-active-bg] hover:text-[--tw-menu-item-hover-color]">
+                        <span class="menu-icon w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] inline-flex items-center justify-center">
+                           <svg class="w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] fill-[var(--tw-menu-item-color)] stroke-inherit transition transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color]" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
+                              <path d="M12,6a4,4,0,1,0,4,4A4,4,0,0,0,12,6Zm0,6a2,2,0,1,1,2-2A2,2,0,0,1,12,12Z"/>
+                              <path d="M12,24a5.271,5.271,0,0,1-4.311-2.2c-3.811-5.257-5.744-9.209-5.744-11.747a10.055,10.055,0,0,1,20.11,0c0,2.538-1.933,6.49-5.744,11.747A5.271,5.271,0,0,1,12,24ZM12,2.181a7.883,7.883,0,0,0-7.874,7.874c0,2.01,1.893,5.727,5.329,10.466a3.145,3.145,0,0,0,5.09,0c3.436-4.739,5.329-8.456,5.329-10.466A7.883,7.883,0,0,0,12,2.181Z"/>
+                           </svg>
+                        </span>
+                        <span class="menu-text text-menu-font-size leading-[--tw-menu-item-font-size] whitespace-nowrap ml-1"> Maps </span>
+                        <span class="menu-arrow ms-auto">
+                           <svg class="w-[--tw-menu-item-font-size] h-[--tw-menu-item-font-size] fill-[--tw-menu-item-color] stroke-inherit transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color]" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
+                              <path d="M15.4,9.88,10.81,5.29a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L14,11.29a1,1,0,0,1,0,1.42L9.4,17.29a1,1,0,0,0,1.41,1.42l4.59-4.59A3,3,0,0,0,15.4,9.88Z"/>
+                           </svg>
+                        </span>
+                     </a>
+                     <ul class="sub-menu hidden w-full overflow-hidden transition-all duration-300 ps-[--submenu-padding-inline-start]">
+                        <li class="menu-item mt-[--submenu-first-item-margin-top]">
+                           <a href="maps-vector.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Vector Maps</span>
+                           </a>
+                        </li>
+                        <li class="menu-item mb-[--submenu-last-item-margin-bottom]">
+                           <a href="maps-google.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Google Maps</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="menu-title p-[--calculated-menu-title-padding] text-menu-item-color text-menu-title-size cursor-default whitespace-nowrap font-medium tracking-widest opacity-75">Documentation</li>
+                  <li class="menu-item py-0 px-[--tw-menu-item-padding-x]">
+                     <a href="javascript:void(0)" data-fc-type="collapse" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] py-[--tw-menu-link-padding-y] px-[--tw-menu-link-padding-x] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:bg-[--tw-menu-item-active-bg] hover:text-[--tw-menu-item-hover-color]">
+                        <span class="menu-icon w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] inline-flex items-center justify-center">
+                           <svg class="w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] fill-[var(--tw-menu-item-color)] stroke-inherit transition transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color]" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
+                              <path d="m18.5,0H5.5c-1.379,0-2.5,1.121-2.5,2.5v21.5h18V2.5c0-1.379-1.121-2.5-2.5-2.5Zm1.5,23H4V2.5c0-.827.673-1.5,1.5-1.5h13c.827,0,1.5.673,1.5,1.5v20.5ZM7,5h10v1H7v-1Zm0,5h10v1H7v-1Zm0,5h5v1h-5v-1Z"/>
+                           </svg>
+                        </span>
+                        <span class="menu-text text-menu-font-size leading-[--tw-menu-item-font-size] whitespace-nowrap ml-1"> Documentation </span>
+                        <span class="menu-arrow ms-auto">
+                           <svg class="w-[--tw-menu-item-font-size] h-[--tw-menu-item-font-size] fill-[--tw-menu-item-color] stroke-inherit transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color]" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
+                              <path d="M15.4,9.88,10.81,5.29a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L14,11.29a1,1,0,0,1,0,1.42L9.4,17.29a1,1,0,0,0,1.41,1.42l4.59-4.59A3,3,0,0,0,15.4,9.88Z"/>
+                           </svg>
+                        </span>
+                     </a>
+                     <ul class="sub-menu hidden w-full overflow-hidden transition-all duration-300 ps-[--submenu-padding-inline-start]">
+                        <li class="menu-item mt-[--submenu-first-item-margin-top]">
+                           <a href="docs-introduction.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Introduction</span>
+                           </a>
+                        </li>
+                        <li class="menu-item">
+                           <a href="docs-installation.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Installation</span>
+                           </a>
+                        </li>
+                        <li class="menu-item">
+                           <a href="docs-customization.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Customization</span>
+                           </a>
+                        </li>
+                        <li class="menu-item mb-[--submenu-last-item-margin-bottom]">
+                           <a href="docs-changelog.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Changelog</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
+               <!-- Help Box Widget -->
+               <div class="my-10 mx-5">
+                  <div class="help-box text-[--tw-menu-item-color] p-6 bg-black/5 text-center rounded-md">
+                     <div class="flex justify-center mb-4">
+                        <svg width="30" height="18" aria-hidden="true">
+                           <path fill-rule="evenodd" clip-rule="evenodd" d="M15 0c-4 0-6.5 2-7.5 6 1.5-2 3.25-2.75 5.25-2.25 1.141.285 1.957 1.113 2.86 2.03C17.08 7.271 18.782 9 22.5 9c4 0 6.5-2 7.5-6-1.5 2-3.25 2.75-5.25 2.25-1.141-.285-1.957-1.113-2.86-2.03C20.42 1.728 18.718 0 15 0ZM7.5 9C3.5 9 1 11 0 15c1.5-2 3.25-2.75 5.25-2.25 1.141.285 1.957 1.113 2.86 2.03C9.58 16.271 11.282 18 15 18c4 0 6.5-2 7.5-6-1.5 2-3.25 2.75-5.25 2.25-1.141-.285-1.957-1.113-2.86-2.03C12.92 10.729 11.218 9 7.5 9Z" fill="#38BDF8"></path>
+                        </svg>
+                     </div>
+                     <h5 class="mb-2">Unlimited Access</h5>
+                     <p class="mb-3">Upgrade to plan to get access to unlimited reports</p>
+                     <a href="javascript: void(0);" class="btn btn-sm bg-secondary text-white">Upgrade</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Sidenav Menu End  -->
+         <!-- ============================================================== -->
+         <!-- Start Page Content here -->
+         <!-- ============================================================== -->
+         <div class="page-content w-full flex flex-col min-h-screen">
+            <!-- Topbar Start -->
+            <header id="app-header" class="app-header flex items-center px-4 gap-3 sticky top-0 shadow-header z-[35] h-[--tw-topbar-height]">
+               <!-- Sidenav Menu Toggle Button -->
+               <button id="button-toggle-menu" class="nav-link text-[--tw-topbar-item-color] rounded-full bg-transparent transition transition-color delay-75 group hover:bg-[var(--tw-topbar-item-hover-bg)] p-2">
+                  <span class="sr-only transition transition-color delay-75 group-hover:text-[--tw-topbar-item-hover-color]">Menu Toggle Button</span>
+                  <span class="flex items-center justify-center h-6 w-6">
+                     <svg class="w-[20px] h-[20px] stroke-[--tw-topbar-item-color] transition transition-color delay-75 group-hover:stroke-[--tw-topbar-item-hover-color]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                     </svg>
+                  </span>
+               </button>
+               <!-- Topbar Brand Logo -->
+               <a href="index.html" class="logo-box">
+                  <!-- Light Brand Logo -->
+                  <div class="logo-light">
+                     <img src="assets/images/logo-light.png" class="logo-lg h-6" alt="Light logo">
+                     <img src="assets/images/logo-sm.png" class="logo-sm" alt="Small logo">
+                  </div>
+                  <!-- Dark Brand Logo -->
+                  <div class="logo-dark">
+                     <img src="assets/images/logo-dark.png" class="logo-lg h-6" alt="Dark logo">
+                     <img src="assets/images/logo-sm.png" class="logo-sm" alt="Small logo">
+                  </div>
+               </a>
+               <!-- Topbar Search Modal Button -->
+               <button id="search-bar" type="button" data-fc-type="modal" data-fc-target="topbar-search-modal" class="nav-link text-[--tw-topbar-item-color] rounded-full bg-transparent transition transition-color delay-75 group hover:bg-[var(--tw-topbar-item-hover-bg)] p-2 me-auto">
+                  <span class="sr-only transition transition-color delay-75 group-hover:text-[var(--tw-topbar-item-hover-color)]">Search</span>
+                  <span class="flex items-center justify-center h-6 w-6">
+                     <svg class="w-[23px] h-[23px] stroke-[--tw-topbar-item-color] transition transition-color delay-75 group-hover:stroke-[--tw-topbar-item-hover-color]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                     </svg>
+                  </span>
+               </button>
+               <!-- Language Dropdown Button -->
+               <div class="relative">
+                  <button data-fc-type="dropdown" data-fc-placement="bottom-end" type="button" class="nav-link text-[--tw-topbar-item-color] rounded-full bg-transparent transition transition-color delay-75 group hover:bg-[var(--tw-topbar-item-hover-bg)] p-2 fc-dropdown">
+                  <span class="flex items-center justify-center h-6 w-6">
+                  <img src="assets/images/flags/us.jpg" alt="user-image" class="h-4 w-6">
+                  </span>
+                  </button>
+                  <div class="fc-dropdown fc-dropdown-open:opacity-100 hidden opacity-0 w-40 z-50 mt-2 transition-[margin,opacity] duration-300 bg-white dark:bg-gray-800 shadow-lg border border-gray-200 dark:border-gray-700 rounded-lg p-2">
+                     <!-- item-->
+                     <a href="javascript:void(0);" class="flex items-center gap-2.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300">
+                     <img src="assets/images/flags/germany.jpg" alt="user-image" class="h-4">
+                     <span class="align-middle">German</span>
+                     </a>
+                     <!-- item-->
+                     <a href="javascript:void(0);" class="flex items-center gap-2.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300">
+                     <img src="assets/images/flags/italy.jpg" alt="user-image" class="h-4">
+                     <span class="align-middle">Italian</span>
+                     </a>
+                     <!-- item-->
+                     <a href="javascript:void(0);" class="flex items-center gap-2.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300">
+                     <img src="assets/images/flags/spain.jpg" alt="user-image" class="h-4">
+                     <span class="align-middle">Spanish</span>
+                     </a>
+                     <!-- item-->
+                     <a href="javascript:void(0);" class="flex items-center gap-2.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300">
+                     <img src="assets/images/flags/russia.jpg" alt="user-image" class="h-4">
+                     <span class="align-middle">Russian</span>
+                     </a>
+                  </div>
+               </div>
+               <!-- Fullscreen Toggle Button -->
+               <div class="md:flex hidden">
+                  <button id="fullscreen" data-toggle="fullscreen" type="button" class="nav-link text-[--tw-topbar-item-color] rounded-full bg-transparent transition transition-color delay-75 group hover:bg-[var(--tw-topbar-item-hover-bg)] p-2">
+                     <span class="sr-only transition transition-color delay-75 group-hover:text-[var(--tw-topbar-item-hover-color)]">Fullscreen Mode</span>
+                     <span class="flex items-center justify-center h-6 w-6">
+                        <svg id="maximize" class="w-[21.5px] h-[21.5px] stroke-[--tw-topbar-item-color] transition transition-color delay-75 group-hover:stroke-[--tw-topbar-item-hover-color]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-maximize">
+                           <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path>
+                        </svg>
+                        <svg id="minimize" class="w-[21.5px] h-[21.5px] stroke-[--tw-topbar-item-color] transition transition-color delay-75 group-hover:stroke-[--tw-topbar-item-hover-color] hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minimize">
+                           <path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3"></path>
+                        </svg>
+                     </span>
+                  </button>
+               </div>
+               <!-- Notification Bell Button -->
+               <div class="relative md:flex hidden">
+                  <button data-fc-type="dropdown" data-fc-placement="bottom-end" type="button" class="nav-link text-[--tw-topbar-item-color] rounded-full bg-transparent transition transition-color delay-75 group hover:bg-[var(--tw-topbar-item-hover-bg)] p-2">
+                     <span class="sr-only transition transition-color delay-75 group-hover:text-[var(--tw-topbar-item-hover-color)]">View notifications</span>
+                     <span class="flex items-center justify-center h-6 w-6">
+                        <svg class="w-[22px] h-[22px] stroke-[--tw-topbar-item-color] transition transition-color delay-75 group-hover:stroke-[--tw-topbar-item-hover-color]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell">
+                           <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                           <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                        </svg>
+                     </span>
+                  </button>
+                  <div class="fc-dropdown fc-dropdown-open:opacity-100 hidden opacity-0 w-80 z-50 mt-2 transition-[margin,opacity] duration-300 bg-white dark:bg-gray-800 shadow-lg border border-gray-200 dark:border-gray-700 rounded-lg">
+                     <div class="p-2 border-b border-dashed border-gray-200 dark:border-gray-700">
+                        <div class="flex items-center justify-between">
+                           <h6 class="text-sm"> Notification</h6>
+                           <a href="javascript: void(0);" class="text-gray-500 underline">
+                           <small>Clear All</small>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="p-4 h-80" data-simplebar>
+                        <h5 class="text-xs text-gray-500 mb-2">Today</h5>
+                        <a href="javascript:void(0);" class="block mb-4">
+                           <div class="card-body">
+                              <div class="flex items-center">
+                                 <div class="flex-shrink-0">
+                                    <div class="flex justify-center items-center h-9 w-9 rounded-full bg text-white bg-primary">
+                                       <i class="mgc_message_3_line text-lg"></i>
+                                    </div>
+                                 </div>
+                                 <div class="flex-grow truncate ms-2">
+                                    <h5 class="text-sm font-semibold mb-1">Datacorp <small class="font-normal text-gray-500 ms-1">1 min ago</small></h5>
+                                    <small class="noti-item-subtitle text-muted">Caleb Flakelar commented on Admin</small>
+                                 </div>
+                              </div>
+                           </div>
+                        </a>
+                        <a href="javascript:void(0);" class="block mb-4">
+                           <div class="card-body">
+                              <div class="flex items-center">
+                                 <div class="flex-shrink-0">
+                                    <div class="flex justify-center items-center h-9 w-9 rounded-full bg-info text-white">
+                                       <i class="mgc_user_add_line text-lg"></i>
+                                    </div>
+                                 </div>
+                                 <div class="flex-grow truncate ms-2">
+                                    <h5 class="text-sm font-semibold mb-1">Admin <small class="font-normal text-gray-500 ms-1">1 hr ago</small></h5>
+                                    <small class="noti-item-subtitle text-muted">New user registered</small>
+                                 </div>
+                              </div>
+                           </div>
+                        </a>
+                        <a href="javascript:void(0);" class="block mb-4">
+                           <div class="card-body">
+                              <div class="flex items-center">
+                                 <div class="flex-shrink-0">
+                                    <img src="assets/images/users/avatar-2.jpg" class="rounded-full h-9 w-9" alt="">
+                                 </div>
+                                 <div class="flex-grow truncate ms-2">
+                                    <h5 class="text-sm font-semibold mb-1">Cristina Pride <small class="font-normal text-gray-500 ms-1">1 day ago</small></h5>
+                                    <small class="noti-item-subtitle text-muted">Hi, How are you? What about our next meeting</small>
+                                 </div>
+                              </div>
+                           </div>
+                        </a>
+                        <h5 class="text-xs text-gray-500 mb-2">Yesterday</h5>
+                        <a href="javascript:void(0);" class="block mb-4">
+                           <div class="card-body">
+                              <div class="flex items-center">
+                                 <div class="flex-shrink-0">
+                                    <div class="flex justify-center items-center h-9 w-9 rounded-full bg-primary text-white">
+                                       <i class="mgc_message_1_line text-lg"></i>
+                                    </div>
+                                 </div>
+                                 <div class="flex-grow truncate ms-2">
+                                    <h5 class="text-sm font-semibold mb-1">Datacorp</h5>
+                                    <small class="noti-item-subtitle text-muted">Caleb Flakelar commented on Admin</small>
+                                 </div>
+                              </div>
+                           </div>
+                        </a>
+                        <a href="javascript:void(0);" class="block">
+                           <div class="card-body">
+                              <div class="flex items-center">
+                                 <div class="flex-shrink-0">
+                                    <img src="assets/images/users/avatar-4.jpg" class="rounded-full h-9 w-9" alt="">
+                                 </div>
+                                 <div class="flex-grow truncate ms-2">
+                                    <h5 class="text-sm font-semibold mb-1">Karen Robinson</h5>
+                                    <small class="noti-item-subtitle text-muted">Wow ! this admin looks good and awesome design</small>
+                                 </div>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                     <a href="javascript:void(0);" class="p-2 border-t border-dashed border-gray-200 dark:border-gray-700 block text-center text-primary underline font-semibold">
+                     View All
+                     </a>
+                  </div>
+               </div>
+               <!-- Light/Dark Toggle Button -->
+               <div class="flex">
+                  <button id="light-dark-mode" type="button" class="nav-link text-[--tw-topbar-item-color] rounded-full bg-transparent transition transition-color delay-75 group hover:bg-[var(--tw-topbar-item-hover-bg)] p-2">
+                     <span class="sr-only transition-color delay-75 group-hover:text-[var(--tw-topbar-item-hover-color)]">Light/Dark Mode</span>
+                     <span class="flex items-center justify-center w-6 h-6">
+                        <svg class="w-[21.5px] h-[21.5px] stroke-[--tw-topbar-item-color] transition transition-color delay-75 group-hover:stroke-[--tw-topbar-item-hover-color] rotate-[268deg] block dark:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon">
+                           <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                        <svg class="w-[21.5px] h-[21.5px] stroke-[--tw-topbar-item-color] transition transition-color delay-75 group-hover:stroke-[--tw-topbar-item-hover-color] hidden dark:block" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun">
+                           <circle cx="12" cy="12" r="5"></circle>
+                           <line x1="12" y1="1" x2="12" y2="3"></line>
+                           <line x1="12" y1="21" x2="12" y2="23"></line>
+                           <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                           <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                           <line x1="1" y1="12" x2="3" y2="12"></line>
+                           <line x1="21" y1="12" x2="23" y2="12"></line>
+                           <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                           <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                     </span>
+                  </button>
+               </div>
+               <!-- Profile Dropdown Button -->
+               <div class="relative">
+                  <button data-fc-type="dropdown" data-fc-placement="bottom-end" type="button" class="nav-link text-[--tw-topbar-item-color] rounded-full bg-transparent transition transition-color delay-75 group hover:bg-[var(--tw-topbar-item-hover-bg)]">
+                  <img src="assets/images/users/user-6.jpg" alt="user-image" class="rounded-full h-10">
+                  </button>
+                  <div class="fc-dropdown fc-dropdown-open:opacity-100 hidden opacity-0 w-44 z-50 transition-[margin,opacity] duration-300 mt-2 bg-white shadow-lg border rounded-lg p-2 border-gray-200 dark:border-gray-700 dark:bg-gray-800">
+                     <a class="flex items-center py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="pages-gallery.html">
+                     <i class="mgc_pic_2_line  me-2"></i> 
+                     <span>Gallery</span>
+                     </a>
+                     <a class="flex items-center py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="apps-kanban.html">
+                     <i class="mgc_task_2_line  me-2"></i> 
+                     <span>Kanban</span>
+                     </a>
+                     <a class="flex items-center py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="auth-login.html">
+                     <i class="mgc_lock_line  me-2"></i> 
+                     <span>Lock Screen</span>
+                     </a>
+                     <hr class="my-2 -mx-2 border-gray-200 dark:border-gray-700">
+                     <a class="flex items-center py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="auth-login.html">
+                     <i class="mgc_exit_line  me-2"></i> 
+                     <span>Log Out</span>
+                     </a>
+                  </div>
+               </div>
+            </header>
+            <!-- Topbar End -->
+            <!-- Topbar Search Modal Start -->
+            <div>
+               <div id="topbar-search-modal" class="fc-modal hidden w-full h-full fixed top-0 start-0 z-50">
+                  <div class="fc-modal-open:opacity-100 fc-modal-open:duration-500 opacity-0 transition-all sm:max-w-lg sm:w-full m-12 sm:mx-auto">
+                     <div class="mx-auto max-w-2xl overflow-hidden rounded-xl bg-white shadow-2xl transition-all dark:bg-slate-800">
+                        <div class="relative flex items-center">
+                           <div class="pointer-events-none absolute start-4">
+                              <svg class="w-[19px] h-[19px] text-gray-900 text-opacity-40 dark:text-gray-200" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+                                 <circle cx="11" cy="11" r="8"></circle>
+                                 <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                              </svg>
+                           </div>
+                           <input type="search" class="h-12 w-full border-0 bg-transparent ps-11 pe-4 text-gray-900 placeholder-gray-500 dark:placeholder-gray-300 dark:text-gray-200 focus:outline-none focus:ring-0 sm:text-sm appearance-none border-gray-500 rounded-none p-2 px-3 shadow-none m-0" placeholder="Search...">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- Topbar Search Modal End -->
+            <main class="flex-grow p-6">
+               <!-- Page Title Start -->
+               <div class="flex justify-between items-center mb-6">
+                  <h4 class="text-slate-900 dark:text-slate-200 text-lg font-medium">Layout</h4>
+                  <div class="md:flex hidden items-center gap-2.5 text-sm font-semibold">
+                     <div class="flex items-center gap-2">
+                        <a href="#" class="text-sm font-medium text-slate-700 dark:text-slate-400">Konrix</a>
+                     </div>
+                     <div class="flex items-center gap-2">
+                        <i class="mgc_right_line text-lg flex-shrink-0 text-slate-400 rtl:rotate-180"></i>
+                        <a href="#" class="text-sm font-medium text-slate-700 dark:text-slate-400">Form</a>
+                     </div>
+                     <div class="flex items-center gap-2">
+                        <i class="mgc_right_line text-lg flex-shrink-0 text-slate-400 rtl:rotate-180"></i>
+                        <a href="#" class="text-sm font-medium text-slate-700 dark:text-slate-400" aria-current="page">Layout</a>
+                     </div>
+                  </div>
+               </div>
+               <!-- Page Title End -->
+               <div class="grid lg:grid-cols-2 grid-cols-1 gap-6">
+                <div class="h-fit rounded-md bg-[rgb(255_255_255/var(--tw-bg-opacity))] dark:bg-[rgb(31_41_55/var(--tw-bg-opacity))] shadow">
+                    <div class="border-b border-gray-200 dark:border-gray-700 pt-3 pb-3 pl-6 pr-6">
+                        <div class="flex justify-between items-center">
+                            <h4 class="text-base leading-6 font-medium text-opacity-100 text-gray-900 dark:text-gray-200 dark:text-opacity-100">Basic Example</h4>
+                            <div class="flex items-center gap-2">
+                                <button type="button" class="btn-code flex items-center rounded-md bg-slate-100 dark:bg-slate-700 p-2 text-xs leading-4 font-semibold" data-fc-type="collapse" data-fc-target="BasicHtml">
+                                    <i class="mgc_eye_line text-lg"></i>
+                                    <span class="ms-2">Code</span>
+                                </button>
+
+                                <button class="btn-code flex items-center rounded-md bg-slate-100 dark:bg-slate-700 p-2 text-xs leading-4 font-semibold" data-clipboard-action="copy">
+                                    <i class="mgc_copy_line text-lg"></i>
+                                    <span class="ms-2">Copy</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="cursor-pointer text-gray-800 dark:text-gray-400 text-sm font-medium inline-block mb-2">Email address</label>
+                                <input type="email" class="placeholder-gray-500 placeholder-opacity-100 py-2 px-3 block appearance-none border w-full border-gray-200 bg-transparent text-sm font-normal rounded shadow-none focus:ring-0 focus:outline-none focus:border-gray-300 dark:text-gray-400 dark:border-gray-700" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                <small id="emailHelp" class="form-text text-sm text-slate-700 dark:text-slate-400">We'll never share your email
+                                    with anyone else.</small>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="cursor-pointer text-gray-800 dark:text-gray-400 text-sm font-medium inline-block mb-2">Password</label>
+                                <input type="password" class="placeholder-gray-500 placeholder-opacity-100 py-2 px-3 block appearance-none border w-full border-gray-200 bg-transparent text-sm font-normal rounded shadow-none focus:ring-0 focus:outline-none focus:border-gray-300 dark:text-gray-400 dark:border-gray-700" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+                            <div class="flex items-center gap-2 mb-3">
+                                <input type="checkbox" class="cursor-pointer bg-inherit appearance-none p-0 print-color-adjust inline-block align-middle bg-origin-border select-none h-4 w-4 shadow-none checked:bg-checkbox-checked checked:border-transparent checked:bg-current checked:bg-full checked:bg-center checked:bg-no-repeat checked:hover:border-transparent checked:hover:bg-current checked:focus:border-transparent checked:focus:bg-current focus:ring-0 focus:outline-none indeterminate:bg-checkbox-indeterminate indeterminate:border-transparent indeterminate:bg-current indeterminate:bg-full indeterminate:bg-center indeterminate:bg-no-repeat indeterminate:hover:border-transparent indeterminate:hover:bg-current text-primary rounded border border-gray-200 dark:border-gray-600" id="checkmeout0">
+                                <label class="cursor-pointer text-gray-800 dark:text-gray-400 text-sm font-medium inline-block" for="checkmeout0">Check me out !</label>
+                            </div>
+                            <button type="submit" class="btn bg-primary inline-flex items-center justify-center rounded border border-transparent py-2 px-4 text-center text-sm leading-5 font-medium transition duration-150 ease-in-out text-white">Submit</button>
+                        </form>
+                        <div id="BasicHtml" class="hidden w-full overflow-hidden transition-[height] duration-300">
+                            <pre class="language-html h-56">
+                                <code>
+                                    &lt;form&gt;
+                                        &lt;div class=&quot;mb-3&quot;&gt;
+                                            &lt;label for=&quot;exampleInputEmail1&quot; class=&quot;text-gray-800 dark:text-gray-400 text-sm font-medium inline-block mb-2&quot;&gt;Email address&lt;/label&gt;
+                                            &lt;input type=&quot;email&quot; class=&quot;placeholder-gray-500 placeholder-opacity-100 py-2 px-3 block appearance-none border w-full border-gray-200 bg-transparent text-sm font-normal rounded shadow-none focus:ring-0 focus:outline-none focus:border-gray-300 dark:text-gray-400 dark:border-gray-700&quot; id=&quot;exampleInputEmail1&quot; aria-describedby=&quot;emailHelp&quot; placeholder=&quot;Enter email&quot;&gt;
+                                            &lt;small id=&quot;emailHelp&quot; class=&quot;form-text text-sm text-slate-700 dark:text-slate-400&quot;&gt;We'll never share your email
+                                                with anyone else.&lt;/small&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class=&quot;mb-3&quot;&gt;
+                                            &lt;label for=&quot;exampleInputPassword1&quot; class=&quot;text-gray-800 dark:text-gray-400 text-sm font-medium inline-block mb-2&quot;&gt;Password&lt;/label&gt;
+                                            &lt;input type=&quot;password&quot; class=&quot;placeholder-gray-500 placeholder-opacity-100 py-2 px-3 block appearance-none border w-full border-gray-200 bg-transparent text-sm font-normal rounded shadow-none focus:ring-0 focus:outline-none focus:border-gray-300 dark:text-gray-400 dark:border-gray-700&quot; id=&quot;exampleInputPassword1&quot; placeholder=&quot;Password&quot;&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class=&quot;flex items-center gap-2 mb-3&quot;&gt;
+                                            &lt;input type=&quot;checkbox&quot; class=&quot;cursor-pointer bg-inherit appearance-none p-0 print-color-adjust inline-block align-middle bg-origin-border select-none h-4 w-4 shadow-none checked:bg-checkbox-checked checked:border-transparent checked:bg-current checked:bg-full checked:bg-center checked:bg-no-repeat checked:hover:border-transparent checked:hover:bg-current checked:focus:border-transparent checked:focus:bg-current focus:ring-0 focus:outline-none indeterminate:bg-checkbox-indeterminate indeterminate:border-transparent indeterminate:bg-current indeterminate:bg-full indeterminate:bg-center indeterminate:bg-no-repeat indeterminate:hover:border-transparent indeterminate:hover:bg-current text-primary rounded border border-gray-200 dark:border-gray-600&quot; id=&quot;checkmeout0&quot;&gt;
+                                            &lt;label class=&quot;cursor-pointer text-gray-800 dark:text-gray-400 text-sm font-medium inline-block&quot; for=&quot;checkmeout0&quot;&gt;Check me out !&lt;/label&gt;
+                                        &lt;/div&gt;
+                                        &lt;button type=&quot;submit&quot; class=&quot;btn bg-primary inline-flex items-center justify-center rounded border border-transparent py-2 px-4 text-center text-sm leading-5 font-medium transition duration-150 ease-in-out text-white&quot;&gt;Submit&lt;/button&gt;
+                                    &lt;/form&gt;
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="h-fit rounded-md bg-[rgb(255_255_255/var(--tw-bg-opacity))] dark:bg-[rgb(31_41_55/var(--tw-bg-opacity))] shadow">
+                    <div class="border-b border-gray-200 dark:border-gray-700 pt-3 pb-3 pl-6 pr-6">
+                        <div class="flex justify-between items-center">
+                            <h4 class="text-base leading-6 font-medium text-opacity-100 text-gray-900 dark:text-gray-200 dark:text-opacity-100">Horizontal form</h4>
+                            <div class="flex items-center gap-2">
+                                <button type="button" class="btn-code flex items-center rounded-md bg-slate-100 dark:bg-slate-700 p-2 text-xs leading-4 font-semibold" data-fc-type="collapse" data-fc-target="HorizontalFormHtml">
+                                    <i class="mgc_eye_line text-lg"></i>
+                                    <span class="ms-2">Code</span>
+                                </button>
+
+                                <button class="btn-code flex items-center rounded-md bg-slate-100 dark:bg-slate-700 p-2 text-xs leading-4 font-semibold" data-clipboard-action="copy">
+                                    <i class="mgc_copy_line text-lg"></i>
+                                    <span class="ms-2">Copy</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <form class="flex flex-col gap-3">
+                            <div class="grid grid-cols-4 items-center gap-6">
+                                <label for="inputEmail3" class="cursor-pointer text-gray-800 dark:text-gray-400 text-sm font-medium inline-block mb-2">Email</label>
+                                <div class="md:col-span-3">
+                                    <input type="email" class="placeholder-gray-500 placeholder-opacity-100 py-2 px-3 block appearance-none border w-full border-gray-200 bg-transparent text-sm font-normal rounded shadow-none focus:ring-0 focus:outline-none focus:border-gray-300 dark:text-gray-400 dark:border-gray-700" id="inputEmail3" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-4 items-center gap-6">
+                                <label for="inputPassword3" class="cursor-pointer text-gray-800 dark:text-gray-400 text-sm font-medium inline-block mb-2">Password</label>
+                                <div class="md:col-span-3">
+                                    <input type="password" class="placeholder-gray-500 placeholder-opacity-100 py-2 px-3 block appearance-none border w-full border-gray-200 bg-transparent text-sm font-normal rounded shadow-none focus:ring-0 focus:outline-none focus:border-gray-300 dark:text-gray-400 dark:border-gray-700" id="inputPassword3" placeholder="Password">
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-4 items-center gap-6">
+                                <label for="inputPassword5" class="cursor-pointer text-gray-800 dark:text-gray-400 text-sm font-medium inline-block mb-2">Re Password</label>
+                                <div class="md:col-span-3">
+                                    <input type="password" class="placeholder-gray-500 placeholder-opacity-100 py-2 px-3 block appearance-none border w-full border-gray-200 bg-transparent text-sm font-normal rounded shadow-none focus:ring-0 focus:outline-none focus:border-gray-300 dark:text-gray-400 dark:border-gray-700" id="inputPassword5" placeholder="Retype Password">
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-4 items-center gap-6">
+                                <div class="md:col-start-2">
+                                    <div class="flex items-center gap-2">
+                                        <input type="checkbox" class="cursor-pointer bg-inherit appearance-none p-0 print-color-adjust inline-block align-middle bg-origin-border select-none h-4 w-4 shadow-none checked:bg-checkbox-checked checked:border-transparent checked:bg-current checked:bg-full checked:bg-center checked:bg-no-repeat checked:hover:border-transparent checked:hover:bg-current checked:focus:border-transparent checked:focus:bg-current focus:ring-0 focus:outline-none indeterminate:bg-checkbox-indeterminate indeterminate:border-transparent indeterminate:bg-current indeterminate:bg-full indeterminate:bg-center indeterminate:bg-no-repeat indeterminate:hover:border-transparent indeterminate:hover:bg-current text-primary rounded border border-gray-200 dark:border-gray-600" id="checkmeout">
+                                        <label class="cursor-pointer text-gray-800 dark:text-gray-400 text-sm font-medium inline-block" for="checkmeout">Check me out !</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-4 items-center gap-6">
+                                <div class="md:col-start-2">
+                                    <button type="submit" class="btn bg-info inline-flex items-center justify-center rounded border border-transparent py-2 px-4 text-center text-sm leading-5 font-medium transition duration-150 ease-in-out text-white">Sign in</button>
+                                </div>
+                            </div>
+                        </form>
+                        <div id="HorizontalFormHtml" class="hidden w-full overflow-hidden transition-[height] duration-300">
+                            <pre class="language-html h-56">
+                                <code>
+                                    &lt;form class=&quot;flex flex-col gap-3&quot;&gt;
+                                        &lt;div class=&quot;grid grid-cols-4 items-center gap-6&quot;&gt;
+                                            &lt;label for=&quot;inputEmail3&quot; class=&quot;cursor-pointer text-gray-800 dark:text-gray-400 text-sm font-medium inline-block mb-2&quot;&gt;Email&lt;/label&gt;
+                                            &lt;div class=&quot;md:col-span-3&quot;&gt;
+                                                &lt;input type=&quot;email&quot; class=&quot;placeholder-gray-500 placeholder-opacity-100 py-2 px-3 block appearance-none border w-full border-gray-200 bg-transparent text-sm font-normal rounded shadow-none focus:ring-0 focus:outline-none focus:border-gray-300 dark:text-gray-400 dark:border-gray-700&quot; id=&quot;inputEmail3&quot; placeholder=&quot;Email&quot;&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class=&quot;grid grid-cols-4 items-center gap-6&quot;&gt;
+                                            &lt;label for=&quot;inputPassword3&quot; class=&quot;cursor-pointer text-gray-800 dark:text-gray-400 text-sm font-medium inline-block mb-2&quot;&gt;Password&lt;/label&gt;
+                                            &lt;div class=&quot;md:col-span-3&quot;&gt;
+                                                &lt;input type=&quot;password&quot; class=&quot;placeholder-gray-500 placeholder-opacity-100 py-2 px-3 block appearance-none border w-full border-gray-200 bg-transparent text-sm font-normal rounded shadow-none focus:ring-0 focus:outline-none focus:border-gray-300 dark:text-gray-400 dark:border-gray-700&quot; id=&quot;inputPassword3&quot; placeholder=&quot;Password&quot;&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class=&quot;grid grid-cols-4 items-center gap-6&quot;&gt;
+                                            &lt;label for=&quot;inputPassword5&quot; class=&quot;cursor-pointer text-gray-800 dark:text-gray-400 text-sm font-medium inline-block mb-2&quot;&gt;Re Password&lt;/label&gt;
+                                            &lt;div class=&quot;md:col-span-3&quot;&gt;
+                                                &lt;input type=&quot;password&quot; class=&quot;placeholder-gray-500 placeholder-opacity-100 py-2 px-3 block appearance-none border w-full border-gray-200 bg-transparent text-sm font-normal rounded shadow-none focus:ring-0 focus:outline-none focus:border-gray-300 dark:text-gray-400 dark:border-gray-700&quot; id=&quot;inputPassword5&quot; placeholder=&quot;Retype Password&quot;&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class=&quot;grid grid-cols-4 items-center gap-6&quot;&gt;
+                                            &lt;div class=&quot;md:col-start-2&quot;&gt;
+                                                &lt;div class=&quot;flex items-center gap-2&quot;&gt;
+                                                    &lt;input type=&quot;checkbox&quot; class=&quot;cursor-pointer bg-inherit appearance-none p-0 print-color-adjust inline-block align-middle bg-origin-border select-none h-4 w-4 shadow-none checked:bg-checkbox-checked checked:border-transparent checked:bg-current checked:bg-full checked:bg-center checked:bg-no-repeat checked:hover:border-transparent checked:hover:bg-current checked:focus:border-transparent checked:focus:bg-current focus:ring-0 focus:outline-none indeterminate:bg-checkbox-indeterminate indeterminate:border-transparent indeterminate:bg-current indeterminate:bg-full indeterminate:bg-center indeterminate:bg-no-repeat indeterminate:hover:border-transparent indeterminate:hover:bg-current text-primary rounded border border-gray-200 dark:border-gray-600&quot; id=&quot;checkmeout&quot;&gt;
+                                                    &lt;label class=&quot;cursor-pointer text-gray-800 dark:text-gray-400 text-sm font-medium inline-block&quot; for=&quot;checkmeout&quot;&gt;Check me out !&lt;/label&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class=&quot;grid grid-cols-4 items-center gap-6&quot;&gt;
+                                            &lt;div class=&quot;md:col-start-2&quot;&gt;
+                                                &lt;button type=&quot;submit&quot; class=&quot;btn bg-info inline-flex items-center justify-center rounded border border-transparent py-2 px-4 text-center text-sm leading-5 font-medium transition duration-150 ease-in-out text-white&quot;&gt;Sign in&lt;/button&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/form&gt;
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </div> <!-- end card -->
+
+                <div class="col-span-2">
+                    <div class="h-fit rounded-md bg-[rgb(255_255_255/var(--tw-bg-opacity))] dark:bg-[rgb(31_41_55/var(--tw-bg-opacity))] shadow">
+                        <div class="border-b border-gray-200 dark:border-gray-700 pt-3 pb-3 pl-6 pr-6">
+                            <div class="flex justify-between items-center">
+                                <h4 class="text-base leading-6 font-medium text-opacity-100 text-gray-900 dark:text-gray-200 dark:text-opacity-100">Sizing</h4>
+                                <div class="flex items-center gap-2">
+                                    <button type="button" class="btn-code flex items-center rounded-md bg-slate-100 dark:bg-slate-700 p-2 text-xs leading-4 font-semibold" data-fc-type="collapse" data-fc-target="SizingFormHtml">
+                                        <i class="mgc_eye_line text-lg"></i>
+                                        <span class="ms-2">Code</span>
+                                    </button>
+
+                                    <button class="btn-code flex items-center rounded-md bg-slate-100 dark:bg-slate-700 p-2 text-xs leading-4 font-semibold" data-clipboard-action="copy">
+                                        <i class="mgc_copy_line text-lg"></i>
+                                        <span class="ms-2">Copy</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-sm text-slate-700 dark:text-slate-400 mb-4">
+                                As shown in the previous examples, our grid system allows you to place any number of a <code class="text-primary">.grid-cols-*</code> and <code class="text-primary">.flex</code>
+                            </p>
+
+                            <form class="grid grid-cols-4 gap-4 mb-6">
+                                <div>
+                                    <label for="staticEmail2" class="sr-only">Email</label>
+                                    <input type="text" readonly class="placeholder-gray-500 placeholder-opacity-100 py-2 px-3 block appearance-none border w-full border-gray-200 bg-transparent text-sm font-normal rounded shadow-none focus:ring-0 focus:outline-none focus:border-gray-300 dark:text-gray-400 dark:border-gray-700" id="staticEmail2" value="email@example.com">
+                                </div>
+                                <div>
+                                    <label for="inputPassword2" class="sr-only">Password</label>
+                                    <input type="password" class="placeholder-gray-500 placeholder-opacity-100 py-2 px-3 block appearance-none border w-full border-gray-200 bg-transparent text-sm font-normal rounded shadow-none focus:ring-0 focus:outline-none focus:border-gray-300 dark:text-gray-400 dark:border-gray-700" id="inputPassword2" placeholder="Password">
+                                </div>
+                                <div>
+                                    <button type="submit" class="btn bg-primary inline-flex items-center justify-center rounded border border-transparent py-2 px-4 text-center text-sm leading-5 font-medium transition duration-150 ease-in-out text-white">Confirm identity</button>
+                                </div>
+                            </form>
+
+                            <form>
+                                <div class="flex flex-wrap items-center gap-4">
+                                    <div>
+                                        <label class="sr-only" for="inlineFormInput">Name</label>
+                                        <input type="text" class="placeholder-gray-500 placeholder-opacity-100 py-2 px-3 block appearance-none border w-full border-gray-200 bg-transparent text-sm font-normal rounded shadow-none focus:ring-0 focus:outline-none focus:border-gray-300 dark:text-gray-400 dark:border-gray-700" id="inlineFormInput" placeholder="Jane Doe">
+                                    </div>
+                                    <div>
+                                        <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                                        <div class="flex">
+                                            <span class="px-4 inline-flex items-center min-w-fit rounded-l border border-r-0 border-gray-200 bg-gray-50 text-sm text-gray-500 dark:bg-gray-700 dark:border-gray-700 dark:text-gray-400">@</span>
+                                            <input type="text" class="placeholder-gray-500 placeholder-opacity-100 py-2 px-3 block appearance-none border w-full border-gray-200 bg-transparent text-sm font-normal rounded shadow-none focus:ring-0 focus:outline-none focus:border-gray-300 dark:text-gray-400 dark:border-gray-700 rounded-l-none" placeholder="Username">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button type="submit" class="btn bg-primary inline-flex items-center justify-center rounded border border-transparent py-2 px-4 text-center text-sm leading-5 font-medium transition duration-150 ease-in-out text-white">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <div id="SizingFormHtml" class="hidden w-full overflow-hidden transition-[height] duration-300">
+                                <pre class="language-html h-56">
+                                    <code>
+                                        &lt;form class=&quot;grid grid-cols-4 gap-4 mb-6&quot;&gt;
+                                            &lt;div&gt;
+                                                &lt;label for=&quot;staticEmail2&quot; class=&quot;sr-only&quot;&gt;Email&lt;/label&gt;
+                                                &lt;input type=&quot;text&quot; readonly class=&quot;placeholder-gray-500 placeholder-opacity-100 py-2 px-3 block appearance-none border w-full border-gray-200 bg-transparent text-sm font-normal rounded shadow-none focus:ring-0 focus:outline-none focus:border-gray-300 dark:text-gray-400 dark:border-gray-700&quot; id=&quot;staticEmail2&quot; value=&quot;email@example.com&quot;&gt;
+                                            &lt;/div&gt;
+                                            &lt;div&gt;
+                                                &lt;label for=&quot;inputPassword2&quot; class=&quot;sr-only&quot;&gt;Password&lt;/label&gt;
+                                                &lt;input type=&quot;password&quot; class=&quot;placeholder-gray-500 placeholder-opacity-100 py-2 px-3 block appearance-none border w-full border-gray-200 bg-transparent text-sm font-normal rounded shadow-none focus:ring-0 focus:outline-none focus:border-gray-300 dark:text-gray-400 dark:border-gray-700&quot; id=&quot;inputPassword2&quot; placeholder=&quot;Password&quot;&gt;
+                                            &lt;/div&gt;
+                                            &lt;div&gt;
+                                                &lt;button type=&quot;submit&quot; class=&quot;btn bg-primary inline-flex items-center justify-center rounded border border-transparent py-2 px-4 text-center text-sm leading-5 font-medium transition duration-150 ease-in-out text-white&quot;&gt;Confirm identity&lt;/button&gt;
+                                            &lt;/div&gt;
+                                        &lt;/form&gt;
+
+                                        &lt;form&gt;
+                                            &lt;div class=&quot;flex flex-wrap items-center gap-4&quot;&gt;
+                                                &lt;div&gt;
+                                                    &lt;label class=&quot;sr-only&quot; for=&quot;inlineFormInput&quot;&gt;Name&lt;/label&gt;
+                                                    &lt;input type=&quot;text&quot; class=&quot;placeholder-gray-500 placeholder-opacity-100 py-2 px-3 block appearance-none border w-full border-gray-200 bg-transparent text-sm font-normal rounded shadow-none focus:ring-0 focus:outline-none focus:border-gray-300 dark:text-gray-400 dark:border-gray-700&quot; id=&quot;inlineFormInput&quot; placeholder=&quot;Jane Doe&quot;&gt;
+                                                &lt;/div&gt;
+                                                &lt;div&gt;
+                                                    &lt;label class=&quot;sr-only&quot; for=&quot;inlineFormInputGroup&quot;&gt;Username&lt;/label&gt;
+                                                    &lt;div class=&quot;flex&quot;&gt;
+                                                        &lt;span class=&quot;px-4 inline-flex items-center min-w-fit rounded-l border border-r-0 border-gray-200 bg-gray-50 text-sm text-gray-500 dark:bg-gray-700 dark:border-gray-700 dark:text-gray-400&quot;&gt;@&lt;/span&gt;
+                                                        &lt;input type=&quot;text&quot; class=&quot;placeholder-gray-500 placeholder-opacity-100 py-2 px-3 block appearance-none border w-full border-gray-200 bg-transparent text-sm font-normal rounded shadow-none focus:ring-0 focus:outline-none focus:border-gray-300 dark:text-gray-400 dark:border-gray-700 rounded-l-none&quot; placeholder=&quot;Username&quot;&gt;
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                                &lt;div&gt;
+                                                    &lt;button type=&quot;submit&quot; class=&quot;btn bg-primary inline-flex items-center justify-center rounded border border-transparent py-2 px-4 text-center text-sm leading-5 font-medium transition duration-150 ease-in-out text-white&quot;&gt;Submit&lt;/button&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/form&gt;
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div> <!-- end card -->
+                </div> <!-- end col -->
+
+                <div class="col-span-2">
+                    <div class="h-fit rounded-md bg-[rgb(255_255_255/var(--tw-bg-opacity))] dark:bg-[rgb(31_41_55/var(--tw-bg-opacity))] shadow">
+                        <div class="border-b border-gray-200 dark:border-gray-700 pt-3 pb-3 pl-6 pr-6">
+                            <div class="flex justify-between items-center">
+                                <h4 class="text-base leading-6 font-medium text-opacity-100 text-gray-900 dark:text-gray-200 dark:text-opacity-100">Grid</h4>
+                                <div class="flex items-center gap-2">
+                                    <button type="button" class="btn-code flex items-center rounded-md bg-slate-100 dark:bg-slate-700 p-2 text-xs leading-4 font-semibold" data-fc-type="collapse" data-fc-target="GridFormHtml">
+                                        <i class="mgc_eye_line text-lg"></i>
+                                        <span class="ms-2">Code</span>
+                                    </button>
+
+                                    <button class="btn-code flex items-center rounded-md bg-slate-100 dark:bg-slate-700 p-2 text-xs leading-4 font-semibold" data-clipboard-action="copy">
+                                        <i class="mgc_copy_line text-lg"></i>
+                                        <span class="ms-2">Copy</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-6">
+                            <p class="text-sm text-slate-700 dark:text-slate-400 mb-4">More complex layouts can also be created with the grid system.</p>
+
+                            <form>
+                                <div class="grid grid-cols-1 md:grid-cols-2  gap-6">
+                                    <div>
+                                        <label for="inputEmail4" class="cursor-pointer text-gray-800 dark:text-gray-400 text-sm font-medium inline-block mb-2">Email</label>
+                                        <input type="email" class="placeholder-gray-500 placeholder-opacity-100 py-2 px-3 block appearance-none border w-full border-gray-200 bg-transparent text-sm font-normal rounded shadow-none focus:ring-0 focus:outline-none focus:border-gray-300 dark:text-gray-400 dark:border-gray-700" id="inputEmail4" placeholder="Email">
+                                    </div>
+                                    <div>
+                                        <label for="inputPassword4" class="cursor-pointer text-gray-800 dark:text-gray-400 text-sm font-medium inline-block mb-2">Password</label>
+                                        <input type="password" class="placeholder-gray-500 placeholder-opacity-100 py-2 px-3 block appearance-none border w-full border-gray-200 bg-transparent text-sm font-normal rounded shadow-none focus:ring-0 focus:outline-none focus:border-gray-300 dark:text-gray-400 dark:border-gray-700" id="inputPassword4" placeholder="Password">
+                                    </div>
+
+                                    <div class="lg:col-span-2">
+                                        <label for="inputAddress" class="cursor-pointer text-gray-800 dark:text-gray-400 text-sm font-medium inline-block mb-2">Address</label>
+                                        <input type="text" class="placeholder-gray-500 placeholder-opacity-100 py-2 px-3 block appearance-none border w-full border-gray-200 bg-transparent text-sm font-normal rounded shadow-none focus:ring-0 focus:outline-none focus:border-gray-300 dark:text-gray-400 dark:border-gray-700" id="inputAddress" placeholder="1234 Main St">
+                                    </div>
+
+                                    <div>
+                                        <label for="inputAddress2" class="cursor-pointer text-gray-800 dark:text-gray-400 text-sm font-medium inline-block mb-2">Address 2</label>
+                                        <input type="text" class="placeholder-gray-500 placeholder-opacity-100 py-2 px-3 block appearance-none border w-full border-gray-200 bg-transparent text-sm font-normal rounded shadow-none focus:ring-0 focus:outline-none focus:border-gray-300 dark:text-gray-400 dark:border-gray-700" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                    </div>
+
+                                    <div>
+                                        <label for="inputCity" class="cursor-pointer text-gray-800 dark:text-gray-400 text-sm font-medium inline-block mb-2">City</label>
+                                        <input type="text" class="placeholder-gray-500 placeholder-opacity-100 py-2 px-3 block appearance-none border w-full border-gray-200 bg-transparent text-sm font-normal rounded shadow-none focus:ring-0 focus:outline-none focus:border-gray-300 dark:text-gray-400 dark:border-gray-700" id="inputCity">
+                                    </div>
+                                    <div>
+                                        <label for="inputState" class="cursor-pointer text-gray-800 dark:text-gray-400 text-sm font-medium inline-block mb-2">State</label>
+                                        <select id="inputState" class="py-2 px-3 block appearance-none border w-full border-gray-200 bg-transparent text-sm font-normal rounded shadow-none focus:ring-0 focus:outline-none focus:border-gray-300 dark:text-gray-400 dark:border-gray-700">
+                                            <option>Choose</option>
+                                            <option>Option 1</option>
+                                            <option>Option 2</option>
+                                            <option>Option 3</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label for="inputZip" class="cursor-pointer text-gray-800 dark:text-gray-400 text-sm font-medium inline-block mb-2">Zip</label>
+                                        <input type="text" class="placeholder-gray-500 placeholder-opacity-100 py-2 px-3 block appearance-none border w-full border-gray-200 bg-transparent text-sm font-normal rounded shadow-none focus:ring-0 focus:outline-none focus:border-gray-300 dark:text-gray-400 dark:border-gray-700" id="inputZip">
+                                    </div>
+                                </div>
+
+                                <div class="flex items-center gap-2 my-3">
+                                    <input type="checkbox" class="cursor-pointer bg-inherit appearance-none p-0 print-color-adjust inline-block align-middle bg-origin-border select-none h-4 w-4 shadow-none checked:bg-checkbox-checked checked:border-transparent checked:bg-current checked:bg-full checked:bg-center checked:bg-no-repeat checked:hover:border-transparent checked:hover:bg-current checked:focus:border-transparent checked:focus:bg-current focus:ring-0 focus:outline-none indeterminate:bg-checkbox-indeterminate indeterminate:border-transparent indeterminate:bg-current indeterminate:bg-full indeterminate:bg-center indeterminate:bg-no-repeat indeterminate:hover:border-transparent indeterminate:hover:bg-current text-primary rounded border border-gray-200 dark:border-gray-600" id="customCheck11">
+                                    <label class="cursor-pointer text-gray-800 dark:text-gray-400 text-sm font-medium inline-block" for="customCheck11">Check this custom checkbox !</label>
+                                </div>
+
+                                <button type="submit" class="btn bg-primary inline-flex items-center justify-center rounded border border-transparent py-2 px-4 text-center text-sm leading-5 font-medium transition duration-150 ease-in-out text-white">Sign in</button>
+                            </form>
+                            <div id="GridFormHtml" class="hidden w-full overflow-hidden transition-[height] duration-300">
+                                <pre class="language-html h-56">
+                                    <code>
+                                        &lt;form&gt;
+                                            &lt;div class=&quot;grid grid-cols-1 md:grid-cols-2  gap-6&quot;&gt;
+                                                &lt;div&gt;
+                                                    &lt;label for=&quot;inputEmail4&quot; class=&quot;cursor-pointer text-gray-800 dark:text-gray-400 text-sm font-medium inline-block mb-2&quot;&gt;Email&lt;/label&gt;
+                                                    &lt;input type=&quot;email&quot; class=&quot;placeholder-gray-500 placeholder-opacity-100 py-2 px-3 block appearance-none border w-full border-gray-200 bg-transparent text-sm font-normal rounded shadow-none focus:ring-0 focus:outline-none focus:border-gray-300 dark:text-gray-400 dark:border-gray-700&quot; id=&quot;inputEmail4&quot; placeholder=&quot;Email&quot;&gt;
+                                                &lt;/div&gt;
+                                                &lt;div&gt;
+                                                    &lt;label for=&quot;inputPassword4&quot; class=&quot;cursor-pointer text-gray-800 dark:text-gray-400 text-sm font-medium inline-block mb-2&quot;&gt;Password&lt;/label&gt;
+                                                    &lt;input type=&quot;password&quot; class=&quot;placeholder-gray-500 placeholder-opacity-100 py-2 px-3 block appearance-none border w-full border-gray-200 bg-transparent text-sm font-normal rounded shadow-none focus:ring-0 focus:outline-none focus:border-gray-300 dark:text-gray-400 dark:border-gray-700&quot; id=&quot;inputPassword4&quot; placeholder=&quot;Password&quot;&gt;
+                                                &lt;/div&gt;
+
+                                                &lt;div class=&quot;lg:col-span-2&quot;&gt;
+                                                    &lt;label for=&quot;inputAddress&quot; class=&quot;cursor-pointer text-gray-800 dark:text-gray-400 text-sm font-medium inline-block mb-2&quot;&gt;Address&lt;/label&gt;
+                                                    &lt;input type=&quot;text&quot; class=&quot;placeholder-gray-500 placeholder-opacity-100 py-2 px-3 block appearance-none border w-full border-gray-200 bg-transparent text-sm font-normal rounded shadow-none focus:ring-0 focus:outline-none focus:border-gray-300 dark:text-gray-400 dark:border-gray-700&quot; id=&quot;inputAddress&quot; placeholder=&quot;1234 Main St&quot;&gt;
+                                                &lt;/div&gt;
+
+                                                &lt;div&gt;
+                                                    &lt;label for=&quot;inputAddress2&quot; class=&quot;cursor-pointer text-gray-800 dark:text-gray-400 text-sm font-medium inline-block mb-2&quot;&gt;Address 2&lt;/label&gt;
+                                                    &lt;input type=&quot;text&quot; class=&quot;placeholder-gray-500 placeholder-opacity-100 py-2 px-3 block appearance-none border w-full border-gray-200 bg-transparent text-sm font-normal rounded shadow-none focus:ring-0 focus:outline-none focus:border-gray-300 dark:text-gray-400 dark:border-gray-700&quot; id=&quot;inputAddress2&quot; placeholder=&quot;Apartment, studio, or floor&quot;&gt;
+                                                &lt;/div&gt;
+
+                                                &lt;div&gt;
+                                                    &lt;label for=&quot;inputCity&quot; class=&quot;cursor-pointer text-gray-800 dark:text-gray-400 text-sm font-medium inline-block mb-2&quot;&gt;City&lt;/label&gt;
+                                                    &lt;input type=&quot;text&quot; class=&quot;placeholder-gray-500 placeholder-opacity-100 py-2 px-3 block appearance-none border w-full border-gray-200 bg-transparent text-sm font-normal rounded shadow-none focus:ring-0 focus:outline-none focus:border-gray-300 dark:text-gray-400 dark:border-gray-700&quot; id=&quot;inputCity&quot;&gt;
+                                                &lt;/div&gt;
+                                                &lt;div&gt;
+                                                    &lt;label for=&quot;inputState&quot; class=&quot;cursor-pointer text-gray-800 dark:text-gray-400 text-sm font-medium inline-block mb-2&quot;&gt;State&lt;/label&gt;
+                                                    &lt;select id=&quot;inputState&quot; class=&quot;py-2 px-3 block appearance-none border w-full border-gray-200 bg-transparent text-sm font-normal rounded shadow-none focus:ring-0 focus:outline-none focus:border-gray-300 dark:text-gray-400 dark:border-gray-700&quot;&gt;
+                                                        &lt;option&gt;Choose&lt;/option&gt;
+                                                        &lt;option&gt;Option 1&lt;/option&gt;
+                                                        &lt;option&gt;Option 2&lt;/option&gt;
+                                                        &lt;option&gt;Option 3&lt;/option&gt;
+                                                    &lt;/select&gt;
+                                                &lt;/div&gt;
+                                                &lt;div&gt;
+                                                    &lt;label for=&quot;inputZip&quot; class=&quot;cursor-pointer text-gray-800 dark:text-gray-400 text-sm font-medium inline-block mb-2&quot;&gt;Zip&lt;/label&gt;
+                                                    &lt;input type=&quot;text&quot; class=&quot;placeholder-gray-500 placeholder-opacity-100 py-2 px-3 block appearance-none border w-full border-gray-200 bg-transparent text-sm font-normal rounded shadow-none focus:ring-0 focus:outline-none focus:border-gray-300 dark:text-gray-400 dark:border-gray-700&quot; id=&quot;inputZip&quot;&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+
+                                            &lt;div class=&quot;flex items-center gap-2 my-3&quot;&gt;
+                                                &lt;input type=&quot;checkbox&quot; class=&quot;cursor-pointer bg-inherit appearance-none p-0 print-color-adjust inline-block align-middle bg-origin-border select-none h-4 w-4 shadow-none checked:bg-checkbox-checked checked:border-transparent checked:bg-current checked:bg-full checked:bg-center checked:bg-no-repeat checked:hover:border-transparent checked:hover:bg-current checked:focus:border-transparent checked:focus:bg-current focus:ring-0 focus:outline-none indeterminate:bg-checkbox-indeterminate indeterminate:border-transparent indeterminate:bg-current indeterminate:bg-full indeterminate:bg-center indeterminate:bg-no-repeat indeterminate:hover:border-transparent indeterminate:hover:bg-current text-primary rounded border border-gray-200 dark:border-gray-600&quot; id=&quot;customCheck11&quot;&gt;
+                                                &lt;label class=&quot;cursor-pointer text-gray-800 dark:text-gray-400 text-sm font-medium inline-block&quot; for=&quot;customCheck11&quot;&gt;Check this custom checkbox !&lt;/label&gt;
+                                            &lt;/div&gt;
+
+                                            &lt;button type=&quot;submit&quot; class=&quot;btn bg-primary inline-flex items-center justify-center rounded border border-transparent py-2 px-4 text-center text-sm leading-5 font-medium transition duration-150 ease-in-out text-white&quot;&gt;Sign in&lt;/button&gt;
+                                        &lt;/form&gt;
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end col -->
+            </div>
+
+            </main>
+            <!-- Footer Start -->
+            <footer class="footer h-16 flex items-center px-6 bg-white shadow dark:bg-gray-800">
+               <div class="flex md:justify-between justify-center w-full gap-4">
+                  <div>
+                     <script>document.write(new Date().getFullYear())</script> © Konrix - <a href="https://coderthemes.com/" target="_blank">Coderthemes</a>
+                  </div>
+                  <div class="md:flex hidden gap-4 item-center md:justify-end">
+                     <a href="javascript: void(0);" class="text-sm leading-5 text-zinc-600 transition hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-white">About</a>
+                     <span class="border-e border-gray-300 dark:border-gray-700"></span>
+                     <a href="javascript: void(0);" class="text-sm leading-5 text-zinc-600 transition hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-white">Support</a>
+                     <span class="border-e border-gray-300 dark:border-gray-700"></span>
+                     <a href="javascript: void(0);" class="text-sm leading-5 text-zinc-600 transition hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-white">Contact Us</a>
+                  </div>
+               </div>
+            </footer>
+            <!-- Footer End -->
+         </div>
+         <!-- ============================================================== -->
+         <!-- End Page content -->
+         <!-- ============================================================== -->
+      </div>
+      <!-- Back to Top Button Start -->
+      <button data-toggle="back-to-top" class="fixed hidden h-10 w-10 items-center justify-center rounded-full z-10 bottom-20 end-14 p-2.5 bg-primary cursor-pointer shadow-lg text-white">
+      <i class="mgc_arrow_up_line text-lg"></i>
+      </button>
+      <!-- Back to Top Button End -->
+      <!-- Theme Settings Start -->
+      <div>
+         <!-- Theme Setting Button -->
+         <div class="fixed end-0 bottom-20">
+            <button data-fc-type="offcanvas" data-fc-target="theme-customization" type="button" class="bg-white rounded-s-full shadow-lg p-2.5 ps-3 transition-all dark:bg-slate-800">
+               <span class="sr-only">Setting</span>
+               <span class="flex items-center justify-center animate-spin">
+                  <svg class="w-[21.5px] h-[21.5px]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-settings">
+                     <circle cx="12" cy="12" r="3"></circle>
+                     <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                  </svg>
+               </span>
+            </button>
+         </div>
+         <!-- Theme Settings Offcanvas -->
+         <div id="theme-customization" class="fc-offcanvas-open:translate-x-0 hidden translate-x-full rtl:-translate-x-full fixed inset-y-0 end-0
+            transition-all duration-300 transform max-w-sm w-full z-50 bg-white border-s border-gray-900/10 dark:bg-gray-800 dark:border-white/10" tabindex="-1">
+            <div class="h-16 flex items-center text-gray-800 dark:text-white border-b border-dashed border-gray-900/10 dark:border-white/10 px-6 gap-3">
+               <h5 class="text-base grow font-semibold">Theme Settings</h5>
+               <button type="button" class="p-2" id="reset-layout"><i class="mgc_refresh_1_line text-xl"></i></button>
+               <button type="button" data-fc-dismiss><i class="mgc_close_line text-xl"></i></button>
+            </div>
+            <div class="h-[calc(100vh-64px)]" data-simplebar>
+               <div class="divide-y divide-dashed divide-slate-900/10  dark:divide-white/10">
+                  <div class="p-6">
+                     <h5 class="font-semibold text-sm mb-3">Theme</h5>
+                     <div class="grid grid-cols-3 gap-2">
+                        <div class="card-radio relative">
+                           <input class="form-radio hidden" type="radio" name="data-mode" id="layout-color-light" value="light">
+                           <label class="form-label rounded-md flex flex-col cursor-pointer truncate border border-[rgb(229_231_235/var(--tw-border-opacity))] dark:border-[rgb(55_65_81/var(--tw-border-opacity))]" for="layout-color-light">
+                           <span class="flex items-center justify-center px-4 py-3">
+                           <i class="mgc_sun_line text-2xl"></i>
+                           </span>
+                           </label>
+                           <div class="mt-1 text-md font-medium text-center text-gray-600 dark:text-gray-300"> Light </div>
+                        </div>
+                        <div class="card-radio relative">
+                           <input class="form-radio hidden" type="radio" name="data-mode" id="layout-color-dark" value="dark">
+                           <label class="form-label rounded-md flex flex-col cursor-pointer truncate border border-[rgb(229_231_235/var(--tw-border-opacity))] dark:border-[rgb(55_65_81/var(--tw-border-opacity))]" for="layout-color-dark">
+                           <span class="flex items-center justify-center px-4 py-3">
+                           <i class="mgc_moon_line text-2xl"></i>
+                           </span>
+                           </label>
+                           <div class="mt-1 text-md font-medium text-center text-gray-600 dark:text-gray-300"> Dark </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="p-6">
+                     <h5 class="font-semibold text-sm mb-3">Direction</h5>
+                     <div class="grid grid-cols-3 gap-2">
+                        <div class="card-radio relative">
+                           <input class="form-radio hidden" type="radio" name="dir" id="direction-ltr" value="ltr">
+                           <label class="form-label rounded-md flex flex-col cursor-pointer truncate border border-[rgb(229_231_235/var(--tw-border-opacity))] dark:border-[rgb(55_65_81/var(--tw-border-opacity))]" for="direction-ltr">
+                           <span class="flex items-center justify-center px-4 py-3">
+                           <i class="mgc_align_left_line text-2xl"></i>
+                           </span>
+                           </label>
+                           <div class="mt-1 text-md font-medium text-center text-gray-600 dark:text-gray-300"> LTR </div>
+                        </div>
+                        <div class="card-radio relative">
+                           <input class="form-radio hidden" type="radio" name="dir" id="direction-rtl" value="rtl">
+                           <label class="form-label rounded-md flex flex-col cursor-pointer truncate border border-[rgb(229_231_235/var(--tw-border-opacity))] dark:border-[rgb(55_65_81/var(--tw-border-opacity))]" for="direction-rtl">
+                           <span class="flex items-center justify-center px-4 py-3">
+                           <i class="mgc_align_right_line text-2xl"></i>
+                           </span>
+                           </label>
+                           <div class="mt-1 text-md font-medium text-center text-gray-600 dark:text-gray-300"> RTL </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="p-6 2xl:block hidden">
+                     <h5 class="font-semibold text-sm mb-3">Content Width</h5>
+                     <div class="grid grid-cols-3 gap-2">
+                        <div class="card-radio relative">
+                           <input class="form-radio hidden" type="radio" name="data-layout-width" id="layout-mode-default" value="default">
+                           <label class="form-label rounded-md flex flex-col cursor-pointer truncate border border-[rgb(229_231_235/var(--tw-border-opacity))] dark:border-[rgb(55_65_81/var(--tw-border-opacity))]" for="layout-mode-default">
+                           <span class="flex items-center justify-center px-4 py-3">
+                           <i class="mgc_fullscreen_2_line text-2xl rotate-45"></i>
+                           </span>
+                           </label>
+                           <div class="mt-1 text-md font-medium text-center text-gray-600 dark:text-gray-300"> Fluid </div>
+                        </div>
+                        <div class="card-radio relative">
+                           <input class="form-radio hidden" type="radio" name="data-layout-width" id="layout-mode-boxed" value="boxed">
+                           <label class="form-label rounded-md flex flex-col cursor-pointer truncate border border-[rgb(229_231_235/var(--tw-border-opacity))] dark:border-[rgb(55_65_81/var(--tw-border-opacity))]" for="layout-mode-boxed">
+                           <span class="flex items-center justify-center px-4 py-3">
+                           <i class="mgc_fullscreen_exit_2_line text-2xl rotate-45"></i>
+                           </span>
+                           </label>
+                           <div class="mt-1 text-md font-medium text-center text-gray-600 dark:text-gray-300"> Boxed </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="p-6">
+                     <h5 class="font-semibold text-sm mb-3">Sidenav View</h5>
+                     <div class="grid grid-cols-3 gap-3">
+                        <div class="card-radio relative">
+                           <input class="form-radio hidden" type="radio" name="data-sidenav-view" id="sidenav-view-default" value="default">
+                           <label class="form-label rounded-md flex flex-col cursor-pointer truncate border border-[rgb(229_231_235/var(--tw-border-opacity))] dark:border-[rgb(55_65_81/var(--tw-border-opacity))]" for="sidenav-view-default">
+                           <span class="flex h-16 overflow-hidden">
+                           <span class="block w-8 bg-gray-100 dark:bg-gray-800">
+                           <span class="mt-1.5 mx-1.5 block space-y-1">
+                           <span class="h-1 block rounded-sm mb-2.5 bg-gray-300 dark:bg-gray-700"></span>
+                           <span class="h-1 block rounded-sm bg-gray-300 dark:bg-gray-700"></span>
+                           <span class="h-1 block rounded-sm bg-gray-300 dark:bg-gray-700"></span>
+                           <span class="h-1 block rounded-sm bg-gray-300 dark:bg-gray-700"></span>
+                           <span class="h-1 block rounded-sm bg-gray-300 dark:bg-gray-700"></span>
+                           <span class="h-1 block rounded-sm bg-gray-300 dark:bg-gray-700"></span>
+                           </span>
+                           </span>
+                           <span class="flex flex-col flex-auto border-s border-gray-200 dark:border-gray-700">
+                           <span class="h-3 bg-gray-100 dark:bg-gray-800">
+                           <span class="flex items-center justify-end h-full mr-1.5">
+                           <span class="w-1 h-1 block ml-1 rounded-full bg-gray-300 dark:bg-gray-700"></span>
+                           <span class="w-1 h-1 block ml-1 rounded-full bg-gray-300 dark:bg-gray-700"></span>
+                           <span class="w-1 h-1 block ml-1 rounded-full bg-gray-300 dark:bg-gray-700"></span>
+                           </span>
+                           </span>
+                           <span class="flex flex-auto border-t border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900"></span>
+                           </span>
+                           </span>
+                           </label>
+                           <div class="mt-1 text-md font-medium text-center text-gray-600 dark:text-gray-300"> Default </div>
+                        </div>
+                        <div class="card-radio relative">
+                           <input class="form-radio hidden" type="radio" name="data-sidenav-view" id="sidenav-view-hover" value="hover">
+                           <label class="form-label rounded-md flex flex-col cursor-pointer truncate border border-[rgb(229_231_235/var(--tw-border-opacity))] dark:border-[rgb(55_65_81/var(--tw-border-opacity))]" for="sidenav-view-hover">
+                           <span class="flex h-16 overflow-hidden">
+                           <span class="w-3 bg-gray-100 dark:bg-gray-800">
+                           <span class="w-1.5 h-1.5 mt-1 mx-auto rounded-sm bg-gray-300 dark:bg-gray-700"></span>
+                           <span class="flex flex-col items-center w-full mt-1.5 space-y-1">
+                           <span class="w-1.5 h-1.5 rounded-full bg-gray-300 dark:bg-gray-700"></span>
+                           <span class="w-1.5 h-1.5 rounded-full bg-gray-300 dark:bg-gray-700"></span>
+                           <span class="w-1.5 h-1.5 rounded-full bg-gray-300 dark:bg-gray-700"></span>
+                           <span class="w-1.5 h-1.5 rounded-full bg-gray-300 dark:bg-gray-700"></span>
+                           <span class="w-1.5 h-1.5 rounded-full bg-gray-300 dark:bg-gray-700"></span>
+                           </span>
+                           </span>
+                           <span class="flex flex-col flex-auto border-s border-gray-200 dark:border-gray-700">
+                           <span class="h-3 bg-gray-100 dark:bg-gray-800">
+                           <span class="flex items-center justify-end h-full mr-1.5">
+                           <span class="w-1 h-1 block ml-1 rounded-full bg-gray-300 dark:bg-gray-700"></span>
+                           <span class="w-1 h-1 block ml-1 rounded-full bg-gray-300 dark:bg-gray-700"></span>
+                           <span class="w-1 h-1 block ml-1 rounded-full bg-gray-300 dark:bg-gray-700"></span>
+                           </span>
+                           </span>
+                           <span class="flex flex-auto border-t border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900"></span>
+                           </span>
+                           </span>
+                           </label>
+                           <div class="mt-1 text-md font-medium text-center text-gray-600 dark:text-gray-300"> Hover </div>
+                        </div>
+                        <div class="card-radio relative">
+                           <input class="form-radio hidden" type="radio" name="data-sidenav-view" id="sidenav-view-hover-active" value="hover-active">
+                           <label class="form-label rounded-md flex flex-col cursor-pointer truncate border border-[rgb(229_231_235/var(--tw-border-opacity))] dark:border-[rgb(55_65_81/var(--tw-border-opacity))]" for="sidenav-view-hover-active">
+                           <span class="flex h-16 overflow-hidden">
+                           <span class="w-8 bg-gray-100 dark:bg-gray-800">
+                           <span class="mt-1.5 mx-1.5 block space-y-1">
+                           <span class="flex mb-2.5 gap-1">
+                           <span class="h-1 block w-full rounded-sm bg-gray-300 dark:bg-gray-700"></span>
+                           <span class="h-1 block w-2 rounded-full bg-gray-300 dark:bg-gray-700"></span>
+                           </span>
+                           <span class="h-1 block rounded-sm bg-gray-300 dark:bg-gray-700"></span>
+                           <span class="h-1 block rounded-sm bg-gray-300 dark:bg-gray-700"></span>
+                           <span class="h-1 block rounded-sm bg-gray-300 dark:bg-gray-700"></span>
+                           <span class="h-1 block rounded-sm bg-gray-300 dark:bg-gray-700"></span>
+                           <span class="h-1 block rounded-sm bg-gray-300 dark:bg-gray-700"></span>
+                           </span>
+                           </span>
+                           <span class="flex flex-col flex-auto border-s border-gray-200 dark:border-gray-700">
+                           <span class="h-3 bg-gray-100 dark:bg-gray-800">
+                           <span class="flex items-center justify-end h-full mr-1.5">
+                           <span class="w-1 h-1 block ml-1 rounded-full bg-gray-300 dark:bg-gray-700"></span>
+                           <span class="w-1 h-1 block ml-1 rounded-full bg-gray-300 dark:bg-gray-700"></span>
+                           <span class="w-1 h-1 block ml-1 rounded-full bg-gray-300 dark:bg-gray-700"></span>
+                           </span>
+                           </span>
+                           <span class="flex flex-auto border-t border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900"></span>
+                           </span>
+                           </span>
+                           </label>
+                           <div class="mt-1 text-md font-medium text-center text-gray-600 dark:text-gray-300"> Hover Active </div>
+                        </div>
+                        <div class="card-radio relative">
+                           <input class="form-radio hidden" type="radio" name="data-sidenav-view" id="sidenav-view-sm" value="sm">
+                           <label class="form-label rounded-md flex flex-col cursor-pointer truncate border border-[rgb(229_231_235/var(--tw-border-opacity))] dark:border-[rgb(55_65_81/var(--tw-border-opacity))]" for="sidenav-view-sm">
+                           <span class="flex h-16 overflow-hidden">
+                           <span class="w-3 bg-gray-100 dark:bg-gray-800">
+                           <span class="w-1.5 h-1.5 mt-1 mx-auto rounded-sm bg-gray-300 dark:bg-gray-700"></span>
+                           <span class="flex flex-col items-center w-full mt-1.5 space-y-1">
+                           <span class="w-1.5 h-1.5 rounded-full bg-gray-300 dark:bg-gray-700"></span>
+                           <span class="w-1.5 h-1.5 rounded-full bg-gray-300 dark:bg-gray-700"></span>
+                           <span class="w-1.5 h-1.5 rounded-full bg-gray-300 dark:bg-gray-700"></span>
+                           <span class="w-1.5 h-1.5 rounded-full bg-gray-300 dark:bg-gray-700"></span>
+                           <span class="w-1.5 h-1.5 rounded-full bg-gray-300 dark:bg-gray-700"></span>
+                           </span>
+                           </span>
+                           <span class="flex flex-col flex-auto border-s border-gray-200 dark:border-gray-700">
+                           <span class="h-3 bg-gray-100 dark:bg-gray-800">
+                           <span class="flex items-center h-full mr-1.5">
+                           <span class="grow">
+                           <span class="w-1 h-1 block ml-1 rounded-full bg-gray-300 dark:bg-gray-700"></span>
+                           </span>
+                           <span class="w-1 h-1 block ml-1 rounded-full bg-gray-300 dark:bg-gray-700"></span>
+                           <span class="w-1 h-1 block ml-1 rounded-full bg-gray-300 dark:bg-gray-700"></span>
+                           <span class="w-1 h-1 block ml-1 rounded-full bg-gray-300 dark:bg-gray-700"></span>
+                           </span>
+                           </span>
+                           <span class="flex flex-auto border-t border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900"></span>
+                           </span>
+                           </span>
+                           </label>
+                           <div class="mt-1 text-md font-medium text-center text-gray-600 dark:text-gray-300"> Small </div>
+                        </div>
+                        <div class="card-radio relative">
+                           <input class="form-radio hidden" type="radio" name="data-sidenav-view" id="sidenav-view-md" value="md">
+                           <label class="form-label rounded-md flex flex-col cursor-pointer truncate border border-[rgb(229_231_235/var(--tw-border-opacity))] dark:border-[rgb(55_65_81/var(--tw-border-opacity))]" for="sidenav-view-md">
+                           <span class="flex h-16 rounded-md overflow-hidden">
+                           <span class="w-4 bg-gray-100 dark:bg-gray-800">
+                           <span class="w-2 h-2 mt-2 mx-auto rounded-sm bg-gray-300 dark:bg-gray-700"></span>
+                           <span class="flex flex-col items-center w-full mt-2 space-y-1">
+                           <span class="w-2 h-2 rounded-sm bg-gray-300 dark:bg-gray-700"></span>
+                           <span class="w-2 h-2 rounded-sm bg-gray-300 dark:bg-gray-700"></span>
+                           <span class="w-2 h-2 rounded-sm bg-gray-300 dark:bg-gray-700"></span>
+                           </span>
+                           </span>
+                           <span class="flex flex-col flex-auto border-s border-gray-200 dark:border-gray-700">
+                           <span class="h-3 bg-gray-100 dark:bg-gray-800">
+                           <span class="flex items-center h-full mr-1.5">
+                           <span class="grow">
+                           <span class="w-1 h-1 block ml-1 rounded-full bg-gray-300 dark:bg-gray-700"></span>
+                           </span>
+                           <span class="w-1 h-1 block ml-1 rounded-full bg-gray-300 dark:bg-gray-700"></span>
+                           <span class="w-1 h-1 block ml-1 rounded-full bg-gray-300 dark:bg-gray-700"></span>
+                           <span class="w-1 h-1 block ml-1 rounded-full bg-gray-300 dark:bg-gray-700"></span>
+                           </span>
+                           </span>
+                           <span class="flex flex-auto border-t border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900"></span>
+                           </span>
+                           </span>
+                           </label>
+                           <div class="mt-1 text-md font-medium text-center text-gray-600 dark:text-gray-300"> Compact </div>
+                        </div>
+                        <div class="card-radio relative">
+                           <input class="form-radio hidden" type="radio" name="data-sidenav-view" id="sidenav-view-mobile" value="mobile">
+                           <label class="form-label rounded-md flex flex-col cursor-pointer truncate border border-[rgb(229_231_235/var(--tw-border-opacity))] dark:border-[rgb(55_65_81/var(--tw-border-opacity))]" for="sidenav-view-mobile">
+                           <span class="flex h-16 overflow-hidden">
+                           <span class="flex flex-col flex-auto">
+                           <span class="h-3 bg-gray-100 dark:bg-gray-800">
+                           <span class="flex items-center h-full mr-1.5">
+                           <span class="w-1.5 h-1.5  ms-1 rounded-sm bg-gray-300 dark:bg-gray-700"></span>
+                           <span class="w-1 h-1 block ms-1  rounded-full bg-gray-300 dark:bg-gray-700"></span>
+                           <span class="w-1 h-1 block ms-auto rounded-full bg-gray-300 dark:bg-gray-700"></span>
+                           <span class="w-1 h-1 block ms-1 rounded-full bg-gray-300 dark:bg-gray-700"></span>
+                           <span class="w-1 h-1 block ms-1 rounded-full bg-gray-300 dark:bg-gray-700"></span>
+                           <span class="w-1 h-1 block ms-1 rounded-full bg-gray-300 dark:bg-gray-700"></span>
+                           </span>
+                           </span>
+                           <span class="flex flex-auto border-t border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900"></span>
+                           </span>
+                           </span>
+                           </label>
+                           <div class="mt-1 text-md font-medium text-center text-gray-600 dark:text-gray-300"> Mobile </div>
+                        </div>
+                        <div class="card-radio relative">
+                           <input class="form-radio hidden" type="radio" name="data-sidenav-view" id="sidenav-view-hidden" value="hidden">
+                           <label class="form-label rounded-md flex flex-col cursor-pointer truncate border border-[rgb(229_231_235/var(--tw-border-opacity))] dark:border-[rgb(55_65_81/var(--tw-border-opacity))]" for="sidenav-view-hidden">
+                           <span class="flex h-16 overflow-hidden">
+                           <span class="flex flex-col flex-auto">
+                           <span class="h-3 bg-gray-100 dark:bg-gray-800">
+                           <span class="flex flex-auto items-center h-full me-1.5">
+                           <span class="w-1 h-1 block ms-1 rounded-full bg-gray-300 dark:bg-gray-700"></span>
+                           <span class="w-1 h-1 block ms-auto rounded-full bg-gray-300 dark:bg-gray-700"></span>
+                           <span class="w-1 h-1 block ms-1 rounded-full bg-gray-300 dark:bg-gray-700"></span>
+                           <span class="w-1 h-1 block ms-1 rounded-full bg-gray-300 dark:bg-gray-700"></span>
+                           <span class="w-1 h-1 block ms-1 rounded-full bg-gray-300 dark:bg-gray-700"></span>
+                           </span>
+                           </span>
+                           <span class="flex flex-auto border-t border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900"></span>
+                           </span>
+                           </span>
+                           </label>
+                           <div class="mt-1 text-md font-medium text-center text-gray-600 dark:text-gray-300"> Hidden </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="p-6">
+                     <h5 class="font-semibold text-sm mb-3">Menu Color</h5>
+                     <div class="grid grid-cols-4 gap-2">
+                        <div class="card-radio relative">
+                           <input class="form-radio hidden" type="radio" name="data-menu-color" id="menu-color-light" value="light">
+                           <label class="form-label rounded-md flex flex-col cursor-pointer truncate border border-[rgb(229_231_235/var(--tw-border-opacity))] dark:border-[rgb(55_65_81/var(--tw-border-opacity))]" for="menu-color-light">
+                           <span class="flex items-center justify-center px-4 py-3 bg-gray-100 dark:bg-gray-900">
+                           <span class="w-5 h-5 shadow-lg rounded-full bg-white"></span>
+                           </span>
+                           </label>
+                           <div class="mt-1 text-md font-medium text-center text-gray-600 dark:text-gray-300"> Light </div>
+                        </div>
+                        <div class="card-radio relative">
+                           <input class="form-radio hidden" type="radio" name="data-menu-color" id="menu-color-dark" value="dark">
+                           <label class="form-label rounded-md flex flex-col cursor-pointer truncate border border-[rgb(229_231_235/var(--tw-border-opacity))] dark:border-[rgb(55_65_81/var(--tw-border-opacity))]" for="menu-color-dark">
+                           <span class="flex items-center justify-center px-4 py-3 bg-gray-100 dark:bg-gray-900">
+                           <span class="w-5 h-5 shadow-lg rounded-full bg-dark"></span>
+                           </span>
+                           </label>
+                           <div class="mt-1 text-md font-medium text-center text-gray-600 dark:text-gray-300"> Dark </div>
+                        </div>
+                        <div class="card-radio relative">
+                           <input class="form-radio hidden" type="radio" name="data-menu-color" id="menu-color-brand" value="brand">
+                           <label class="form-label rounded-md flex flex-col cursor-pointer truncate border border-[rgb(229_231_235/var(--tw-border-opacity))] dark:border-[rgb(55_65_81/var(--tw-border-opacity))]" for="menu-color-brand">
+                           <span class="flex items-center justify-center px-4 py-3 bg-gray-100 dark:bg-gray-900">
+                           <span class="w-5 h-5 shadow-lg rounded-full bg-primary"></span>
+                           </span>
+                           </label>
+                           <div class="mt-1 text-md font-medium text-center text-gray-600 dark:text-gray-300"> Brand </div>
+                        </div>
+                        <div class="card-radio relative">
+                           <input class="form-radio hidden" type="radio" name="data-menu-color" id="menu-color-gradient" value="gradient">
+                           <label class="form-label rounded-md flex flex-col cursor-pointer truncate border border-[rgb(229_231_235/var(--tw-border-opacity))] dark:border-[rgb(55_65_81/var(--tw-border-opacity))]" for="menu-color-gradient">
+                           <span class="flex items-center justify-center px-4 py-3 bg-gray-100 dark:bg-gray-900">
+                           <span class="w-5 h-5 shadow-lg rounded-full" style="background: linear-gradient(135deg, #6379c3 0%, #546ee5 60%);"></span>
+                           </span>
+                           </label>
+                           <div class="mt-1 text-md font-medium text-center text-gray-600 dark:text-gray-300"> Gradient </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="p-6">
+                     <h5 class="font-semibold text-sm mb-3">Topbar Color</h5>
+                     <div class="grid grid-cols-4 gap-2">
+                        <div class="card-radio relative">
+                           <input class="form-radio hidden" type="radio" name="data-topbar-color" id="topbar-color-light" value="light">
+                           <label class="form-label rounded-md flex flex-col cursor-pointer truncate border border-[rgb(229_231_235/var(--tw-border-opacity))] dark:border-[rgb(55_65_81/var(--tw-border-opacity))]" for="topbar-color-light">
+                           <span class="flex items-center justify-center px-4 py-3 bg-gray-100 dark:bg-gray-900">
+                           <span class="w-5 h-5 shadow-lg rounded-full bg-white"></span>
+                           </span>
+                           </label>
+                           <div class="mt-1 text-md font-medium text-center text-gray-600 dark:text-gray-300"> Light </div>
+                        </div>
+                        <div class="card-radio relative">
+                           <input class="form-radio hidden" type="radio" name="data-topbar-color" id="topbar-color-dark" value="dark">
+                           <label class="form-label rounded-md flex flex-col cursor-pointer truncate border border-[rgb(229_231_235/var(--tw-border-opacity))] dark:border-[rgb(55_65_81/var(--tw-border-opacity))]" for="topbar-color-dark">
+                           <span class="flex items-center justify-center px-4 py-3 bg-gray-100 dark:bg-gray-900">
+                           <span class="w-5 h-5 shadow-lg rounded-full bg-dark"></span>
+                           </span>
+                           </label>
+                           <div class="mt-1 text-md font-medium text-center text-gray-600 dark:text-gray-300"> Dark </div>
+                        </div>
+                        <div class="card-radio relative">
+                           <input class="form-radio hidden" type="radio" name="data-topbar-color" id="topbar-color-brand" value="brand">
+                           <label class="form-label rounded-md flex flex-col cursor-pointer truncate border border-[rgb(229_231_235/var(--tw-border-opacity))] dark:border-[rgb(55_65_81/var(--tw-border-opacity))]" for="topbar-color-brand">
+                           <span class="flex items-center justify-center px-4 py-3 bg-gray-100 dark:bg-gray-900">
+                           <span class="w-5 h-5 shadow-lg rounded-full bg-primary"></span>
+                           </span>
+                           </label>
+                           <div class="mt-1 text-md font-medium text-center text-gray-600 dark:text-gray-300"> Brand </div>
+                        </div>
+                        <div class="card-radio relative">
+                           <input class="form-radio hidden" type="radio" name="data-topbar-color" id="topbar-color-gradient" value="gradient">
+                           <label class="form-label rounded-md flex flex-col cursor-pointer truncate border border-[rgb(229_231_235/var(--tw-border-opacity))] dark:border-[rgb(55_65_81/var(--tw-border-opacity))]" for="topbar-color-gradient">
+                           <span class="flex items-center justify-center px-4 py-3 bg-gray-100 dark:bg-gray-900">
+                           <span class="w-5 h-5 shadow-lg rounded-full" style="background: linear-gradient(135deg, #6379c3 0%, #546ee5 60%);"></span>
+                           </span>
+                           </label>
+                           <div class="mt-1 text-md font-medium text-center text-gray-600 dark:text-gray-300"> Gradient </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="p-6">
+                     <h5 class="font-semibold text-sm mb-3">Layout Position</h5>
+                     <div class="flex btn-radio">
+                        <input type="radio" class="form-radio hidden" name="data-layout-position" id="layout-position-fixed" value="fixed">
+                        <label class="btn rounded-e-none text-gray-800 dark:text-gray-400 bg-gray-100 dark:bg-gray-700 inline-flex items-center justify-center rounded-md border border-transparent px-4 py-2 text-sm leading-5 font-medium transition duration-150 ease-in-out cursor-pointer" for="layout-position-fixed">Fixed</label>
+                        <input type="radio" class="form-radio hidden" name="data-layout-position" id="layout-position-scrollable" value="scrollable">
+                        <label class="btn rounded-s-none text-gray-800 dark:text-gray-400 bg-gray-100 dark:bg-gray-700 inline-flex items-center justify-center rounded-md border border-transparent px-4 py-2 text-sm leading-5 font-medium transition duration-150 ease-in-out cursor-pointer" for="layout-position-scrollable">Scrollable</label>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Theme Settings End -->
+      <!-- Code Preview Plugin Js -->
+      <script src="assets/libs/prismjs/prism.js"></script>
+      <script src="assets/libs/prismjs/plugins/normalize-whitespace/prism-normalize-whitespace.min.js"></script>
+      <script src="assets/libs/clipboard/clipboard.min.js"></script>
+      <script src="assets/js/pages/highlight.js"></script>
+      <!-- Plugin Js -->
+      <script src="assets/libs/simplebar/simplebar.min.js"></script>
+      <script src="assets/libs/feather-icons/feather.min.js"></script>
+      <script src="assets/libs/@frostui/tailwindcss/frostui.js"></script>
+      <!-- App Js -->
+      <script type="module" src="assets/js/app.js"></script>
+   </body>
+</html>

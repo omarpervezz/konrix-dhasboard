@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en" class="relative scroll-smooth leading-default font-sans tab-size-4 text-size-adjust font-feature-settings font-variation-settings">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Dropzone Plugin Css -->
+
+<link rel="stylesheet" href="./src/output.css">
+</head>
+<body class="overflow-x-hidden text-[--tw-body-color] bg-[--tw-body-bg] font-inter font-normal text-[0.875rem] leading-[1.5] antialiased">
+  
+
+
+  <form class="grid lg:grid-cols-3 gap-6">
+    <div>
+        <label for="validationDefault01" class="cursor-pointer text-gray-800 dark:text-gray-400 text-sm font-medium inline-block mb-2">First name</label>
+        <input type="text" class="placeholder-gray-500 placeholder-opacity-100 py-2 px-3 block appearance-none border w-full border-gray-200 bg-transparent text-sm font-normal rounded shadow-none focus:ring-0 focus:outline-none focus:border-gray-300 dark:text-gray-400 dark:border-gray-700" id="validationDefault01" value="Mark" required>
+    </div>
+    <div>
+        <label for="validationDefault02" class="cursor-pointer text-gray-800 dark:text-gray-400 text-sm font-medium inline-block mb-2">Last name</label>
+        <input type="text" class="placeholder-gray-500 placeholder-opacity-100 py-2 px-3 block appearance-none border w-full border-gray-200 bg-transparent text-sm font-normal rounded shadow-none focus:ring-0 focus:outline-none focus:border-gray-300 dark:text-gray-400 dark:border-gray-700" id="validationDefault02" value="Otto" required>
+    </div>
+    <div>
+        <label for="validationDefaultUsername" class="cursor-pointer text-gray-800 dark:text-gray-400 text-sm font-medium inline-block mb-2">Username</label>
+        <div class="flex items-center">
+            <span class="py-2 px-3 bg-light rounded-l" id="inputGroupPrepend2">@</span>
+            <input type="text" class="placeholder-gray-500 placeholder-opacity-100 py-2 px-3 block appearance-none border w-full border-gray-200 bg-transparent text-sm font-normal rounded shadow-none focus:ring-0 focus:outline-none focus:border-gray-300 dark:text-gray-400 dark:border-gray-700 rounded-l-none" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required>
+        </div>
+    </div>
+    <div>
+        <label for="validationDefault03" class="cursor-pointer text-gray-800 dark:text-gray-400 text-sm font-medium inline-block mb-2">City</label>
+        <input type="text" class="placeholder-gray-500 placeholder-opacity-100 py-2 px-3 block appearance-none border w-full border-gray-200 bg-transparent text-sm font-normal rounded shadow-none focus:ring-0 focus:outline-none focus:border-gray-300 dark:text-gray-400 dark:border-gray-700" id="validationDefault03" required>
+    </div>
+    <div>
+        <label for="validationDefault04" class="cursor-pointer text-gray-800 dark:text-gray-400 text-sm font-medium inline-block mb-2">State</label>
+        <select class="py-2 px-3 block appearance-none border w-full border-gray-200 bg-transparent text-sm font-normal rounded shadow-none focus:ring-0 focus:outline-none focus:border-gray-300 dark:text-gray-400 dark:border-gray-700" id="validationDefault04" required>
+            <option selected disabled value="">Choose...</option>
+            <option>...</option>
+        </select>
+    </div>
+    <div>
+        <label for="validationDefault05" class="cursor-pointer text-gray-800 dark:text-gray-400 text-sm font-medium inline-block mb-2">Zip</label>
+        <input type="text" class="placeholder-gray-500 placeholder-opacity-100 py-2 px-3 block appearance-none border w-full border-gray-200 bg-transparent text-sm font-normal rounded shadow-none focus:ring-0 focus:outline-none focus:border-gray-300 dark:text-gray-400 dark:border-gray-700" id="validationDefault05" required>
+    </div>
+    <div class="col-span-3">
+        <div class="form-check">
+            <input class="cursor-pointer border border-gray-300 bg-inherit appearance-none p-0 print-color-adjust inline-block align-middle bg-origin-border select-none h-4 w-4 shadow-none checked:bg-checkbox-checked checked:border-transparent checked:bg-current checked:bg-full checked:bg-center checked:bg-no-repeat checked:hover:border-transparent checked:hover:bg-current checked:focus:border-transparent checked:focus:bg-current focus:ring-0 focus:outline-none indeterminate:bg-checkbox-indeterminate indeterminate:border-transparent indeterminate:bg-current indeterminate:bg-full indeterminate:bg-center indeterminate:bg-no-repeat indeterminate:hover:border-transparent indeterminate:hover:bg-current text-primary rounded" type="checkbox" value="" id="invalidCheck2" required>
+            <label class="ms-1.5" for="invalidCheck2">
+                Agree to terms and conditions
+            </label>
+        </div>
+    </div>
+    <div class="col-span-3">
+        <button class="btn bg-primary inline-flex items-center justify-center rounded border border-transparent py-2 px-4 text-center text-sm leading-5 font-medium transition duration-150 ease-in-out text-white" type="submit">Submit form</button>
+    </div>
+</form>
+
+
+
+          <!-- Form Validation Pristine Plugin -->
+          <script src="assets/libs/pristinejs/pristine.min.js"></script>
+
+          <!-- Form Validation Demo -->
+          <script src="assets/js/pages/form-validation.js"></script>
+
+</body>
+</html>
