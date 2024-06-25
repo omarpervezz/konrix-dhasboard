@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "start": "vite"
+    "start": "vite",
+    "build": "npx tailwindcss -i ./src/input.css -o ./src/output.css --minify"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.13",
