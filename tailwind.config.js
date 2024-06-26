@@ -2,13 +2,13 @@
 const plugin = require('tailwindcss/plugin');
 
 module.exports = {
-   content: ["./*.html", "./src/**/*.{html,js,css}", "./assets/js/modules/show-backdrop.js", "./assets/js/pages/apps-calendar.js", "./assets/js/pages/extended-sweetalert.js"],
+   content: ["./*.html", "./src/**/*.{html,js,css}", "./assets/js/modules/show-backdrop.js", "./assets/js/pages/apps-calendar.js", "./assets/js/pages/extended-sweetalert.js", "./assets/js/pages/icons-mingcute.js", "./assets/js/pages/icons-material-symbols.js"],
    darkMode: ['class', '[data-mode="dark"]'],
    theme: {
       extend: {
          colors: {
             'menu-item-color': 'var(--tw-menu-item-color)',
-            'blue': 'rgb(15 23 42 / var(--tw-text-opacity))',
+            'blue': '#2563eb',
             'light': 'rgb(238 242 247 / var(--tw-bg-opacity))',
             'dark': 'rgb(49 58 70 / var(--tw-text-opacity))',
             'primary': '#3073F1',
@@ -17,7 +17,6 @@ module.exports = {
             'success': '#1CB454',
             'info': '#0895D8',
             'secondary': '#68625D',
-            'blue-600': '#2563eb',
          },
          backgroundColor: theme => ({
             ...theme('colors'),
@@ -122,7 +121,10 @@ module.exports = {
             },
             '.print-color-adjust': {
                'print-color-adjust': 'exact'
-            }
+            },
+            '.opacity-checkbox-20': {
+               '--tw-bg-opacity': '0.2',
+             },
          };
          addUtilities(newUtilities);
       }),

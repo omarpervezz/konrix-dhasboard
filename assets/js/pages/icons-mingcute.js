@@ -23,7 +23,9 @@ function getIconItem(icon) {
     var div = document.createElement('div'),
         i = document.createElement('i');
     var span = document.createElement('span');
-    i.className = icon;
+    span.classList.add('inline-flex', 'select-all', 'ms-4');
+    i.className = `${icon} text-center align-middle text-[28px] w-[50px] h-[50px] rounded-[3px] inline-block transition duration-200`;
+    i.style.setProperty('line-height', '50px', 'important');
     div.appendChild(i);
     span.innerHTML = icon;
     div.appendChild(span);

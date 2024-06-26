@@ -21,9 +21,12 @@ extract();
 
 function getIconItem(icon) {
     var div = document.createElement('div'),
-        i = document.createElement('i');
-        var span = document.createElement('span');
-    i.className = 'msr';
+    i = document.createElement('i');
+    var span = document.createElement('span');
+    span.className = 'inline-flex select-all ms-4';
+    i.className = `msr text-center align-middle w-[50px] h-[50px] rounded-[3px] inline-block transition duration-200`;
+    i.style.setProperty('line-height', '50px', 'important');
+    i.style.setProperty('font-size', '28px', 'important');
     i.innerHTML = icon
     div.appendChild(i);
     span.innerHTML = icon;
