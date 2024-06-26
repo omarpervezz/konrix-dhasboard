@@ -2,7 +2,7 @@
 <html lang="en" class="relative scroll-smooth leading-default font-sans tab-size-4 text-size-adjust font-feature-settings font-variation-settings">
    <head>
       <meta charset="utf-8">
-      <title>Introducation | Konrix - Responsive Tailwind Admin Dashboard</title>
+      <title>Installation | Konrix - Responsive Tailwind Admin Dashboard</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description">
       <meta content="coderthemes" name="author">
@@ -946,87 +946,125 @@
             <main class="flex-grow p-6">
                <!-- Page Title Start -->
                <div class="flex justify-between items-center mb-6">
-                  <h4 class="text-slate-900 dark:text-slate-200 text-lg font-medium">Introducation</h4>
+                  <h4 class="text-slate-900 dark:text-slate-200 text-lg font-medium">Installation</h4>
                   <div class="md:flex hidden items-center gap-2.5 text-sm font-semibold">
                      <div class="flex items-center gap-2">
                         <a href="#" class="text-sm font-medium text-slate-700 dark:text-slate-400">Konrix</a>
                      </div>
                      <div class="flex items-center gap-2">
                         <i class="mgc_right_line text-lg flex-shrink-0 text-slate-400 rtl:rotate-180"></i>
-                        <a href="#" class="text-sm font-medium text-slate-700 dark:text-slate-400">Documentation</a>
+                        <a href="#" class="text-sm font-medium text-slate-700 dark:text-slate-400">Documentation
                      </div>
                      <div class="flex items-center gap-2">
                         <i class="mgc_right_line text-lg flex-shrink-0 text-slate-400 rtl:rotate-180"></i>
-                        <a href="#" class="text-sm font-medium text-slate-700 dark:text-slate-400" aria-current="page">Introducation</a>
+                        <a href="#" class="text-sm font-medium text-slate-700 dark:text-slate-400" aria-current="page">Installation</a>
                      </div>
                   </div>
                </div>
                <!-- Page Title End -->
-               <div class="flex flex-col gap-6">
-                <div class="h-fit rounded-md bg-[rgb(255_255_255/var(--tw-bg-opacity))] dark:bg-[rgb(31_41_55/var(--tw-bg-opacity))] shadow">
-                   <div class="p-6">
-                      <p>
-                         Konrix is a fully featured premium admin template built on
-                         top of awesome
-                         <strong class="text-danger">Tailwind v3</strong>. It's
-                         crafted using modern web technologies
-                         <strong class="text-danger">HTML5, CSS, PHP </strong>and
-                         <strong class="text-danger">Javascript</strong>. The theme
-                         includes beautiful dashboard, many ready to use hand crafted
-                         components, widgets, pages, etc. The components can be used
-                         very easily on any page. The theme is fully responsive and
-                         customizable.
-                      </p>
-                      <p>
-                         It is extremely powerful and adaptable, making it ideal for
-                         web development. applications including CRM, CMS, admin
-                         panels, dashboards, etc. It is fully responsive and has a
-                         perfect look and feel on mobiles and tablets. Also, we tried
-                         to implement this by Keeping the concept of modularity in
-                         mind, this enables you to reduce the development time and
-                         cost.
-                      </p>
-                      <p>
-                         This documentation is guidelines for all users who can even
-                         be a beginner or experienced web developer.
-                      </p>
-                      <p>
-                         We really care for our buyers, so in case you are having any
-                         question or feedback, please feel free to get back to us via
-                         email <code class="text-sky-500">support@coderthemes.com</code> or by filling out
-                         the contact form on our
-                         <a href="http://coderthemes.com/#contact" class="text-primary"
-                            target="_blank">website</a>.
-                      </p>
-                   </div>
+               <div class="h-fit rounded-md bg-[rgb(255_255_255/var(--tw-bg-opacity))] dark:bg-[rgb(31_41_55/var(--tw-bg-opacity))] shadow">
+                <div class="border-b border-gray-200 dark:border-gray-700 pt-3 pb-3 pl-6 pr-6">
+                    <h6 class="text-base leading-6 font-medium text-opacity-100 text-gray-900 dark:text-gray-200 dark:text-opacity-100">Setup</h6>
                 </div>
-                <div class="h-fit rounded-md bg-[rgb(255_255_255/var(--tw-bg-opacity))] dark:bg-[rgb(31_41_55/var(--tw-bg-opacity))] shadow">
-                   <div class="p-6">
-                      <h4 class="text-base leading-6 font-medium text-opacity-100 text-gray-900 dark:text-gray-200 dark:text-opacity-100 mb-4">Structure</h4>
-                      <p>
-                         When you extract the zip file you received after purchasing,
-                         you will find the following files and folders:
-                      </p>
-                      <div class="mt-4 rounded p-1">
-                         <pre class="language-html">
-                                     <code>
-                                             ├── Documentation
-                                             └── Konrix
-                                                 |── assets/
-                                                 |   └── css
-                                                 |   └── fonts
-                                                 |   └── images
-                                                 |   └── js  
-                                                 |   └── libs  
-                                                 ├── partials
-                                                 └── services
-                                                     └── database.db
-                                     </code>
-                                 </pre>
-                      </div>
-                   </div>
+                <div class="p-6">
+
+                    <div class="px-6 max-w-full">
+                        <h6 class="mb-2.5 text-base font-semibold">Prerequisites</h6>
+
+                        <p class="mb-4">Please follow below steps to install and setup all prerequisites:</p>
+
+                        <ul class="ps-8">
+                            <li class="list-disc">
+                                <p class="my-2.5">Sqlite3</p>
+                                <ol class="ps-8">
+                                    <li class="list-disc">
+                                        Open the download page <a href="https://www.sqlite.org/download.html" target="_blank" class="text-primary">https://www.sqlite.org/download.html</a> and download command-line tools file for your operating system.
+                                    </li>
+                                    <li class="list-disc">
+                                        Create a folder C:\>sqlite and unzip above zipped file in this folder.
+                                    </li>
+                                    <li class="list-disc">
+                                        Add C:\>sqlite in your PATH environment variable and finally go to the command prompt and issue sqlite3 command.
+                                    </li>
+                                    <li class="mt-2">
+                                        If you have any problem with installation and setup, refer this page <a href="https://www.tutorialspoint.com/sqlite/sqlite_installation.htm" class="text-primary">https://www.tutorialspoint.com/sqlite/sqlite_installation.htm</a>
+                                    </li>
+
+                                </ol>
+
+                            </li>
+
+
+                            <li class="list-disc">
+                                <p class="my-2.5">PHP 7.4</p>
+                                <p class="mb-3.5">Make sure to have <a class="text-primary" href="https://www.php.net/" target="_blank">PHP-7.4 or latest version</a>
+                                    installed &amp; running
+                                    on your computer.
+                                    If you already have installed PHP on your computer, you
+                                    can skip this step.</p>
+                            </li>
+
+                            <li class="list-disc">
+                                <p class="my-2.5">Xampp</p>
+                                <p class="mb-3.5">Make sure to have <a class="text-primary" href="https://www.apachefriends.org/" target="_blank">the latest version of xampp</a> or installed &amp; running
+                                    on your computer. If you already have installed Xampp on your computer, you
+                                    can skip this step.</p>
+                            </li>
+
+                        </ul>
+
+                        <h6 class="mt-9 mb-2.5 text-base font-semibold">Installation</h6>
+
+                        <p class="mb-1"> After you finished with the above steps, you can run the following commands into the
+                            terminal/command prompt from the root directory ( Konrix ) of the project to
+                            run the project locally or build for production use:
+                        </p>
+                        <p class="mb-4">You can run the following commands to run project locally or
+                            build for production use:</p>
+
+                        <p class="mb-4">Put your project file in xampp/htdocs/. Open your browser and run your project using localhost/your_project.
+                        </p>
+
+                        <div class="shadow-sm overflow-hidden ring-1 ring-gray-200 dark:ring-gray-700 rounded-md">
+                            <table class="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
+                                <thead>
+                                    <tr>
+                                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">
+                                            Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-gray-200 dark:divide-gray-700">
+                                    <tr>
+                                        <td class="px-6 py-4 text-sm font-medium text-gray-800 dark:text-gray-200">
+                                            Start the apache server from xampp control pannel if you are using windows.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-6 py-4 text-sm font-medium text-gray-800 dark:text-gray-200">
+                                            Project can be accessed from <code>
+                                                localhost/project_name/directory/index.php
+                                            </code>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="px-6 py-4 text-sm font-medium text-gray-800 dark:text-gray-200">
+                                            You can execute create, insert, update, and delete queries in database using <code>database.db</code> file in services folder.
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                    <div class="mt-6 bg-success/20 text-sm text-success rounded-md p-4">If you are having
+                        any question or
+                        difficulty during setup, don't hesitate to contact us. We would be glad
+                        to assist you.</div>
+
                 </div>
-             </div>
+            </div>
             </main>
             <!-- Footer Start -->
             <footer class="footer h-16 flex items-center px-6 bg-white shadow dark:bg-gray-800">
@@ -1436,11 +1474,6 @@
          </div>
       </div>
       <!-- Theme Settings End -->
-      <!-- Code Preview Plugin Js -->
-      <script src="assets/libs/prismjs/prism.js"></script>
-      <script src="assets/libs/prismjs/plugins/normalize-whitespace/prism-normalize-whitespace.min.js"></script>
-      <script src="assets/libs/clipboard/clipboard.min.js"></script>
-      <script src="assets/js/pages/highlight.js"></script>
       <!-- Plugin Js -->
       <script src="assets/libs/simplebar/simplebar.min.js"></script>
       <script src="assets/libs/feather-icons/feather.min.js"></script>

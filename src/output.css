@@ -1699,6 +1699,11 @@ select{
   margin-bottom: 0.5rem;
 }
 
+.my-2\.5{
+  margin-top: 0.625rem;
+  margin-bottom: 0.625rem;
+}
+
 .my-3{
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
@@ -1769,6 +1774,10 @@ select{
 
 .mb-3{
   margin-bottom: 0.75rem;
+}
+
+.mb-3\.5{
+  margin-bottom: 0.875rem;
 }
 
 .mb-4{
@@ -1937,6 +1946,10 @@ select{
 
 .mt-8{
   margin-top: 2rem;
+}
+
+.mt-9{
+  margin-top: 2.25rem;
 }
 
 .mt-\[--submenu-first-item-margin-top\]{
@@ -2675,6 +2688,10 @@ select{
   resize: both;
 }
 
+.list-inside{
+  list-style-position: inside;
+}
+
 .list-disc{
   list-style-type: disc;
 }
@@ -2985,6 +3002,14 @@ select{
 
 .whitespace-nowrap{
   white-space: nowrap;
+}
+
+.text-wrap{
+  text-wrap: wrap;
+}
+
+.text-nowrap{
+  text-wrap: nowrap;
 }
 
 .rounded{
@@ -3669,6 +3694,10 @@ select{
   background-color: rgb(28 180 84 / var(--tw-bg-opacity));
 }
 
+.bg-success\/20{
+  background-color: rgb(28 180 84 / 0.2);
+}
+
 .bg-success\/25{
   background-color: rgb(28 180 84 / 0.25);
 }
@@ -4188,6 +4217,10 @@ select{
 
 .ps-6{
   padding-inline-start: 1.5rem;
+}
+
+.ps-8{
+  padding-inline-start: 2rem;
 }
 
 .ps-9{
@@ -4895,6 +4928,12 @@ select{
 
 .-outline-offset-2{
   outline-offset: -2px;
+}
+
+.ring-1{
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 
 .ring-2{
@@ -9705,6 +9744,10 @@ button.gridjs-sort-asc, button.gridjs-sort-desc {
 
   .md\:justify-between{
     justify-content: space-between;
+  }
+
+  .md\:rounded-lg{
+    border-radius: 0.5rem;
   }
 
   .md\:p-10{
