@@ -105,14 +105,5 @@ class ThemeCustomizer {
     document.addEventListener('DOMContentLoaded', () => {
         new App().init();
         new ThemeCustomizer().init();
-        
-
-        // Initial call to set the correct state
-        // updateLogoVisibility();
-        
-        //  // Initialize observers
-        //  initObservers();
-        
-
     });
 })();
