@@ -18,268 +18,269 @@
    <body class="overflow-x-hidden text-[--tw-body-color] bg-[--tw-body-bg] font-inter font-normal text-[0.875rem] leading-[1.5] antialiased">
       <div class="flex wrapper">
          <!-- Sidenav Menu Start-->
-         <div id="app-menu" class="app-menu w-[--tw-sidenav-width] min-w-[--tw-sidenav-width] z-40 h-screen shadow transition-all duration-300 ease-in-out sticky top-0">
+         <div id="app-menu" class="app-menu w-[--tw-sidenav-width] min-w-[--tw-sidenav-width] z-40 h-screen shadow transition-all duration-300 ease-in-out sticky top-0 sidenav-sm:w-[--tw-sidenav-width-sm] sidenav-mobile:ms-[--calculated-app-menu-inline-start] sidenav-mobile:fixed sidenav-mobile:opacity-0 sidenav-mobile-enable:ms-0 sidenav-mobile-enable:z-50 sidenav-mobile-enable:opacity-100 sidenav-sm:min-w-[--tw-sidenav-width-sm] sidenav-sm:min-h-[--tw-sidenav-sm-height] sidenav-sm:h-[unset] sidenav-sm:static sidenav-md:w-[--tw-sidenav-width-md] sidenav-md:min-w-[--tw-sidenav-width-md] layout-scrollable:unset layout-scrollable:h-unset scrollable-hover:absolute scrollable-hover:h-unset scrollable-hover-active:absolute scrollable-hover-active:h-unset sidenav-view-hover-size:w-[--tw-sidenav-width-sm] sidenav-view-hover-size:min-w-[--tw-sidenav-width-sm] sidenav-hover:fixed sidenav-hover:bottom-0 sidenav-hover-active:fixed sidenav-hover-active:bottom-0 sidenav-hidden:ms-[--calculated-app-menu-inline-hidden]">
             <!-- Sidenav Brand Logo -->
-            <a href="index.html" id="logo-box" class="logo-box h-[--tw-topbar-height] text-[--tw-menu-item-color] sticky top-0 flex items-center justify-center transition-all duration-300 ease-in-out">
+            <a href="index.html" id="logo-box" class="logo-box h-[--tw-topbar-height] text-[--tw-menu-item-color] sticky top-0 flex items-center justify-center transition-all duration-300 ease-in-out sidenav-sm:bg-[--tw-menu-bg] sidenav-sm:z-40 scrollable:unset">
                <!-- Light Brand Logo -->
-               <div class="logo-light hidden">
-                  <img src="assets/images/logo-light.png" class="logo-lg h-6" alt="Light logo">
-                  <img src="assets/images/logo-sm.png" class="logo-sm h-8" alt="Small logo">
+               <div class="logo-light hidden dark:block menu-color-brand:block menu-color-dark:block menu-color-gradient:block">
+                  <img src="assets/images/logo-light.png" class="logo-lg lg:block h-6 sidenav-view-hover:hidden sidenav-sm:hidden" alt="Light logo">
+                  <img src="assets/images/logo-sm.png" class="logo-sm hidden h-8 sidenav-sm:flex sidenav-view-hover:flex" alt="Small logo">
                </div>
                <!-- Dark Brand Logo -->
-               <div class="logo-dark block">
-                  <img src="assets/images/logo-dark.png" class="logo-lg h-6" alt="Dark logo">
-                  <img src="assets/images/logo-sm.png" class="logo-sm h-8" alt="Small logo">
+               <div class="logo-dark block dark:hidden menu-color-brand:hidden menu-color-dark:hidden menu-color-gradient:hidden">
+                  <img src="assets/images/logo-dark.png" class="logo-lg lg:block h-6 sidenav-view-hover:hidden sidenav-sm:hidden" alt="Dark logo">
+                  <img src="assets/images/logo-sm.png" class="logo-sm hidden h-8 sidenav-sm:flex sidenav-view-hover:flex" alt="Small logo">
                </div>
             </a>
             <!-- Sidenav Menu Toggle Button -->
-            <button id="button-hover-toggle" class="absolute top-5 end-2 rounded-full p-1.5">
+            <button id="button-hover-toggle" class="absolute top-5 end-2 rounded-full p-1.5 text-[--tw-menu-item-color] hidden sidenav-hover:flex sidenav-hover:transition-all sidenav-hover:duration-150 sidenav-hover:ease-in-out sidenav-view-hover:hidden sidenav-hover-active:flex sidenav-hover-active:items-center sidenav-hover-active:transition-all sidenav-hover-active:duration-150 sidenav-hover-active:ease-in-out items-center justify-center">
             <span class="sr-only">Menu Toggle Button</span>
-            <i class="mgc_round_line text-xl"></i>
+            <i class="mgc_round_line sidenav-hover-active:before:content-['\f053'] text-xl"></i>
             </button>
+            <!-- Sidenav Menu Toggle Button -->
             <!--- Menu -->
             <div id="scrollbar" class="h-[calc(100%-var(--tw-topbar-height))] border-t border-dashed border-gray-500 border-opacity-25" data-simplebar>
-               <ul id="menu" class="menu flex flex-col gap-[--tw-menu-item-gap] py-[--tw-menu-item-gap] px-0" data-fc-type="accordion">
-                  <li class="menu-title p-[--calculated-menu-title-padding] text-menu-item-color text-menu-title-size cursor-default whitespace-nowrap font-medium tracking-widest opacity-75">Menu</li>
-                  <li class="menu-item py-0 px-[--tw-menu-item-padding-x]">
-                     <a href="index.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] py-[--tw-menu-link-padding-y] px-[--tw-menu-link-padding-x] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:bg-[--tw-menu-item-active-bg] hover:text-[--tw-menu-item-hover-color]">
+               <ul id="menu" class="menu flex flex-col gap-[--tw-menu-item-gap] py-[--tw-menu-item-gap] px-0 sidenav-sm:py-[--tw-menu-item-padding-x] sidenav-sm:px-0" data-fc-type="accordion">
+                  <li class="menu-title p-[--calculated-menu-title-padding] text-menu-item-color text-menu-title-size cursor-default whitespace-nowrap font-medium tracking-widest opacity-75 sidenav-view-hover:invisible sidenav-view-hover:relative sidenav-view-hover:after:content-[''] sidenav-view-hover:after:border-t sidenav-view-hover:after:border-solid sidenav-view-hover:after:border-[--tw-menu-item-color] sidenav-view-hover:after:w-[--tw-menu-item-icon-size] sidenav-view-hover:after:visible sidenav-view-hover:after:absolute sidenav-view-hover:after:top-1/2 sidenav-view-hover:after:flex sidenav-view-hover:after:justify-center sidenav-view-hover:after:rounded-full sidenav-view-hover:after:opacity-40 sidenav-view-hover:after:transform sidenav-view-hover:after:-translate-y-1/2 sidenav-sm:hidden sidenav-md:text-center sidenav-md:underline sidenav-md:decoration-dashed">Menu</li>
+                  <li class="menu-item py-0 px-[--tw-menu-item-padding-x] sidenav-sm:relative">
+                     <a href="index.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] py-[--tw-menu-link-padding-y] px-[--tw-menu-link-padding-x] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:bg-[--tw-menu-item-active-bg] hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm:flex sidenav-sm:justify-center sidenav-sm:text-center sidenav-sm-menu-link:text-[--tw-menu-item-hover-color] sidenav-sm-menu-link:bg-[--tw-menu-item-hover-bg] sidenav-sm-menu-link:after:content-[''] sidenav-sm-menu-link:after:inset-0 sidenav-sm-menu-link:after:absolute sidenav-sm-menu-link:after:w-[--tw-sidenav-width] sidenav-md:flex-col sidenav-md:text-center">
                         <span class="menu-icon w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] inline-flex items-center justify-center">
                            <svg class="w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] fill-[var(--tw-menu-item-color)] stroke-inherit transition transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color]" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
                               <path d="M23.121,9.069,15.536,1.483a5.008,5.008,0,0,0-7.072,0L.879,9.069A2.978,2.978,0,0,0,0,11.19v9.817a3,3,0,0,0,3,3H21a3,3,0,0,0,3-3V11.19A2.978,2.978,0,0,0,23.121,9.069ZM15,22.007H9V18.073a3,3,0,0,1,6,0Zm7-1a1,1,0,0,1-1,1H17V18.073a5,5,0,0,0-10,0v3.934H3a1,1,0,0,1-1-1V11.19a1.008,1.008,0,0,1,.293-.707L9.878,2.9a3.008,3.008,0,0,1,4.244,0l7.585,7.586A1.008,1.008,0,0,1,22,11.19Z"/>
                            </svg>
                         </span>
-                        <span class="menu-text text-menu-font-size leading-[--tw-menu-item-font-size] whitespace-nowrap ml-1"> Dashboard </span>
+                        <span class="menu-text text-menu-font-size leading-[--tw-menu-item-font-size] whitespace-nowrap ml-1 sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-sm:ms-1.5 sidenav-sm:shadow-lg sidenav-sm:shadow-black/10 sidenav-sm:rounded-md sidenav-sm-hover-menu-text:bg-[--tw-menu-bg] sidenav-sm-hover-menu-text:leading-[--tw-menu-item-icon-size] sidenav-sm-hover-menu-text:w-[--calculated-menu-text-hover-width] sidenav-sm-hover-menu-text:py-[--tw-menu-link-padding-y] sidenav-sm-hover-menu-text:px-[--tw-menu-link-padding-x] sidenav-sm-hover-menu-text:[inset-inline-start:--calculated-menu-text-hover-inset] sidenav-sm-hover-menu-text:absolute sidenav-sm-hover-menu-text:flex sidenav-sm-hover-menu-text:items-center sidenav-sm-hover-menu-text:border sidenav-sm-hover-menu-text:border-solid sidenav-sm-hover-menu-text:border-[rgb(107_114_128/0.2)]"> Dashboard </span>
                      </a>
                   </li>
-                  <li class="menu-title p-[--calculated-menu-title-padding] text-menu-item-color text-menu-title-size cursor-default whitespace-nowrap font-medium tracking-widest opacity-75">Apps</li>
-                  <li class="menu-item py-0 px-[--tw-menu-item-padding-x]">
-                     <a href="apps-calendar.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] py-[--tw-menu-link-padding-y] px-[--tw-menu-link-padding-x] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:bg-[--tw-menu-item-active-bg] hover:text-[--tw-menu-item-hover-color]">
+                  <li class="menu-title p-[--calculated-menu-title-padding] text-menu-item-color text-menu-title-size cursor-default whitespace-nowrap font-medium tracking-widest opacity-75 sidenav-view-hover:invisible sidenav-view-hover:relative sidenav-view-hover:after:content-[''] sidenav-view-hover:after:border-t sidenav-view-hover:after:border-solid sidenav-view-hover:after:border-[--tw-menu-item-color] sidenav-view-hover:after:w-[--tw-menu-item-icon-size] sidenav-view-hover:after:visible sidenav-view-hover:after:absolute sidenav-view-hover:after:top-1/2 sidenav-view-hover:after:flex sidenav-view-hover:after:justify-center sidenav-view-hover:after:rounded-full sidenav-view-hover:after:opacity-40 sidenav-view-hover:after:transform sidenav-view-hover:after:-translate-y-1/2 sidenav-sm:hidden sidenav-md:text-center sidenav-md:underline sidenav-md:decoration-dashed">Apps</li>
+                  <li class="menu-item py-0 px-[--tw-menu-item-padding-x] sidenav-sm:relative">
+                     <a href="apps-calendar.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] py-[--tw-menu-link-padding-y] px-[--tw-menu-link-padding-x] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:bg-[--tw-menu-item-active-bg] hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm:flex sidenav-sm:justify-center sidenav-sm:text-center sidenav-sm-menu-link:text-[--tw-menu-item-hover-color] sidenav-sm-menu-link:bg-[--tw-menu-item-hover-bg] sidenav-sm-menu-link:after:content-[''] sidenav-sm-menu-link:after:inset-0 sidenav-sm-menu-link:after:absolute sidenav-sm-menu-link:after:w-[--tw-sidenav-width] sidenav-md:flex-col sidenav-md:text-center">
                         <span class="menu-icon w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] inline-flex items-center justify-center">
                            <svg class="w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] fill-[var(--tw-menu-item-color)] stroke-inherit transition transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color]" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
                               <path d="m7.5,12h-2c-.827,0-1.5.673-1.5,1.5v2c0,.827.673,1.5,1.5,1.5h2c.827,0,1.5-.673,1.5-1.5v-2c0-.827-.673-1.5-1.5-1.5Zm.5,3.5c0,.276-.225.5-.5.5h-2c-.275,0-.5-.224-.5-.5v-2c0-.276.225-.5.5-.5h2c.275,0,.5.224.5.5v2ZM19.5,2h-1.5V.5c0-.276-.224-.5-.5-.5s-.5.224-.5.5v1.5H7V.5c0-.276-.224-.5-.5-.5s-.5.224-.5.5v1.5h-1.5C2.019,2,0,4.019,0,6.5v13c0,2.481,2.019,4.5,4.5,4.5h15c2.481,0,4.5-2.019,4.5-4.5V6.5c0-2.481-2.019-4.5-4.5-4.5Zm-15,1h15c1.93,0,3.5,1.57,3.5,3.5v1.5H1v-1.5c0-1.93,1.57-3.5,3.5-3.5Zm15,20H4.5c-1.93,0-3.5-1.57-3.5-3.5v-10.5h22v10.5c0,1.93-1.57,3.5-3.5,3.5Z"/>
                            </svg>
                         </span>
-                        <span class="menu-text text-menu-font-size leading-[--tw-menu-item-font-size] whitespace-nowrap ml-1"> Calendar </span>
+                        <span class="menu-text text-menu-font-size leading-[--tw-menu-item-font-size] whitespace-nowrap ml-1 sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-sm:ms-1.5 sidenav-sm:shadow-lg sidenav-sm:shadow-black/10 sidenav-sm:rounded-md sidenav-sm-hover-menu-text:bg-[--tw-menu-bg] sidenav-sm-hover-menu-text:leading-[--tw-menu-item-icon-size] sidenav-sm-hover-menu-text:w-[--calculated-menu-text-hover-width] sidenav-sm-hover-menu-text:py-[--tw-menu-link-padding-y] sidenav-sm-hover-menu-text:px-[--tw-menu-link-padding-x] sidenav-sm-hover-menu-text:[inset-inline-start:--calculated-menu-text-hover-inset] sidenav-sm-hover-menu-text:absolute sidenav-sm-hover-menu-text:flex sidenav-sm-hover-menu-text:items-center sidenav-sm-hover-menu-text:border sidenav-sm-hover-menu-text:border-solid sidenav-sm-hover-menu-text:border-[rgb(107_114_128/0.2)]"> Calendar </span>
                      </a>
                   </li>
-                  <li class="menu-item py-0 px-[--tw-menu-item-padding-x]">
-                     <a href="apps-tickets.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] py-[--tw-menu-link-padding-y] px-[--tw-menu-link-padding-x] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:bg-[--tw-menu-item-active-bg] hover:text-[--tw-menu-item-hover-color]">
+                  <li class="menu-item py-0 px-[--tw-menu-item-padding-x] sidenav-sm:relative">
+                     <a href="apps-tickets.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] py-[--tw-menu-link-padding-y] px-[--tw-menu-link-padding-x] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:bg-[--tw-menu-item-active-bg] hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm:flex sidenav-sm:justify-center sidenav-sm:text-center sidenav-sm-menu-link:text-[--tw-menu-item-hover-color] sidenav-sm-menu-link:bg-[--tw-menu-item-hover-bg] sidenav-sm-menu-link:after:content-[''] sidenav-sm-menu-link:after:inset-0 sidenav-sm-menu-link:after:absolute sidenav-sm-menu-link:after:w-[--tw-sidenav-width] sidenav-md:flex-col sidenav-md:text-center">
                         <span class="menu-icon w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] inline-flex items-center justify-center">
                            <svg class="w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] fill-[var(--tw-menu-item-color)] stroke-inherit transition transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color]" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
                               <path d="M19.5,21l-15-.004c-2.481,0-4.5-2.019-4.5-4.5v-1.423c0-.136,.055-.266,.153-.36,.098-.094,.225-.145,.365-.14h.007c1.42,0,2.556-1.139,2.556-2.537s-1.14-2.541-2.541-2.541c-.276,0-.541-.22-.541-.496v-1.504C0,5.015,2.019,2.996,4.5,2.996l15,.004c2.481,0,4.5,2.019,4.5,4.5v1.5c0,.276-.224,.5-.5,.5-1.378,0-2.5,1.122-2.5,2.5s1.122,2.5,2.5,2.5c.276,0,.5,.224,.5,.5v1.5c0,2.481-2.019,4.5-4.5,4.5ZM1,15.548v.948c0,1.93,1.57,3.5,3.5,3.5l15,.004c1.93,0,3.5-1.57,3.5-3.5v-1.036c-1.694-.243-3-1.704-3-3.464s1.306-3.221,3-3.464v-1.036c0-1.93-1.57-3.5-3.5-3.5l-15-.004c-1.93,0-3.5,1.57-3.5,3.5v1.037c1.752,.237,3.082,1.718,3.082,3.504,0,1.797-1.345,3.286-3.082,3.511Z"/>
                            </svg>
                         </span>
-                        <span class="menu-text text-menu-font-size leading-[--tw-menu-item-font-size] whitespace-nowrap ml-1"> Tickets </span>
+                        <span class="menu-text text-menu-font-size leading-[--tw-menu-item-font-size] whitespace-nowrap ml-1 sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-sm:ms-1.5 sidenav-sm:shadow-lg sidenav-sm:shadow-black/10 sidenav-sm:rounded-md sidenav-sm-hover-menu-text:bg-[--tw-menu-bg] sidenav-sm-hover-menu-text:leading-[--tw-menu-item-icon-size] sidenav-sm-hover-menu-text:w-[--calculated-menu-text-hover-width] sidenav-sm-hover-menu-text:py-[--tw-menu-link-padding-y] sidenav-sm-hover-menu-text:px-[--tw-menu-link-padding-x] sidenav-sm-hover-menu-text:[inset-inline-start:--calculated-menu-text-hover-inset] sidenav-sm-hover-menu-text:absolute sidenav-sm-hover-menu-text:flex sidenav-sm-hover-menu-text:items-center sidenav-sm-hover-menu-text:border sidenav-sm-hover-menu-text:border-solid sidenav-sm-hover-menu-text:border-[rgb(107_114_128/0.2)]"> Tickets </span>
                      </a>
                   </li>
-                  <li class="menu-item py-0 px-[--tw-menu-item-padding-x]">
-                     <a href="apps-file-manager.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] py-[--tw-menu-link-padding-y] px-[--tw-menu-link-padding-x] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:bg-[--tw-menu-item-active-bg] hover:text-[--tw-menu-item-hover-color]">
+                  <li class="menu-item py-0 px-[--tw-menu-item-padding-x] sidenav-sm:relative">
+                     <a href="apps-file-manager.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] py-[--tw-menu-link-padding-y] px-[--tw-menu-link-padding-x] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:bg-[--tw-menu-item-active-bg] hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm:flex sidenav-sm:justify-center sidenav-sm:text-center sidenav-sm-menu-link:text-[--tw-menu-item-hover-color] sidenav-sm-menu-link:bg-[--tw-menu-item-hover-bg] sidenav-sm-menu-link:after:content-[''] sidenav-sm-menu-link:after:inset-0 sidenav-sm-menu-link:after:absolute sidenav-sm-menu-link:after:w-[--tw-sidenav-width] sidenav-md:flex-col sidenav-md:text-center">
                         <span class="menu-icon w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] inline-flex items-center justify-center transition-all ease-in-out duration-150">
                            <svg class="w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] fill-[var(--tw-menu-item-color)] stroke-inherit transition transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color]" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
                               <path d="M19.5,3h-7.03c-.23,0-.46-.05-.67-.16l-3.16-1.58c-.34-.17-.73-.26-1.12-.26h-3.03C2.02,1,0,3.02,0,5.5v13c0,2.48,2.02,4.5,4.5,4.5H12.5c.28,0,.5-.22,.5-.5s-.22-.5-.5-.5H4.5c-1.93,0-3.5-1.57-3.5-3.5V8H23v6.5c0,.28,.22,.5,.5,.5s.5-.22,.5-.5V7.5c0-2.48-2.02-4.5-4.5-4.5ZM1,5.5c0-1.93,1.57-3.5,3.5-3.5h3.03c.23,0,.46,.05,.67,.16l3.16,1.58c.34,.17,.73,.26,1.12,.26h7.03c1.76,0,3.22,1.31,3.46,3H1v-1.5Zm23,14s0,0,0,0c0,.5-.19,1-.58,1.38l-2.57,2.52c-.1,.1-.22,.14-.35,.14s-.26-.05-.36-.15c-.19-.2-.19-.51,0-.71l2.57-2.52c.06-.06,.1-.12,.14-.18H13.5c-.28,0-.5-.22-.5-.5s.22-.5,.5-.5h9.36c-.04-.07-.09-.13-.15-.19l-2.57-2.51c-.2-.19-.2-.51,0-.71,.19-.2,.51-.2,.71,0l2.57,2.52c.38,.38,.58,.89,.58,1.39,0,0,0,0,0,0Z"/>
                            </svg>
                         </span>
-                        <span class="menu-text text-menu-font-size leading-[--tw-menu-item-font-size] whitespace-nowrap ml-1"> File Manager </span>
+                        <span class="menu-text text-menu-font-size leading-[--tw-menu-item-font-size] whitespace-nowrap ml-1 sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-sm:ms-1.5 sidenav-sm:shadow-lg sidenav-sm:shadow-black/10 sidenav-sm:rounded-md sidenav-sm-hover-menu-text:bg-[--tw-menu-bg] sidenav-sm-hover-menu-text:leading-[--tw-menu-item-icon-size] sidenav-sm-hover-menu-text:w-[--calculated-menu-text-hover-width] sidenav-sm-hover-menu-text:py-[--tw-menu-link-padding-y] sidenav-sm-hover-menu-text:px-[--tw-menu-link-padding-x] sidenav-sm-hover-menu-text:[inset-inline-start:--calculated-menu-text-hover-inset] sidenav-sm-hover-menu-text:absolute sidenav-sm-hover-menu-text:flex sidenav-sm-hover-menu-text:items-center sidenav-sm-hover-menu-text:border sidenav-sm-hover-menu-text:border-solid sidenav-sm-hover-menu-text:border-[rgb(107_114_128/0.2)]"> File Manager </span>
                      </a>
                   </li>
-                  <li class="menu-item py-0 px-[--tw-menu-item-padding-x]">
-                     <a href="apps-kanban.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] py-[--tw-menu-link-padding-y] px-[--tw-menu-link-padding-x] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:bg-[--tw-menu-item-active-bg] hover:text-[--tw-menu-item-hover-color]">
+                  <li class="menu-item py-0 px-[--tw-menu-item-padding-x] sidenav-sm:relative">
+                     <a href="apps-kanban.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] py-[--tw-menu-link-padding-y] px-[--tw-menu-link-padding-x] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:bg-[--tw-menu-item-active-bg] hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm:flex sidenav-sm:justify-center sidenav-sm:text-center sidenav-sm-menu-link:text-[--tw-menu-item-hover-color] sidenav-sm-menu-link:bg-[--tw-menu-item-hover-bg] sidenav-sm-menu-link:after:content-[''] sidenav-sm-menu-link:after:inset-0 sidenav-sm-menu-link:after:absolute sidenav-sm-menu-link:after:w-[--tw-sidenav-width] sidenav-md:flex-col sidenav-md:text-center">
                         <span class="menu-icon w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] inline-flex items-center justify-center">
                            <svg class="w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] fill-[var(--tw-menu-item-color)] stroke-inherit transition transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color]" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
                               <path d="M17.5,24H6.5c-2.481,0-4.5-2.019-4.5-4.5V4.5C2,2.019,4.019,0,6.5,0h11c2.481,0,4.5,2.019,4.5,4.5v15c0,2.481-2.019,4.5-4.5,4.5ZM6.5,1c-1.93,0-3.5,1.57-3.5,3.5v15c0,1.93,1.57,3.5,3.5,3.5h11c1.93,0,3.5-1.57,3.5-3.5V4.5c0-1.93-1.57-3.5-3.5-3.5H6.5Zm11.5,4.5c0-.276-.224-.5-.5-.5h-6c-.276,0-.5,.224-.5,.5s.224,.5,.5,.5h6c.276,0,.5-.224,.5-.5Zm0,6c0-.276-.224-.5-.5-.5h-6c-.276,0-.5,.224-.5,.5s.224,.5,.5,.5h6c.276,0,.5-.224,.5-.5Zm0,6c0-.276-.224-.5-.5-.5h-6c-.276,0-.5,.224-.5,.5s.224,.5,.5,.5h6c.276,0,.5-.224,.5-.5ZM8.5,7h-2c-.276,0-.5-.224-.5-.5v-2c0-.276,.224-.5,.5-.5h2c.276,0,.5,.224,.5,.5v2c0,.276-.224,.5-.5,.5Zm-1.5-1h1v-1h-1v1Zm1.5,7h-2c-.276,0-.5-.224-.5-.5v-2c0-.276,.224-.5,.5-.5h2c.276,0,.5,.224,.5,.5v2c0,.276-.224,.5-.5,.5Zm-1.5-1h1v-1h-1v1Zm1.5,7h-2c-.276,0-.5-.224-.5-.5v-2c0-.276,.224-.5,.5-.5h2c.276,0,.5,.224,.5,.5v2c0,.276-.224,.5-.5,.5Zm-1.5-1h1v-1h-1v1Z"/>
                            </svg>
                         </span>
-                        <span class="menu-text text-menu-font-size leading-[--tw-menu-item-font-size] whitespace-nowrap ml-1">Kanban</span>
+                        <span class="menu-text text-menu-font-size leading-[--tw-menu-item-font-size] whitespace-nowrap ml-1 sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-sm:ms-1.5 sidenav-sm:shadow-lg sidenav-sm:shadow-black/10 sidenav-sm:rounded-md sidenav-sm-hover-menu-text:bg-[--tw-menu-bg] sidenav-sm-hover-menu-text:leading-[--tw-menu-item-icon-size] sidenav-sm-hover-menu-text:w-[--calculated-menu-text-hover-width] sidenav-sm-hover-menu-text:py-[--tw-menu-link-padding-y] sidenav-sm-hover-menu-text:px-[--tw-menu-link-padding-x] sidenav-sm-hover-menu-text:[inset-inline-start:--calculated-menu-text-hover-inset] sidenav-sm-hover-menu-text:absolute sidenav-sm-hover-menu-text:flex sidenav-sm-hover-menu-text:items-center sidenav-sm-hover-menu-text:border sidenav-sm-hover-menu-text:border-solid sidenav-sm-hover-menu-text:border-[rgb(107_114_128/0.2)]">Kanban</span>
                      </a>
                   </li>
-                  <li class="menu-item py-0 px-[--tw-menu-item-padding-x]">
-                     <a href="javascript:void(0)" data-fc-type="collapse" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] py-[--tw-menu-link-padding-y] px-[--tw-menu-link-padding-x] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:bg-[--tw-menu-item-active-bg] hover:text-[--tw-menu-item-hover-color]">
+                  <li class="menu-item py-0 px-[--tw-menu-item-padding-x] sidenav-sm:relative">
+                     <a href="javascript:void(0)" data-fc-type="collapse" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] py-[--tw-menu-link-padding-y] px-[--tw-menu-link-padding-x] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:bg-[--tw-menu-item-active-bg] hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm:flex sidenav-sm:justify-center sidenav-sm:text-center sidenav-sm-menu-link:text-[--tw-menu-item-hover-color] sidenav-sm-menu-link:bg-[--tw-menu-item-hover-bg] sidenav-sm-menu-link:after:content-[''] sidenav-sm-menu-link:after:inset-0 sidenav-sm-menu-link:after:absolute sidenav-sm-menu-link:after:w-[--tw-sidenav-width] sidenav-md:flex-col sidenav-md:text-center">
                         <span class="menu-icon w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] inline-flex items-center justify-center">
                            <svg class="w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] fill-[var(--tw-menu-item-color)] stroke-inherit transition transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color]" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
                               <path d="m6,4V0h-3C1.346,0,0,1.346,0,3v18c0,1.654,1.346,3,3,3h21V4H6ZM1,3c0-1.103.897-2,2-2h2v17h-2c-.768,0-1.469.29-2,.766V3Zm22,20H3c-1.103,0-2-.897-2-2s.897-2,2-2h3V5h17v18Zm-2-2h-13V7h3v1h-2v3h2v1h-2v8h5v-5h-2v-1h5v1h-2v5h5v-12h-5v3h-1v-4h7v14Z"/>
                            </svg>
                         </span>
-                        <span class="menu-text text-menu-font-size leading-[--tw-menu-item-font-size] whitespace-nowrap ml-1"> Project </span>
-                        <span class="menu-arrow ms-auto">
-                           <svg class="w-[--tw-menu-item-font-size] h-[--tw-menu-item-font-size] fill-[--tw-menu-item-color] stroke-inherit transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color]" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
+                        <span class="menu-text text-menu-font-size leading-[--tw-menu-item-font-size] whitespace-nowrap ml-1 sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-sm:ms-1.5 sidenav-sm:shadow-lg sidenav-sm:shadow-black/10 sidenav-sm:rounded-t-md sidenav-sm-hover-menu-text:bg-[--tw-menu-bg] sidenav-sm-hover-menu-text:leading-[--tw-menu-item-icon-size] sidenav-sm-hover-menu-text:w-[--calculated-menu-text-hover-width] sidenav-sm-hover-menu-text:py-[--tw-menu-link-padding-y] sidenav-sm-hover-menu-text:px-[--tw-menu-link-padding-x] sidenav-sm-hover-menu-text:[inset-inline-start:--calculated-menu-text-hover-inset] sidenav-sm-hover-menu-text:absolute sidenav-sm-hover-menu-text:flex sidenav-sm-hover-menu-text:items-center sidenav-sm-hover-menu-text:border sidenav-sm-hover-menu-text:border-solid sidenav-sm-hover-menu-text:border-[rgb(107_114_128/0.2)]"> Project </span>
+                        <span class="menu-arrow ms-auto rtl-menu-arrow:rotate-180 transform sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:hidden">
+                           <svg class="w-[--tw-menu-item-font-size] h-[--tw-menu-item-font-size] fill-[--tw-menu-item-color] stroke-inherit transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color] open-menu:rotate-90" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
                               <path d="M15.4,9.88,10.81,5.29a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L14,11.29a1,1,0,0,1,0,1.42L9.4,17.29a1,1,0,0,0,1.41,1.42l4.59-4.59A3,3,0,0,0,15.4,9.88Z"/>
                            </svg>
                         </span>
                      </a>
-                     <ul class="sub-menu hidden w-full overflow-hidden transition-all duration-300 ps-[--submenu-padding-inline-start]">
+                     <ul class="sub-menu sidenav-sm:hidden sidenav-sm:h-[inherit] sidenav-sm:rounded-b-md sidenav-sm:ms-1.5 sidenav-sm:shadow-lg sidenav-sm:shadow-black/10 sidenav-md:ps-0 sidenav-sm-submenu:block sidenav-sm-submenu:[inset-inline-start:100%] sidenav-sm-submenu:overflow-visible sidenav-sm-submenu:absolute sidenav-sm-submenu:h-[inherit] sidenav-sm-submenu:transition-none sidenav-sm-submenu:ps-0 sidenav-sm-submenu:bg-[--tw-menu-bg] sidenav-sm-submenu:w-[--submenu-hover-width] sidenav-sm-submenu:border sidenav-sm-submenu:border-solid sidenav-sm-submenu:border-[rgb(107_114_128/0.2)] sidenav-view-hover:invisible sidenav-view-hover:h-0 hidden w-full overflow-hidden transition-all duration-300 ps-[--submenu-padding-inline-start]">
                         <li class="menu-item mt-[--submenu-first-item-margin-top]">
-                           <a href="apps-project-list.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">List</span>
+                           <a href="apps-project-list.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">List</span>
                            </a>
                         </li>
                         <li class="menu-item">
-                           <a href="apps-project-detail.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Detail</span>
+                           <a href="apps-project-detail.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Detail</span>
                            </a>
                         </li>
                         <li class="menu-item mb-[--submenu-last-item-margin-bottom]">
-                           <a href="apps-project-create.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Create</span>
+                           <a href="apps-project-create.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Create</span>
                            </a>
                         </li>
                      </ul>
                   </li>
-                  <li class="menu-title p-[--calculated-menu-title-padding] text-menu-item-color text-menu-title-size cursor-default whitespace-nowrap font-medium tracking-widest opacity-75">Custom</li>
-                  <li class="menu-item py-0 px-[--tw-menu-item-padding-x]">
-                     <a href="javascript:void(0)" data-fc-type="collapse" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] py-[--tw-menu-link-padding-y] px-[--tw-menu-link-padding-x] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:bg-[--tw-menu-item-active-bg] hover:text-[--tw-menu-item-hover-color]">
+                  <li class="menu-title p-[--calculated-menu-title-padding] text-menu-item-color text-menu-title-size cursor-default whitespace-nowrap font-medium tracking-widest opacity-75 sidenav-view-hover:invisible sidenav-view-hover:relative sidenav-view-hover:after:content-[''] sidenav-view-hover:after:border-t sidenav-view-hover:after:border-solid sidenav-view-hover:after:border-[--tw-menu-item-color] sidenav-view-hover:after:w-[--tw-menu-item-icon-size] sidenav-view-hover:after:visible sidenav-view-hover:after:absolute sidenav-view-hover:after:top-1/2 sidenav-view-hover:after:flex sidenav-view-hover:after:justify-center sidenav-view-hover:after:rounded-full sidenav-view-hover:after:opacity-40 sidenav-view-hover:after:transform sidenav-view-hover:after:-translate-y-1/2 sidenav-sm:hidden sidenav-md:text-center sidenav-md:underline sidenav-md:decoration-dashed">Custom</li>
+                  <li class="menu-item py-0 px-[--tw-menu-item-padding-x] sidenav-sm:relative">
+                     <a href="javascript:void(0)" data-fc-type="collapse" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] py-[--tw-menu-link-padding-y] px-[--tw-menu-link-padding-x] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:bg-[--tw-menu-item-active-bg] hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm:flex sidenav-sm:justify-center sidenav-sm:text-center sidenav-sm-menu-link:text-[--tw-menu-item-hover-color] sidenav-sm-menu-link:bg-[--tw-menu-item-hover-bg] sidenav-sm-menu-link:after:content-[''] sidenav-sm-menu-link:after:inset-0 sidenav-sm-menu-link:after:absolute sidenav-sm-menu-link:after:w-[--tw-sidenav-width] sidenav-md:flex-col sidenav-md:text-center">
                         <span class="menu-icon w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] inline-flex items-center justify-center">
                            <svg class="w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] fill-[var(--tw-menu-item-color)] stroke-inherit transition transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color]" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
                               <path d="M12,12A6,6,0,1,0,6,6,6.006,6.006,0,0,0,12,12ZM12,2A4,4,0,1,1,8,6,4,4,0,0,1,12,2Z"/>
                               <path d="M12,14a9.01,9.01,0,0,0-9,9,1,1,0,0,0,2,0,7,7,0,0,1,14,0,1,1,0,0,0,2,0A9.01,9.01,0,0,0,12,14Z"/>
                            </svg>
                         </span>
-                        <span class="menu-text text-menu-font-size leading-[--tw-menu-item-font-size] whitespace-nowrap ml-1"> Auth Pages </span>
-                        <span class="menu-arrow ms-auto">
-                           <svg class="w-[--tw-menu-item-font-size] h-[--tw-menu-item-font-size] fill-[--tw-menu-item-color] stroke-inherit transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color]" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
+                        <span class="menu-text text-menu-font-size leading-[--tw-menu-item-font-size] whitespace-nowrap ml-1 sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-sm:ms-1.5 sidenav-sm:shadow-lg sidenav-sm:shadow-black/10 sidenav-sm:rounded-t-md sidenav-sm-hover-menu-text:bg-[--tw-menu-bg] sidenav-sm-hover-menu-text:leading-[--tw-menu-item-icon-size] sidenav-sm-hover-menu-text:w-[--calculated-menu-text-hover-width] sidenav-sm-hover-menu-text:py-[--tw-menu-link-padding-y] sidenav-sm-hover-menu-text:px-[--tw-menu-link-padding-x] sidenav-sm-hover-menu-text:[inset-inline-start:--calculated-menu-text-hover-inset] sidenav-sm-hover-menu-text:absolute sidenav-sm-hover-menu-text:flex sidenav-sm-hover-menu-text:items-center sidenav-sm-hover-menu-text:border sidenav-sm-hover-menu-text:border-solid sidenav-sm-hover-menu-text:border-[rgb(107_114_128/0.2)]"> Auth Pages </span>
+                        <span class="menu-arrow ms-auto rtl-menu-arrow:rotate-180 transform sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:hidden">
+                           <svg class="w-[--tw-menu-item-font-size] h-[--tw-menu-item-font-size] fill-[--tw-menu-item-color] stroke-inherit transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color] open-menu:rotate-90" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
                               <path d="M15.4,9.88,10.81,5.29a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L14,11.29a1,1,0,0,1,0,1.42L9.4,17.29a1,1,0,0,0,1.41,1.42l4.59-4.59A3,3,0,0,0,15.4,9.88Z"/>
                            </svg>
                         </span>
                      </a>
-                     <ul class="sub-menu hidden w-full overflow-hidden transition-all duration-300 ps-[--submenu-padding-inline-start]">
+                     <ul class="sub-menu sidenav-sm:hidden sidenav-sm:h-[inherit] sidenav-sm:rounded-b-md sidenav-sm:ms-1.5 sidenav-sm:shadow-lg sidenav-sm:shadow-black/10 sidenav-md:ps-0 sidenav-sm-submenu:block sidenav-sm-submenu:[inset-inline-start:100%] sidenav-sm-submenu:overflow-visible sidenav-sm-submenu:absolute sidenav-sm-submenu:h-[inherit] sidenav-sm-submenu:transition-none sidenav-sm-submenu:ps-0 sidenav-sm-submenu:bg-[--tw-menu-bg] sidenav-sm-submenu:w-[--submenu-hover-width] sidenav-sm-submenu:border sidenav-sm-submenu:border-solid sidenav-sm-submenu:border-[rgb(107_114_128/0.2)] sidenav-view-hover:invisible sidenav-view-hover:h-0 hidden w-full overflow-hidden transition-all duration-300 ps-[--submenu-padding-inline-start]">
                         <li class="menu-item mt-[--submenu-first-item-margin-top]">
-                           <a href="auth-login.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Log In</span>
+                           <a href="auth-login.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Log In</span>
                            </a>
                         </li>
                         <li class="menu-item">
-                           <a href="auth-register.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Register</span>
+                           <a href="auth-register.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Register</span>
                            </a>
                         </li>
                         <li class="menu-item">
-                           <a href="auth-recoverpw.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Recover Password</span>
+                           <a href="auth-recoverpw.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Recover Password</span>
                            </a>
                         </li>
                         <li class="menu-item mb-[--submenu-last-item-margin-bottom]">
-                           <a href="auth-lock-screen.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Lock Screen</span>
+                           <a href="auth-lock-screen.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Lock Screen</span>
                            </a>
                         </li>
                      </ul>
                   </li>
-                  <li class="menu-item py-0 px-[--tw-menu-item-padding-x]">
-                     <a href="javascript:void(0)" data-fc-type="collapse" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] py-[--tw-menu-link-padding-y] px-[--tw-menu-link-padding-x] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:bg-[--tw-menu-item-active-bg] hover:text-[--tw-menu-item-hover-color]">
+                  <li class="menu-item py-0 px-[--tw-menu-item-padding-x] sidenav-sm:relative">
+                     <a href="javascript:void(0)" data-fc-type="collapse" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] py-[--tw-menu-link-padding-y] px-[--tw-menu-link-padding-x] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:bg-[--tw-menu-item-active-bg] hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm:flex sidenav-sm:justify-center sidenav-sm:text-center sidenav-sm-menu-link:text-[--tw-menu-item-hover-color] sidenav-sm-menu-link:bg-[--tw-menu-item-hover-bg] sidenav-sm-menu-link:after:content-[''] sidenav-sm-menu-link:after:inset-0 sidenav-sm-menu-link:after:absolute sidenav-sm-menu-link:after:w-[--tw-sidenav-width] sidenav-md:flex-col sidenav-md:text-center">
                         <span class="menu-icon w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] inline-flex items-center justify-center">
                            <svg class="w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] fill-[var(--tw-menu-item-color)] stroke-inherit transition transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color]" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
                               <path d="m12,0L1.5,6v12l10.5,6,10.5-6V6L12,0Zm9.087,6.344l-9.109,5.08L3.1,6.237,12,1.152l9.087,5.192Zm-18.587.701l9,5.259v10.258l-9-5.142V7.045Zm10,15.517v-10.284l9-5.02v10.162l-9,5.142Z"/>
                            </svg>
                         </span>
-                        <span class="menu-text text-menu-font-size leading-[--tw-menu-item-font-size] whitespace-nowrap ml-1"> Extra Pages </span>
-                        <span class="menu-arrow ms-auto">
-                           <svg class="w-[--tw-menu-item-font-size] h-[--tw-menu-item-font-size] fill-[--tw-menu-item-color] stroke-inherit transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color]" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
+                        <span class="menu-text text-menu-font-size leading-[--tw-menu-item-font-size] whitespace-nowrap ml-1 sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-sm:ms-1.5 sidenav-sm:shadow-lg sidenav-sm:shadow-black/10 sidenav-sm:rounded-t-md sidenav-sm-hover-menu-text:bg-[--tw-menu-bg] sidenav-sm-hover-menu-text:leading-[--tw-menu-item-icon-size] sidenav-sm-hover-menu-text:w-[--calculated-menu-text-hover-width] sidenav-sm-hover-menu-text:py-[--tw-menu-link-padding-y] sidenav-sm-hover-menu-text:px-[--tw-menu-link-padding-x] sidenav-sm-hover-menu-text:[inset-inline-start:--calculated-menu-text-hover-inset] sidenav-sm-hover-menu-text:absolute sidenav-sm-hover-menu-text:flex sidenav-sm-hover-menu-text:items-center sidenav-sm-hover-menu-text:border sidenav-sm-hover-menu-text:border-solid sidenav-sm-hover-menu-text:border-[rgb(107_114_128/0.2)]"> Extra Pages </span>
+                        <span class="menu-arrow ms-auto rtl-menu-arrow:rotate-180 transform sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:hidden">
+                           <svg class="w-[--tw-menu-item-font-size] h-[--tw-menu-item-font-size] fill-[--tw-menu-item-color] stroke-inherit transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color] open-menu:rotate-90" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
                               <path d="M15.4,9.88,10.81,5.29a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L14,11.29a1,1,0,0,1,0,1.42L9.4,17.29a1,1,0,0,0,1.41,1.42l4.59-4.59A3,3,0,0,0,15.4,9.88Z"/>
                            </svg>
                         </span>
                      </a>
-                     <ul class="sub-menu hidden w-full overflow-hidden transition-all duration-300 ps-[--submenu-padding-inline-start]">
+                     <ul class="sub-menu sidenav-sm:hidden sidenav-sm:h-[inherit] sidenav-sm:rounded-b-md sidenav-sm:ms-1.5 sidenav-sm:shadow-lg sidenav-sm:shadow-black/10 sidenav-md:ps-0 sidenav-sm-submenu:block sidenav-sm-submenu:[inset-inline-start:100%] sidenav-sm-submenu:overflow-visible sidenav-sm-submenu:absolute sidenav-sm-submenu:h-[inherit] sidenav-sm-submenu:transition-none sidenav-sm-submenu:ps-0 sidenav-sm-submenu:bg-[--tw-menu-bg] sidenav-sm-submenu:w-[--submenu-hover-width] sidenav-sm-submenu:border sidenav-sm-submenu:border-solid sidenav-sm-submenu:border-[rgb(107_114_128/0.2)] sidenav-view-hover:invisible sidenav-view-hover:h-0 hidden w-full overflow-hidden transition-all duration-300 ps-[--submenu-padding-inline-start]">
                         <li class="menu-item mt-[--submenu-first-item-margin-top]">
-                           <a href="pages-starter.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Starter</span>
+                           <a href="pages-starter.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Starter</span>
                            </a>
                         </li>
                         <li class="menu-item">
-                           <a href="pages-timeline.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Timeline</span>
+                           <a href="pages-timeline.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Timeline</span>
                            </a>
                         </li>
                         <li class="menu-item">
-                           <a href="pages-invoice.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-sm-[var(--tw-menu-item-font-size)] whitespace-nowrap transition transition-color delay-75 group-hover:tw-menu-item-hover-color">Invoice</span>
+                           <a href="pages-invoice.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Invoice</span>
                            </a>
                         </li>
                         <li class="menu-item">
-                           <a href="pages-gallery.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Gallery</span>
+                           <a href="pages-gallery.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Gallery</span>
                            </a>
                         </li>
                         <li class="menu-item">
-                           <a href="pages-faqs.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">FAQs</span>
+                           <a href="pages-faqs.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">FAQs</span>
                            </a>
                         </li>
                         <li class="menu-item">
-                           <a href="pages-pricing.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Pricing</span>
+                           <a href="pages-pricing.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Pricing</span>
                            </a>
                         </li>
                         <li class="menu-item">
-                           <a href="pages-maintenance.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Maintenance</span>
+                           <a href="pages-maintenance.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Maintenance</span>
                            </a>
                         </li>
                         <li class="menu-item">
-                           <a href="pages-coming-soon.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Coming Soon</span>
+                           <a href="pages-coming-soon.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Coming Soon</span>
                            </a>
                         </li>
                         <li class="menu-item">
-                           <a href="pages-404.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Error 404</span>
+                           <a href="pages-404.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Error 404</span>
                            </a>
                         </li>
                         <li class="menu-item">
-                           <a href="pages-404-alt.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Error 404-alt</span>
+                           <a href="pages-404-alt.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Error 404-alt</span>
                            </a>
                         </li>
                         <li class="menu-item mb-[--submenu-last-item-margin-bottom]">
-                           <a href="pages-500.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Error 500</span>
+                           <a href="pages-500.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Error 500</span>
                            </a>
                         </li>
                      </ul>
                   </li>
-                  <li class="menu-item py-0 px-[--tw-menu-item-padding-x]">
-                     <a href="javascript:void(0)" data-fc-type="collapse" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] py-[--tw-menu-link-padding-y] px-[--tw-menu-link-padding-x] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:bg-[--tw-menu-item-active-bg] hover:text-[--tw-menu-item-hover-color]">
+                  <li class="menu-item py-0 px-[--tw-menu-item-padding-x] sidenav-sm:relative">
+                     <a href="javascript:void(0)" data-fc-type="collapse" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] py-[--tw-menu-link-padding-y] px-[--tw-menu-link-padding-x] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:bg-[--tw-menu-item-active-bg] hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm:flex sidenav-sm:justify-center sidenav-sm:text-center sidenav-sm-menu-link:text-[--tw-menu-item-hover-color] sidenav-sm-menu-link:bg-[--tw-menu-item-hover-bg] sidenav-sm-menu-link:after:content-[''] sidenav-sm-menu-link:after:inset-0 sidenav-sm-menu-link:after:absolute sidenav-sm-menu-link:after:w-[--tw-sidenav-width] sidenav-md:flex-col sidenav-md:text-center">
                         <span class="menu-icon w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] inline-flex items-center justify-center">
                            <svg class="w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] fill-[var(--tw-menu-item-color)] stroke-inherit transition transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color]" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
                               <path d="M21.5,2H2.5C1.122,2,0,3.121,0,4.5V22H24V4.5c0-1.379-1.122-2.5-2.5-2.5ZM2.5,3H21.5c.827,0,1.5,.673,1.5,1.5v2.5H1v-2.5c0-.827,.673-1.5,1.5-1.5Zm-1.5,5H7v13H1V8Zm7,13V8h15v13H8Z"/>
                            </svg>
                         </span>
-                        <span class="menu-text text-menu-font-size leading-[--tw-menu-item-font-size] whitespace-nowrap ml-1"> Layout </span>
-                        <span class="menu-arrow ms-auto">
-                           <svg class="w-[--tw-menu-item-font-size] h-[--tw-menu-item-font-size] fill-[--tw-menu-item-color] stroke-inherit transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color]" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
+                        <span class="menu-text text-menu-font-size leading-[--tw-menu-item-font-size] whitespace-nowrap ml-1 sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-sm:ms-1.5 sidenav-sm:shadow-lg sidenav-sm:shadow-black/10 sidenav-sm:rounded-t-md sidenav-sm-hover-menu-text:bg-[--tw-menu-bg] sidenav-sm-hover-menu-text:leading-[--tw-menu-item-icon-size] sidenav-sm-hover-menu-text:w-[--calculated-menu-text-hover-width] sidenav-sm-hover-menu-text:py-[--tw-menu-link-padding-y] sidenav-sm-hover-menu-text:px-[--tw-menu-link-padding-x] sidenav-sm-hover-menu-text:[inset-inline-start:--calculated-menu-text-hover-inset] sidenav-sm-hover-menu-text:absolute sidenav-sm-hover-menu-text:flex sidenav-sm-hover-menu-text:items-center sidenav-sm-hover-menu-text:border sidenav-sm-hover-menu-text:border-solid sidenav-sm-hover-menu-text:border-[rgb(107_114_128/0.2)]"> Layout </span>
+                        <span class="menu-arrow ms-auto rtl-menu-arrow:rotate-180 transform sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:hidden">
+                           <svg class="w-[--tw-menu-item-font-size] h-[--tw-menu-item-font-size] fill-[--tw-menu-item-color] stroke-inherit transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color] open-menu:rotate-90" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
                               <path d="M15.4,9.88,10.81,5.29a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L14,11.29a1,1,0,0,1,0,1.42L9.4,17.29a1,1,0,0,0,1.41,1.42l4.59-4.59A3,3,0,0,0,15.4,9.88Z"/>
                            </svg>
                         </span>
                      </a>
-                     <ul class="sub-menu hidden w-full overflow-hidden transition-all duration-300 ps-[--submenu-padding-inline-start]">
+                     <ul class="sub-menu sidenav-sm:hidden sidenav-sm:h-[inherit] sidenav-sm:rounded-b-md sidenav-sm:ms-1.5 sidenav-sm:shadow-lg sidenav-sm:shadow-black/10 sidenav-md:ps-0 sidenav-sm-submenu:block sidenav-sm-submenu:[inset-inline-start:100%] sidenav-sm-submenu:overflow-visible sidenav-sm-submenu:absolute sidenav-sm-submenu:h-[inherit] sidenav-sm-submenu:transition-none sidenav-sm-submenu:ps-0 sidenav-sm-submenu:bg-[--tw-menu-bg] sidenav-sm-submenu:w-[--submenu-hover-width] sidenav-sm-submenu:border sidenav-sm-submenu:border-solid sidenav-sm-submenu:border-[rgb(107_114_128/0.2)] sidenav-view-hover:invisible sidenav-view-hover:h-0 hidden w-full overflow-hidden transition-all duration-300 ps-[--submenu-padding-inline-start]">
                         <li class="menu-item mt-[--submenu-first-item-margin-top]">
-                           <a href="layout-hover-view.html" target="_blank" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Hovered Menu</span>
+                           <a href="layout-hover-view.html" target="_blank" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Hovered Menu</span>
                            </a>
                         </li>
                         <li class="menu-item">
-                           <a href="layout-icon-view.html" target="_blank" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Icon View Menu</span>
+                           <a href="layout-icon-view.html" target="_blank" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Icon View Menu</span>
                            </a>
                         </li>
                         <li class="menu-item">
-                           <a href="layout-compact-view.html" target="_blank" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Compact Menu</span>
+                           <a href="layout-compact-view.html" target="_blank" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Compact Menu</span>
                            </a>
                         </li>
                         <li class="menu-item">
-                           <a href="layout-mobile-view.html" target="_blank" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Mobile View Menu</span>
+                           <a href="layout-mobile-view.html" target="_blank" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Mobile View Menu</span>
                            </a>
                         </li>
                         <li class="menu-item mb-[--submenu-last-item-margin-bottom]">
-                           <a href="layout-hidden.html" target="_blank" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Hidden Menu</span>
+                           <a href="layout-hidden.html" target="_blank" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Hidden Menu</span>
                            </a>
                         </li>
                      </ul>
                   </li>
-                  <li class="menu-title p-[--calculated-menu-title-padding] text-menu-item-color text-menu-title-size cursor-default whitespace-nowrap font-medium tracking-widest opacity-75">Elements</li>
+                  <li class="menu-title p-[--calculated-menu-title-padding] text-menu-item-color text-menu-title-size cursor-default whitespace-nowrap font-medium tracking-widest opacity-75 sidenav-view-hover:invisible sidenav-view-hover:relative sidenav-view-hover:after:content-[''] sidenav-view-hover:after:border-t sidenav-view-hover:after:border-solid sidenav-view-hover:after:border-[--tw-menu-item-color] sidenav-view-hover:after:w-[--tw-menu-item-icon-size] sidenav-view-hover:after:visible sidenav-view-hover:after:absolute sidenav-view-hover:after:top-1/2 sidenav-view-hover:after:flex sidenav-view-hover:after:justify-center sidenav-view-hover:after:rounded-full sidenav-view-hover:after:opacity-40 sidenav-view-hover:after:transform sidenav-view-hover:after:-translate-y-1/2 sidenav-sm:hidden sidenav-md:text-center sidenav-md:underline sidenav-md:decoration-dashed">Elements</li>
                   <li class="menu-item p-[var(--tw-menu-item-padding-x)]">
-                     <a href="javascript:void(0)" data-fc-type="collapse" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] py-[--tw-menu-link-padding-y] px-[--tw-menu-link-padding-x] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:bg-[--tw-menu-item-active-bg] hover:text-[--tw-menu-item-hover-color]">
+                     <a href="javascript:void(0)" data-fc-type="collapse" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] py-[--tw-menu-link-padding-y] px-[--tw-menu-link-padding-x] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:bg-[--tw-menu-item-active-bg] hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm:flex sidenav-sm:justify-center sidenav-sm:text-center sidenav-sm-menu-link:text-[--tw-menu-item-hover-color] sidenav-sm-menu-link:bg-[--tw-menu-item-hover-bg] sidenav-sm-menu-link:after:content-[''] sidenav-sm-menu-link:after:inset-0 sidenav-sm-menu-link:after:absolute sidenav-sm-menu-link:after:w-[--tw-sidenav-width] sidenav-md:flex-col sidenav-md:text-center">
                         <span class="menu-icon w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] inline-flex items-center justify-center">
                            <svg class="w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] fill-[var(--tw-menu-item-color)] stroke-inherit transition transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color]" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
                               <g id="_01_align_center" data-name="01 align center">
@@ -290,252 +291,252 @@
                               </g>
                            </svg>
                         </span>
-                        <span class="menu-text text-menu-font-size leading-[--tw-menu-item-font-size] whitespace-nowrap ml-1"> Components </span>
-                        <span class="menu-arrow ms-auto">
-                           <svg class="w-[--tw-menu-item-font-size] h-[--tw-menu-item-font-size] fill-[--tw-menu-item-color] stroke-inherit transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color]" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
+                        <span class="menu-text text-menu-font-size leading-[--tw-menu-item-font-size] whitespace-nowrap ml-1 sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-sm:ms-1.5 sidenav-sm:shadow-lg sidenav-sm:shadow-black/10 sidenav-sm:rounded-t-md sidenav-sm-hover-menu-text:bg-[--tw-menu-bg] sidenav-sm-hover-menu-text:leading-[--tw-menu-item-icon-size] sidenav-sm-hover-menu-text:w-[--calculated-menu-text-hover-width] sidenav-sm-hover-menu-text:py-[--tw-menu-link-padding-y] sidenav-sm-hover-menu-text:px-[--tw-menu-link-padding-x] sidenav-sm-hover-menu-text:[inset-inline-start:--calculated-menu-text-hover-inset] sidenav-sm-hover-menu-text:absolute sidenav-sm-hover-menu-text:flex sidenav-sm-hover-menu-text:items-center sidenav-sm-hover-menu-text:border sidenav-sm-hover-menu-text:border-solid sidenav-sm-hover-menu-text:border-[rgb(107_114_128/0.2)]"> Components </span>
+                        <span class="menu-arrow ms-auto rtl-menu-arrow:rotate-180 transform sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:hidden">
+                           <svg class="w-[--tw-menu-item-font-size] h-[--tw-menu-item-font-size] fill-[--tw-menu-item-color] stroke-inherit transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color] open-menu:rotate-90" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
                               <path d="M15.4,9.88,10.81,5.29a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L14,11.29a1,1,0,0,1,0,1.42L9.4,17.29a1,1,0,0,0,1.41,1.42l4.59-4.59A3,3,0,0,0,15.4,9.88Z"/>
                            </svg>
                         </span>
                      </a>
-                     <ul class="sub-menu hidden w-full overflow-hidden transition-all duration-300 ps-[--submenu-padding-inline-start]">
+                     <ul class="sub-menu sidenav-sm:hidden sidenav-sm:h-[inherit] sidenav-sm:rounded-b-md sidenav-sm:ms-1.5 sidenav-sm:shadow-lg sidenav-sm:shadow-black/10 sidenav-md:ps-0 sidenav-sm-submenu:block sidenav-sm-submenu:[inset-inline-start:100%] sidenav-sm-submenu:overflow-visible sidenav-sm-submenu:absolute sidenav-sm-submenu:h-[inherit] sidenav-sm-submenu:transition-none sidenav-sm-submenu:ps-0 sidenav-sm-submenu:bg-[--tw-menu-bg] sidenav-sm-submenu:w-[--submenu-hover-width] sidenav-sm-submenu:border sidenav-sm-submenu:border-solid sidenav-sm-submenu:border-[rgb(107_114_128/0.2)] sidenav-view-hover:invisible sidenav-view-hover:h-0 hidden w-full overflow-hidden transition-all duration-300 ps-[--submenu-padding-inline-start]">
                         <li class="menu-item mt-[--submenu-first-item-margin-top]">
-                           <a href="ui-accordions.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Accordions</span>
+                           <a href="ui-accordions.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Accordions</span>
                            </a>
                         </li>
                         <li class="menu-item">
-                           <a href="ui-alerts.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Alerts</span>
+                           <a href="ui-alerts.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Alerts</span>
                            </a>
                         </li>
                         <li class="menu-item">
-                           <a href="ui-avatars.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Avatars</span>
+                           <a href="ui-avatars.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Avatars</span>
                            </a>
                         </li>
                         <li class="menu-item">
-                           <a href="ui-buttons.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Buttons</span>
+                           <a href="ui-buttons.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Buttons</span>
                            </a>
                         </li>
                         <li class="menu-item">
-                           <a href="ui-badges.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Badges</span>
+                           <a href="ui-badges.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Badges</span>
                            </a>
                         </li>
                         <li class="menu-item">
-                           <a href="ui-breadcrumbs.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Breadcrumb</span>
+                           <a href="ui-breadcrumbs.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Breadcrumb</span>
                            </a>
                         </li>
                         <li class="menu-item">
-                           <a href="ui-cards.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Cards</span>
+                           <a href="ui-cards.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Cards</span>
                            </a>
                         </li>
                         <li class="menu-item">
-                           <a href="ui-collapse.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Collapse</span>
+                           <a href="ui-collapse.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Collapse</span>
                            </a>
                         </li>
                         <li class="menu-item">
-                           <a href="ui-dismissible.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Dismissible</span>
+                           <a href="ui-dismissible.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Dismissible</span>
                            </a>
                         </li>
                         <li class="menu-item">
-                           <a href="ui-dropdowns.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Dropdowns</span>
+                           <a href="ui-dropdowns.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Dropdowns</span>
                            </a>
                         </li>
                         <li class="menu-item">
-                           <a href="ui-progress.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Progress</span>
+                           <a href="ui-progress.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Progress</span>
                            </a>
                         </li>
                         <li class="menu-item">
-                           <a href="ui-skeleton.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Skeleton</span>
+                           <a href="ui-skeleton.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Skeleton</span>
                            </a>
                         </li>
                         <li class="menu-item">
-                           <a href="ui-spinners.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Spinners</span>
+                           <a href="ui-spinners.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Spinners</span>
                            </a>
                         </li>
                         <li class="menu-item">
-                           <a href="ui-list-group.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">List Group</span>
+                           <a href="ui-list-group.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">List Group</span>
                            </a>
                         </li>
                         <li class="menu-item">
-                           <a href="ui-ratio.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Ratio</span>
+                           <a href="ui-ratio.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Ratio</span>
                            </a>
                         </li>
                         <li class="menu-item">
-                           <a href="ui-tabs.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Tab</span>
+                           <a href="ui-tabs.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Tab</span>
                            </a>
                         </li>
                         <li class="menu-item">
-                           <a href="ui-modals.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Modals</span>
+                           <a href="ui-modals.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Modals</span>
                            </a>
                         </li>
                         <li class="menu-item">
-                           <a href="ui-offcanvas.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Offcanvas</span>
+                           <a href="ui-offcanvas.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Offcanvas</span>
                            </a>
                         </li>
                         <li class="menu-item">
-                           <a href="ui-popovers.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Popovers</span>
+                           <a href="ui-popovers.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Popovers</span>
                            </a>
                         </li>
                         <li class="menu-item">
-                           <a href="ui-tooltips.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Tooltips</span>
+                           <a href="ui-tooltips.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Tooltips</span>
                            </a>
                         </li>
                         <li class="menu-item mb-[--submenu-last-item-margin-bottom]">
-                           <a href="ui-typography.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Typography</span>
+                           <a href="ui-typography.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Typography</span>
                            </a>
                         </li>
                      </ul>
                   </li>
-                  <li class="menu-item py-0 px-[--tw-menu-item-padding-x]">
-                     <a href="javascript:void(0)" data-fc-type="collapse" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] py-[--tw-menu-link-padding-y] px-[--tw-menu-link-padding-x] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:bg-[--tw-menu-item-active-bg] hover:text-[--tw-menu-item-hover-color]">
+                  <li class="menu-item py-0 px-[--tw-menu-item-padding-x] sidenav-sm:relative">
+                     <a href="javascript:void(0)" data-fc-type="collapse" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] py-[--tw-menu-link-padding-y] px-[--tw-menu-link-padding-x] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:bg-[--tw-menu-item-active-bg] hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm:flex sidenav-sm:justify-center sidenav-sm:text-center sidenav-sm-menu-link:text-[--tw-menu-item-hover-color] sidenav-sm-menu-link:bg-[--tw-menu-item-hover-bg] sidenav-sm-menu-link:after:content-[''] sidenav-sm-menu-link:after:inset-0 sidenav-sm-menu-link:after:absolute sidenav-sm-menu-link:after:w-[--tw-sidenav-width] sidenav-md:flex-col sidenav-md:text-center">
                         <span class="menu-icon w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] inline-flex items-center justify-center">
                            <svg class="w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] fill-[var(--tw-menu-item-color)] stroke-inherit transition transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color]" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
                               <path d="m12,0L1.5,6v12l10.5,6,10.5-6V6L12,0Zm9.087,6.344l-9.109,5.08L3.1,6.237,12,1.152l9.087,5.192Zm-18.587.701l9,5.259v10.258l-9-5.142V7.045Zm10,15.517v-10.284l9-5.02v10.162l-9,5.142Z"/>
                            </svg>
                         </span>
-                        <span class="menu-text text-menu-font-size leading-[--tw-menu-item-font-size] whitespace-nowrap ml-1"> Extended </span>
-                        <span class="menu-arrow ms-auto">
-                           <svg class="w-[--tw-menu-item-font-size] h-[--tw-menu-item-font-size] fill-[--tw-menu-item-color] stroke-inherit transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color]" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
+                        <span class="menu-text text-menu-font-size leading-[--tw-menu-item-font-size] whitespace-nowrap ml-1 sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-sm:ms-1.5 sidenav-sm:shadow-lg sidenav-sm:shadow-black/10 sidenav-sm:rounded-t-md sidenav-sm-hover-menu-text:bg-[--tw-menu-bg] sidenav-sm-hover-menu-text:leading-[--tw-menu-item-icon-size] sidenav-sm-hover-menu-text:w-[--calculated-menu-text-hover-width] sidenav-sm-hover-menu-text:py-[--tw-menu-link-padding-y] sidenav-sm-hover-menu-text:px-[--tw-menu-link-padding-x] sidenav-sm-hover-menu-text:[inset-inline-start:--calculated-menu-text-hover-inset] sidenav-sm-hover-menu-text:absolute sidenav-sm-hover-menu-text:flex sidenav-sm-hover-menu-text:items-center sidenav-sm-hover-menu-text:border sidenav-sm-hover-menu-text:border-solid sidenav-sm-hover-menu-text:border-[rgb(107_114_128/0.2)]"> Extended </span>
+                        <span class="menu-arrow ms-auto rtl-menu-arrow:rotate-180 transform sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:hidden">
+                           <svg class="w-[--tw-menu-item-font-size] h-[--tw-menu-item-font-size] fill-[--tw-menu-item-color] stroke-inherit transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color] open-menu:rotate-90" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
                               <path d="M15.4,9.88,10.81,5.29a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L14,11.29a1,1,0,0,1,0,1.42L9.4,17.29a1,1,0,0,0,1.41,1.42l4.59-4.59A3,3,0,0,0,15.4,9.88Z"/>
                            </svg>
                         </span>
                      </a>
-                     <ul class="sub-menu hidden w-full overflow-hidden transition-all duration-300 ps-[--submenu-padding-inline-start]">
+                     <ul class="sub-menu sidenav-sm:hidden sidenav-sm:h-[inherit] sidenav-sm:rounded-b-md sidenav-sm:ms-1.5 sidenav-sm:shadow-lg sidenav-sm:shadow-black/10 sidenav-md:ps-0 sidenav-sm-submenu:block sidenav-sm-submenu:[inset-inline-start:100%] sidenav-sm-submenu:overflow-visible sidenav-sm-submenu:absolute sidenav-sm-submenu:h-[inherit] sidenav-sm-submenu:transition-none sidenav-sm-submenu:ps-0 sidenav-sm-submenu:bg-[--tw-menu-bg] sidenav-sm-submenu:w-[--submenu-hover-width] sidenav-sm-submenu:border sidenav-sm-submenu:border-solid sidenav-sm-submenu:border-[rgb(107_114_128/0.2)] sidenav-view-hover:invisible sidenav-view-hover:h-0 hidden w-full overflow-hidden transition-all duration-300 ps-[--submenu-padding-inline-start]">
                         <li class="menu-item mt-[--submenu-first-item-margin-top]">
-                           <a href="extended-swiper.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Swiper</span>
+                           <a href="extended-swiper.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Swiper</span>
                            </a>
                         </li>
                         <li class="menu-item">
-                           <a href="extended-nestable.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Nestable List</span>
+                           <a href="extended-nestable.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Nestable List</span>
                            </a>
                         </li>
                         <li class="menu-item">
-                           <a href="extended-ratings.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Ratings</span>
+                           <a href="extended-ratings.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Ratings</span>
                            </a>
                         </li>
                         <li class="menu-item">
-                           <a href="extended-animation.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Animation</span>
+                           <a href="extended-animation.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Animation</span>
                            </a>
                         </li>
                         <li class="menu-item">
-                           <a href="extended-player.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Player</span>
+                           <a href="extended-player.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Player</span>
                            </a>
                         </li>
                         <li class="menu-item">
-                           <a href="extended-scrollbar.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Scrollbar</span>
+                           <a href="extended-scrollbar.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Scrollbar</span>
                            </a>
                         </li>
                         <li class="menu-item">
-                           <a href="extended-sweet-alert.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Sweet Alert</span>
+                           <a href="extended-sweet-alert.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Sweet Alert</span>
                            </a>
                         </li>
                         <li class="menu-item">
-                           <a href="extended-tour.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Tour Page</span>
+                           <a href="extended-tour.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Tour Page</span>
                            </a>
                         </li>
                         <li class="menu-item">
-                           <a href="extended-tippy-tooltips.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Tippy Tooltip</span>
+                           <a href="extended-tippy-tooltips.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Tippy Tooltip</span>
                            </a>
                         </li>
                         <li class="menu-item mb-[--submenu-last-item-margin-bottom]">
-                           <a href="extended-lightbox.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Lightbox</span>
+                           <a href="extended-lightbox.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Lightbox</span>
                            </a>
                         </li>
                      </ul>
                   </li>
-                  <li class="menu-item py-0 px-[--tw-menu-item-padding-x]">
-                     <a href="javascript:void(0)" data-fc-type="collapse" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] py-[--tw-menu-link-padding-y] px-[--tw-menu-link-padding-x] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:bg-[--tw-menu-item-active-bg] hover:text-[--tw-menu-item-hover-color]">
+                  <li class="menu-item py-0 px-[--tw-menu-item-padding-x] sidenav-sm:relative">
+                     <a href="javascript:void(0)" data-fc-type="collapse" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] py-[--tw-menu-link-padding-y] px-[--tw-menu-link-padding-x] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:bg-[--tw-menu-item-active-bg] hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm:flex sidenav-sm:justify-center sidenav-sm:text-center sidenav-sm-menu-link:text-[--tw-menu-item-hover-color] sidenav-sm-menu-link:bg-[--tw-menu-item-hover-bg] sidenav-sm-menu-link:after:content-[''] sidenav-sm-menu-link:after:inset-0 sidenav-sm-menu-link:after:absolute sidenav-sm-menu-link:after:w-[--tw-sidenav-width] sidenav-md:flex-col sidenav-md:text-center">
                         <span class="menu-icon w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] inline-flex items-center justify-center">
                            <svg class="w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] fill-[var(--tw-menu-item-color)] stroke-inherit transition transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color]" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
                               <path d="m19.828 3.414-2.242-2.242a3.975 3.975 0 0 0 -2.829-1.172h-8.757a3 3 0 0 0 -3 3v21h18v-17.758a4.022 4.022 0 0 0 -1.172-2.828zm-1.414 1.414a1.923 1.923 0 0 1 .141.172h-2.555v-2.555a1.923 1.923 0 0 1 .172.141zm-13.414 17.172v-19a1 1 0 0 1 1-1h8v5h5v15zm2-6h10v-6h-10zm2-4h6v2h-6zm-2 6h10v2h-10z"/>
                            </svg>
                         </span>
-                        <span class="menu-text text-menu-font-size leading-[--tw-menu-item-font-size] whitespace-nowrap ml-1"> Forms </span>
-                        <span class="menu-arrow ms-auto">
-                           <svg class="w-[--tw-menu-item-font-size] h-[--tw-menu-item-font-size] fill-[--tw-menu-item-color] stroke-inherit transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color]" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
+                        <span class="menu-text text-menu-font-size leading-[--tw-menu-item-font-size] whitespace-nowrap ml-1 sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-sm:ms-1.5 sidenav-sm:shadow-lg sidenav-sm:shadow-black/10 sidenav-sm:rounded-t-md sidenav-sm-hover-menu-text:bg-[--tw-menu-bg] sidenav-sm-hover-menu-text:leading-[--tw-menu-item-icon-size] sidenav-sm-hover-menu-text:w-[--calculated-menu-text-hover-width] sidenav-sm-hover-menu-text:py-[--tw-menu-link-padding-y] sidenav-sm-hover-menu-text:px-[--tw-menu-link-padding-x] sidenav-sm-hover-menu-text:[inset-inline-start:--calculated-menu-text-hover-inset] sidenav-sm-hover-menu-text:absolute sidenav-sm-hover-menu-text:flex sidenav-sm-hover-menu-text:items-center sidenav-sm-hover-menu-text:border sidenav-sm-hover-menu-text:border-solid sidenav-sm-hover-menu-text:border-[rgb(107_114_128/0.2)]"> Forms </span>
+                        <span class="menu-arrow ms-auto rtl-menu-arrow:rotate-180 transform sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:hidden">
+                           <svg class="w-[--tw-menu-item-font-size] h-[--tw-menu-item-font-size] fill-[--tw-menu-item-color] stroke-inherit transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color] open-menu:rotate-90" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
                               <path d="M15.4,9.88,10.81,5.29a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L14,11.29a1,1,0,0,1,0,1.42L9.4,17.29a1,1,0,0,0,1.41,1.42l4.59-4.59A3,3,0,0,0,15.4,9.88Z"/>
                            </svg>
                         </span>
                      </a>
-                     <ul class="sub-menu hidden w-full overflow-hidden transition-all duration-300 ps-[--submenu-padding-inline-start]">
+                     <ul class="sub-menu sidenav-sm:hidden sidenav-sm:h-[inherit] sidenav-sm:rounded-b-md sidenav-sm:ms-1.5 sidenav-sm:shadow-lg sidenav-sm:shadow-black/10 sidenav-md:ps-0 sidenav-sm-submenu:block sidenav-sm-submenu:[inset-inline-start:100%] sidenav-sm-submenu:overflow-visible sidenav-sm-submenu:absolute sidenav-sm-submenu:h-[inherit] sidenav-sm-submenu:transition-none sidenav-sm-submenu:ps-0 sidenav-sm-submenu:bg-[--tw-menu-bg] sidenav-sm-submenu:w-[--submenu-hover-width] sidenav-sm-submenu:border sidenav-sm-submenu:border-solid sidenav-sm-submenu:border-[rgb(107_114_128/0.2)] sidenav-view-hover:invisible sidenav-view-hover:h-0 hidden w-full overflow-hidden transition-all duration-300 ps-[--submenu-padding-inline-start]">
                         <li class="menu-item mt-[--submenu-first-item-margin-top]">
-                           <a href="forms-elements.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Form Elements</span>
+                           <a href="forms-elements.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Form Elements</span>
                            </a>
                         </li>
                         <li class="menu-item">
-                           <a href="forms-select.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Select</span>
+                           <a href="forms-select.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Select</span>
                            </a>
                         </li>
                         <li class="menu-item">
-                           <a href="forms-range.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Range</span>
+                           <a href="forms-range.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Range</span>
                            </a>
                         </li>
                         <li class="menu-item">
-                           <a href="forms-pickers.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Pickers</span>
+                           <a href="forms-pickers.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Pickers</span>
                            </a>
                         </li>
                         <li class="menu-item">
-                           <a href="forms-masks.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Masks</span>
+                           <a href="forms-masks.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Masks</span>
                            </a>
                         </li>
                         <li class="menu-item">
-                           <a href="forms-editor.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Editor</span>
+                           <a href="forms-editor.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Editor</span>
                            </a>
                         </li>
                         <li class="menu-item">
-                           <a href="forms-file-uploads.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">File Uploads</span>
+                           <a href="forms-file-uploads.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">File Uploads</span>
                            </a>
                         </li>
                         <li class="menu-item">
-                           <a href="forms-validation.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Validation</span>
+                           <a href="forms-validation.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Validation</span>
                            </a>
                         </li>
                         <li class="menu-item mb-[--submenu-last-item-margin-bottom]">
-                           <a href="forms-layout.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Form Layout</span>
+                           <a href="forms-layout.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Form Layout</span>
                            </a>
                         </li>
                      </ul>
                   </li>
-                  <li class="menu-item py-0 px-[--tw-menu-item-padding-x]">
-                     <a href="javascript:void(0)" data-fc-type="collapse" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] py-[--tw-menu-link-padding-y] px-[--tw-menu-link-padding-x] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:bg-[--tw-menu-item-active-bg] hover:text-[--tw-menu-item-hover-color]">
+                  <li class="menu-item py-0 px-[--tw-menu-item-padding-x] sidenav-sm:relative">
+                     <a href="javascript:void(0)" data-fc-type="collapse" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] py-[--tw-menu-link-padding-y] px-[--tw-menu-link-padding-x] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:bg-[--tw-menu-item-active-bg] hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm:flex sidenav-sm:justify-center sidenav-sm:text-center sidenav-sm-menu-link:text-[--tw-menu-item-hover-color] sidenav-sm-menu-link:bg-[--tw-menu-item-hover-bg] sidenav-sm-menu-link:after:content-[''] sidenav-sm-menu-link:after:inset-0 sidenav-sm-menu-link:after:absolute sidenav-sm-menu-link:after:w-[--tw-sidenav-width] sidenav-md:flex-col sidenav-md:text-center">
                         <span class="menu-icon w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] inline-flex items-center justify-center">
                            <svg class="w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] fill-[var(--tw-menu-item-color)] stroke-inherit transition transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color]" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
                               <g id="_01_align_center" data-name="01 align center">
@@ -546,130 +547,130 @@
                               </g>
                            </svg>
                         </span>
-                        <span class="menu-text text-menu-font-size leading-[--tw-menu-item-font-size] whitespace-nowrap ml-1"> Tables </span>
-                        <span class="menu-arrow ms-auto">
-                           <svg class="w-[--tw-menu-item-font-size] h-[--tw-menu-item-font-size] fill-[--tw-menu-item-color] stroke-inherit transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color]" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
+                        <span class="menu-text text-menu-font-size leading-[--tw-menu-item-font-size] whitespace-nowrap ml-1 sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-sm:ms-1.5 sidenav-sm:shadow-lg sidenav-sm:shadow-black/10 sidenav-sm:rounded-t-md sidenav-sm-hover-menu-text:bg-[--tw-menu-bg] sidenav-sm-hover-menu-text:leading-[--tw-menu-item-icon-size] sidenav-sm-hover-menu-text:w-[--calculated-menu-text-hover-width] sidenav-sm-hover-menu-text:py-[--tw-menu-link-padding-y] sidenav-sm-hover-menu-text:px-[--tw-menu-link-padding-x] sidenav-sm-hover-menu-text:[inset-inline-start:--calculated-menu-text-hover-inset] sidenav-sm-hover-menu-text:absolute sidenav-sm-hover-menu-text:flex sidenav-sm-hover-menu-text:items-center sidenav-sm-hover-menu-text:border sidenav-sm-hover-menu-text:border-solid sidenav-sm-hover-menu-text:border-[rgb(107_114_128/0.2)]"> Tables </span>
+                        <span class="menu-arrow ms-auto rtl-menu-arrow:rotate-180 transform sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:hidden">
+                           <svg class="w-[--tw-menu-item-font-size] h-[--tw-menu-item-font-size] fill-[--tw-menu-item-color] stroke-inherit transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color] open-menu:rotate-90" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
                               <path d="M15.4,9.88,10.81,5.29a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L14,11.29a1,1,0,0,1,0,1.42L9.4,17.29a1,1,0,0,0,1.41,1.42l4.59-4.59A3,3,0,0,0,15.4,9.88Z"/>
                            </svg>
                         </span>
                      </a>
-                     <ul class="sub-menu hidden w-full overflow-hidden transition-all duration-300 ps-[--submenu-padding-inline-start]">
+                     <ul class="sub-menu sidenav-sm:hidden sidenav-sm:h-[inherit] sidenav-sm:rounded-b-md sidenav-sm:ms-1.5 sidenav-sm:shadow-lg sidenav-sm:shadow-black/10 sidenav-md:ps-0 sidenav-sm-submenu:block sidenav-sm-submenu:[inset-inline-start:100%] sidenav-sm-submenu:overflow-visible sidenav-sm-submenu:absolute sidenav-sm-submenu:h-[inherit] sidenav-sm-submenu:transition-none sidenav-sm-submenu:ps-0 sidenav-sm-submenu:bg-[--tw-menu-bg] sidenav-sm-submenu:w-[--submenu-hover-width] sidenav-sm-submenu:border sidenav-sm-submenu:border-solid sidenav-sm-submenu:border-[rgb(107_114_128/0.2)] sidenav-view-hover:invisible sidenav-view-hover:h-0 hidden w-full overflow-hidden transition-all duration-300 ps-[--submenu-padding-inline-start]">
                         <li class="menu-item mt-[--submenu-first-item-margin-top]">
-                           <a href="tables-basic.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Basic Tables</span>
+                           <a href="tables-basic.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Basic Tables</span>
                            </a>
                         </li>
                         <li class="menu-item mb-[--submenu-last-item-margin-bottom]">
-                           <a href="tables-datatables.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Data Tables</span>
+                           <a href="tables-datatables.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Data Tables</span>
                            </a>
                         </li>
                      </ul>
                   </li>
-                  <li class="menu-item py-0 px-[--tw-menu-item-padding-x]">
-                     <a href="javascript:void(0)" data-fc-type="collapse" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] py-[--tw-menu-link-padding-y] px-[--tw-menu-link-padding-x] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:bg-[--tw-menu-item-active-bg] hover:text-[--tw-menu-item-hover-color]">
+                  <li class="menu-item py-0 px-[--tw-menu-item-padding-x] sidenav-sm:relative">
+                     <a href="javascript:void(0)" data-fc-type="collapse" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] py-[--tw-menu-link-padding-y] px-[--tw-menu-link-padding-x] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:bg-[--tw-menu-item-active-bg] hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm:flex sidenav-sm:justify-center sidenav-sm:text-center sidenav-sm-menu-link:text-[--tw-menu-item-hover-color] sidenav-sm-menu-link:bg-[--tw-menu-item-hover-bg] sidenav-sm-menu-link:after:content-[''] sidenav-sm-menu-link:after:inset-0 sidenav-sm-menu-link:after:absolute sidenav-sm-menu-link:after:w-[--tw-sidenav-width] sidenav-md:flex-col sidenav-md:text-center">
                         <span class="menu-icon w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] inline-flex items-center justify-center">
                            <svg class="w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] fill-[var(--tw-menu-item-color)] stroke-inherit transition transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color]" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
                               <path d="M12,0A12,12,0,1,0,24,12,12.013,12.013,0,0,0,12,0Zm8.647,7H17.426a19.676,19.676,0,0,0-2.821-4.644A10.031,10.031,0,0,1,20.647,7ZM16.5,12a10.211,10.211,0,0,1-.476,3H7.976A10.211,10.211,0,0,1,7.5,12a10.211,10.211,0,0,1,.476-3h8.048A10.211,10.211,0,0,1,16.5,12ZM8.778,17h6.444A19.614,19.614,0,0,1,12,21.588,19.57,19.57,0,0,1,8.778,17Zm0-10A19.614,19.614,0,0,1,12,2.412,19.57,19.57,0,0,1,15.222,7ZM9.4,2.356A19.676,19.676,0,0,0,6.574,7H3.353A10.031,10.031,0,0,1,9.4,2.356ZM2.461,9H5.9a12.016,12.016,0,0,0-.4,3,12.016,12.016,0,0,0,.4,3H2.461a9.992,9.992,0,0,1,0-6Zm.892,8H6.574A19.676,19.676,0,0,0,9.4,21.644,10.031,10.031,0,0,1,3.353,17Zm11.252,4.644A19.676,19.676,0,0,0,17.426,17h3.221A10.031,10.031,0,0,1,14.605,21.644ZM21.539,15H18.1a12.016,12.016,0,0,0,.4-3,12.016,12.016,0,0,0-.4-3h3.437a9.992,9.992,0,0,1,0,6Z"/>
                            </svg>
                         </span>
-                        <span class="menu-text text-menu-font-size leading-[--tw-menu-item-font-size] whitespace-nowrap ml-1"> Icons </span>
-                        <span class="menu-arrow ms-auto">
-                           <svg class="w-[--tw-menu-item-font-size] h-[--tw-menu-item-font-size] fill-[--tw-menu-item-color] stroke-inherit transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color]" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
+                        <span class="menu-text text-menu-font-size leading-[--tw-menu-item-font-size] whitespace-nowrap ml-1 sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-sm:ms-1.5 sidenav-sm:shadow-lg sidenav-sm:shadow-black/10 sidenav-sm:rounded-t-md sidenav-sm-hover-menu-text:bg-[--tw-menu-bg] sidenav-sm-hover-menu-text:leading-[--tw-menu-item-icon-size] sidenav-sm-hover-menu-text:w-[--calculated-menu-text-hover-width] sidenav-sm-hover-menu-text:py-[--tw-menu-link-padding-y] sidenav-sm-hover-menu-text:px-[--tw-menu-link-padding-x] sidenav-sm-hover-menu-text:[inset-inline-start:--calculated-menu-text-hover-inset] sidenav-sm-hover-menu-text:absolute sidenav-sm-hover-menu-text:flex sidenav-sm-hover-menu-text:items-center sidenav-sm-hover-menu-text:border sidenav-sm-hover-menu-text:border-solid sidenav-sm-hover-menu-text:border-[rgb(107_114_128/0.2)]"> Icons </span>
+                        <span class="menu-arrow ms-auto rtl-menu-arrow:rotate-180 transform sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:hidden">
+                           <svg class="w-[--tw-menu-item-font-size] h-[--tw-menu-item-font-size] fill-[--tw-menu-item-color] stroke-inherit transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color] open-menu:rotate-90" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
                               <path d="M15.4,9.88,10.81,5.29a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L14,11.29a1,1,0,0,1,0,1.42L9.4,17.29a1,1,0,0,0,1.41,1.42l4.59-4.59A3,3,0,0,0,15.4,9.88Z"/>
                            </svg>
                         </span>
                      </a>
-                     <ul class="sub-menu hidden w-full overflow-hidden transition-all duration-300 ps-[--submenu-padding-inline-start]">
+                     <ul class="sub-menu sidenav-sm:hidden sidenav-sm:h-[inherit] sidenav-sm:rounded-b-md sidenav-sm:ms-1.5 sidenav-sm:shadow-lg sidenav-sm:shadow-black/10 sidenav-md:ps-0 sidenav-sm-submenu:block sidenav-sm-submenu:[inset-inline-start:100%] sidenav-sm-submenu:overflow-visible sidenav-sm-submenu:absolute sidenav-sm-submenu:h-[inherit] sidenav-sm-submenu:transition-none sidenav-sm-submenu:ps-0 sidenav-sm-submenu:bg-[--tw-menu-bg] sidenav-sm-submenu:w-[--submenu-hover-width] sidenav-sm-submenu:border sidenav-sm-submenu:border-solid sidenav-sm-submenu:border-[rgb(107_114_128/0.2)] sidenav-view-hover:invisible sidenav-view-hover:h-0 hidden w-full overflow-hidden transition-all duration-300 ps-[--submenu-padding-inline-start]">
                         <li class="menu-item mt-[--submenu-first-item-margin-top]">
-                           <a href="icons-mingcute.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Mingcute</span>
+                           <a href="icons-mingcute.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Mingcute</span>
                            </a>
                         </li>
                         <li class="menu-item">
-                           <a href="icons-feather.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Feather</span>
+                           <a href="icons-feather.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Feather</span>
                            </a>
                         </li>
                         <li class="menu-item mb-[--submenu-last-item-margin-bottom]">
-                           <a href="icons-material-symbols.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Material Symbols </span>
+                           <a href="icons-material-symbols.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Material Symbols </span>
                            </a>
                         </li>
                      </ul>
                   </li>
-                  <li class="menu-item py-0 px-[--tw-menu-item-padding-x]">
-                     <a href="charts.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] py-[--tw-menu-link-padding-y] px-[--tw-menu-link-padding-x] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:bg-[--tw-menu-item-active-bg] hover:text-[--tw-menu-item-hover-color]">
+                  <li class="menu-item py-0 px-[--tw-menu-item-padding-x] sidenav-sm:relative">
+                     <a href="charts.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] py-[--tw-menu-link-padding-y] px-[--tw-menu-link-padding-x] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:bg-[--tw-menu-item-active-bg] hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm:flex sidenav-sm:justify-center sidenav-sm:text-center sidenav-sm-menu-link:text-[--tw-menu-item-hover-color] sidenav-sm-menu-link:bg-[--tw-menu-item-hover-bg] sidenav-sm-menu-link:after:content-[''] sidenav-sm-menu-link:after:inset-0 sidenav-sm-menu-link:after:absolute sidenav-sm-menu-link:after:w-[--tw-sidenav-width] sidenav-md:flex-col sidenav-md:text-center">
                         <span class="menu-icon w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] inline-flex items-center justify-center">
                            <svg class="w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] fill-[var(--tw-menu-item-color)] stroke-inherit transition transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color]" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
                               <path d="M12,0c-1.65,0-3,1.35-3,3V21c0,1.65,1.35,3,3,3s3-1.35,3-3V3c0-1.65-1.35-3-3-3Zm2,21c0,1.1-.9,2-2,2s-2-.9-2-2V3c0-1.1,.9-2,2-2s2,.9,2,2V21Zm7-15c-1.65,0-3,1.35-3,3v12c0,1.65,1.35,3,3,3s3-1.35,3-3V9c0-1.65-1.35-3-3-3Zm2,15c0,1.1-.9,2-2,2s-2-.9-2-2V9c0-1.1,.9-2,2-2s2,.9,2,2v12ZM3,12c-1.65,0-3,1.35-3,3v6c0,1.65,1.35,3,3,3s3-1.35,3-3v-6c0-1.65-1.35-3-3-3Zm2,9c0,1.1-.9,2-2,2s-2-.9-2-2v-6c0-1.1,.9-2,2-2s2,.9,2,2v6Z"/>
                            </svg>
                         </span>
-                        <span class="menu-text text-menu-font-size leading-[--tw-menu-item-font-size] whitespace-nowrap ml-1"> Chart </span>
+                        <span class="menu-text text-menu-font-size leading-[--tw-menu-item-font-size] whitespace-nowrap ml-1 sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-sm:ms-1.5 sidenav-sm:shadow-lg sidenav-sm:shadow-black/10 sidenav-sm:rounded-md sidenav-sm-hover-menu-text:bg-[--tw-menu-bg] sidenav-sm-hover-menu-text:leading-[--tw-menu-item-icon-size] sidenav-sm-hover-menu-text:w-[--calculated-menu-text-hover-width] sidenav-sm-hover-menu-text:py-[--tw-menu-link-padding-y] sidenav-sm-hover-menu-text:px-[--tw-menu-link-padding-x] sidenav-sm-hover-menu-text:[inset-inline-start:--calculated-menu-text-hover-inset] sidenav-sm-hover-menu-text:absolute sidenav-sm-hover-menu-text:flex sidenav-sm-hover-menu-text:items-center sidenav-sm-hover-menu-text:border sidenav-sm-hover-menu-text:border-solid sidenav-sm-hover-menu-text:border-[rgb(107_114_128/0.2)]"> Chart </span>
                      </a>
                   </li>
                   <li class="menu-item py-0 px-[--tw-menu-item-padding-x]">
-                     <a href="javascript:void(0)" data-fc-type="collapse" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] py-[--tw-menu-link-padding-y] px-[--tw-menu-link-padding-x] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:bg-[--tw-menu-item-active-bg] hover:text-[--tw-menu-item-hover-color]">
+                     <a href="javascript:void(0)" data-fc-type="collapse" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] py-[--tw-menu-link-padding-y] px-[--tw-menu-link-padding-x] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:bg-[--tw-menu-item-active-bg] hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm:flex sidenav-sm:justify-center sidenav-sm:text-center sidenav-sm-menu-link:text-[--tw-menu-item-hover-color] sidenav-sm-menu-link:bg-[--tw-menu-item-hover-bg] sidenav-sm-menu-link:after:content-[''] sidenav-sm-menu-link:after:inset-0 sidenav-sm-menu-link:after:absolute sidenav-sm-menu-link:after:w-[--tw-sidenav-width] sidenav-md:flex-col sidenav-md:text-center">
                         <span class="menu-icon w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] inline-flex items-center justify-center">
                            <svg class="w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] fill-[var(--tw-menu-item-color)] stroke-inherit transition transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color]" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
                               <path d="M12,6a4,4,0,1,0,4,4A4,4,0,0,0,12,6Zm0,6a2,2,0,1,1,2-2A2,2,0,0,1,12,12Z"/>
                               <path d="M12,24a5.271,5.271,0,0,1-4.311-2.2c-3.811-5.257-5.744-9.209-5.744-11.747a10.055,10.055,0,0,1,20.11,0c0,2.538-1.933,6.49-5.744,11.747A5.271,5.271,0,0,1,12,24ZM12,2.181a7.883,7.883,0,0,0-7.874,7.874c0,2.01,1.893,5.727,5.329,10.466a3.145,3.145,0,0,0,5.09,0c3.436-4.739,5.329-8.456,5.329-10.466A7.883,7.883,0,0,0,12,2.181Z"/>
                            </svg>
                         </span>
-                        <span class="menu-text text-menu-font-size leading-[--tw-menu-item-font-size] whitespace-nowrap ml-1"> Maps </span>
-                        <span class="menu-arrow ms-auto">
-                           <svg class="w-[--tw-menu-item-font-size] h-[--tw-menu-item-font-size] fill-[--tw-menu-item-color] stroke-inherit transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color]" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
+                        <span class="menu-text text-menu-font-size leading-[--tw-menu-item-font-size] whitespace-nowrap ml-1 sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-sm:ms-1.5 sidenav-sm:shadow-lg sidenav-sm:shadow-black/10 sidenav-sm:rounded-t-md sidenav-sm-hover-menu-text:bg-[--tw-menu-bg] sidenav-sm-hover-menu-text:leading-[--tw-menu-item-icon-size] sidenav-sm-hover-menu-text:w-[--calculated-menu-text-hover-width] sidenav-sm-hover-menu-text:py-[--tw-menu-link-padding-y] sidenav-sm-hover-menu-text:px-[--tw-menu-link-padding-x] sidenav-sm-hover-menu-text:[inset-inline-start:--calculated-menu-text-hover-inset] sidenav-sm-hover-menu-text:absolute sidenav-sm-hover-menu-text:flex sidenav-sm-hover-menu-text:items-center sidenav-sm-hover-menu-text:border sidenav-sm-hover-menu-text:border-solid sidenav-sm-hover-menu-text:border-[rgb(107_114_128/0.2)]"> Maps </span>
+                        <span class="menu-arrow ms-auto rtl-menu-arrow:rotate-180 transform sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:hidden">
+                           <svg class="w-[--tw-menu-item-font-size] h-[--tw-menu-item-font-size] fill-[--tw-menu-item-color] stroke-inherit transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color] open-menu:rotate-90" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
                               <path d="M15.4,9.88,10.81,5.29a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L14,11.29a1,1,0,0,1,0,1.42L9.4,17.29a1,1,0,0,0,1.41,1.42l4.59-4.59A3,3,0,0,0,15.4,9.88Z"/>
                            </svg>
                         </span>
                      </a>
-                     <ul class="sub-menu hidden w-full overflow-hidden transition-all duration-300 ps-[--submenu-padding-inline-start]">
+                     <ul class="sub-menu sidenav-sm:hidden sidenav-sm:h-[inherit] sidenav-sm:rounded-b-md sidenav-sm:ms-1.5 sidenav-sm:shadow-lg sidenav-sm:shadow-black/10 sidenav-md:ps-0 sidenav-sm-submenu:block sidenav-sm-submenu:[inset-inline-start:100%] sidenav-sm-submenu:overflow-visible sidenav-sm-submenu:absolute sidenav-sm-submenu:h-[inherit] sidenav-sm-submenu:transition-none sidenav-sm-submenu:ps-0 sidenav-sm-submenu:bg-[--tw-menu-bg] sidenav-sm-submenu:w-[--submenu-hover-width] sidenav-sm-submenu:border sidenav-sm-submenu:border-solid sidenav-sm-submenu:border-[rgb(107_114_128/0.2)] sidenav-view-hover:invisible sidenav-view-hover:h-0 hidden w-full overflow-hidden transition-all duration-300 ps-[--submenu-padding-inline-start]">
                         <li class="menu-item mt-[--submenu-first-item-margin-top]">
-                           <a href="maps-vector.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Vector Maps</span>
+                           <a href="maps-vector.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Vector Maps</span>
                            </a>
                         </li>
                         <li class="menu-item mb-[--submenu-last-item-margin-bottom]">
-                           <a href="maps-google.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Google Maps</span>
+                           <a href="maps-google.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Google Maps</span>
                            </a>
                         </li>
                      </ul>
                   </li>
-                  <li class="menu-title p-[--calculated-menu-title-padding] text-menu-item-color text-menu-title-size cursor-default whitespace-nowrap font-medium tracking-widest opacity-75">Documentation</li>
+                  <li class="menu-title p-[--calculated-menu-title-padding] text-menu-item-color text-menu-title-size cursor-default whitespace-nowrap font-medium tracking-widest opacity-75 sidenav-view-hover:invisible sidenav-view-hover:relative sidenav-view-hover:after:content-[''] sidenav-view-hover:after:border-t sidenav-view-hover:after:border-solid sidenav-view-hover:after:border-[--tw-menu-item-color] sidenav-view-hover:after:w-[--tw-menu-item-icon-size] sidenav-view-hover:after:visible sidenav-view-hover:after:absolute sidenav-view-hover:after:top-1/2 sidenav-view-hover:after:flex sidenav-view-hover:after:justify-center sidenav-view-hover:after:rounded-full sidenav-view-hover:after:opacity-40 sidenav-view-hover:after:transform sidenav-view-hover:after:-translate-y-1/2 sidenav-sm:hidden sidenav-md:text-center sidenav-md:underline sidenav-md:decoration-dashed">Documentation</li>
                   <li class="menu-item py-0 px-[--tw-menu-item-padding-x]">
-                     <a href="javascript:void(0)" data-fc-type="collapse" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] py-[--tw-menu-link-padding-y] px-[--tw-menu-link-padding-x] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:bg-[--tw-menu-item-active-bg] hover:text-[--tw-menu-item-hover-color]">
+                     <a href="javascript:void(0)" data-fc-type="collapse" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] py-[--tw-menu-link-padding-y] px-[--tw-menu-link-padding-x] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:bg-[--tw-menu-item-active-bg] hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm:flex sidenav-sm:justify-center sidenav-sm:text-center sidenav-sm-menu-link:text-[--tw-menu-item-hover-color] sidenav-sm-menu-link:bg-[--tw-menu-item-hover-bg] sidenav-sm-menu-link:after:content-[''] sidenav-sm-menu-link:after:inset-0 sidenav-sm-menu-link:after:absolute sidenav-sm-menu-link:after:w-[--tw-sidenav-width] sidenav-md:flex-col sidenav-md:text-center">
                         <span class="menu-icon w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] inline-flex items-center justify-center">
                            <svg class="w-[--calculated-menu-icon-size] h-[--calculated-menu-icon-size] fill-[var(--tw-menu-item-color)] stroke-inherit transition transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color]" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
                               <path d="m18.5,0H5.5c-1.379,0-2.5,1.121-2.5,2.5v21.5h18V2.5c0-1.379-1.121-2.5-2.5-2.5Zm1.5,23H4V2.5c0-.827.673-1.5,1.5-1.5h13c.827,0,1.5.673,1.5,1.5v20.5ZM7,5h10v1H7v-1Zm0,5h10v1H7v-1Zm0,5h5v1h-5v-1Z"/>
                            </svg>
                         </span>
-                        <span class="menu-text text-menu-font-size leading-[--tw-menu-item-font-size] whitespace-nowrap ml-1"> Documentation </span>
-                        <span class="menu-arrow ms-auto">
-                           <svg class="w-[--tw-menu-item-font-size] h-[--tw-menu-item-font-size] fill-[--tw-menu-item-color] stroke-inherit transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color]" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
+                        <span class="menu-text text-menu-font-size leading-[--tw-menu-item-font-size] whitespace-nowrap ml-1 sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-sm:ms-1.5 sidenav-sm:shadow-lg sidenav-sm:shadow-black/10 sidenav-sm:rounded-t-md sidenav-sm-hover-menu-text:bg-[--tw-menu-bg] sidenav-sm-hover-menu-text:leading-[--tw-menu-item-icon-size] sidenav-sm-hover-menu-text:w-[--calculated-menu-text-hover-width] sidenav-sm-hover-menu-text:py-[--tw-menu-link-padding-y] sidenav-sm-hover-menu-text:px-[--tw-menu-link-padding-x] sidenav-sm-hover-menu-text:[inset-inline-start:--calculated-menu-text-hover-inset] sidenav-sm-hover-menu-text:absolute sidenav-sm-hover-menu-text:flex sidenav-sm-hover-menu-text:items-center sidenav-sm-hover-menu-text:border sidenav-sm-hover-menu-text:border-solid sidenav-sm-hover-menu-text:border-[rgb(107_114_128/0.2)]"> Documentation </span>
+                        <span class="menu-arrow ms-auto rtl-menu-arrow:rotate-180 transform sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:hidden">
+                           <svg class="w-[--tw-menu-item-font-size] h-[--tw-menu-item-font-size] fill-[--tw-menu-item-color] stroke-inherit transition-color delay-75 group-hover:fill-[--tw-menu-item-hover-color] open-menu:rotate-90" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
                               <path d="M15.4,9.88,10.81,5.29a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L14,11.29a1,1,0,0,1,0,1.42L9.4,17.29a1,1,0,0,0,1.41,1.42l4.59-4.59A3,3,0,0,0,15.4,9.88Z"/>
                            </svg>
                         </span>
                      </a>
-                     <ul class="sub-menu hidden w-full overflow-hidden transition-all duration-300 ps-[--submenu-padding-inline-start]">
+                     <ul class="sub-menu sidenav-sm:hidden sidenav-sm:h-[inherit] sidenav-sm:rounded-b-md sidenav-sm:ms-1.5 sidenav-sm:shadow-lg sidenav-sm:shadow-black/10 sidenav-md:ps-0 sidenav-sm-submenu:block sidenav-sm-submenu:[inset-inline-start:100%] sidenav-sm-submenu:overflow-visible sidenav-sm-submenu:absolute sidenav-sm-submenu:h-[inherit] sidenav-sm-submenu:transition-none sidenav-sm-submenu:ps-0 sidenav-sm-submenu:bg-[--tw-menu-bg] sidenav-sm-submenu:w-[--submenu-hover-width] sidenav-sm-submenu:border sidenav-sm-submenu:border-solid sidenav-sm-submenu:border-[rgb(107_114_128/0.2)] sidenav-view-hover:invisible sidenav-view-hover:h-0 hidden w-full overflow-hidden transition-all duration-300 ps-[--submenu-padding-inline-start]">
                         <li class="menu-item mt-[--submenu-first-item-margin-top]">
-                           <a href="docs-introduction.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Introduction</span>
+                           <a href="docs-introduction.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Introduction</span>
                            </a>
                         </li>
                         <li class="menu-item">
-                           <a href="docs-installation.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Installation</span>
+                           <a href="docs-installation.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Installation</span>
                            </a>
                         </li>
                         <li class="menu-item">
-                           <a href="docs-customization.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Customization</span>
+                           <a href="docs-customization.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Customization</span>
                            </a>
                         </li>
                         <li class="menu-item mb-[--submenu-last-item-margin-bottom]">
-                           <a href="docs-changelog.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color]">
-                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap">Changelog</span>
+                           <a href="docs-changelog.html" class="menu-link text-[--tw-menu-item-color] gap-[--tw-menu-link-item-gap] p-[--submenu-item-padding] relative flex items-center whitespace-nowrap rounded transition-colors delay-75 group hover:text-[--tw-menu-item-hover-color] sidenav-sm:transition-none sidenav-sm-submenu-link:z-[5] sidenav-md:flex-col sidenav-md:text-center">
+                           <span class="menu-text text-menu-font-size leading-[15px] whitespace-nowrap sidenav-view-hover:invisible sidenav-sm:transition-none sidenav-sm:hidden sidenav-md:ps-0 sidenav-sm-submenu-text:block">Changelog</span>
                            </a>
                         </li>
                      </ul>
@@ -677,7 +678,7 @@
                </ul>
                <!-- Help Box Widget -->
                <div class="my-10 mx-5">
-                  <div class="help-box text-[--tw-menu-item-color] p-6 bg-black/5 text-center rounded-md">
+                  <div class="help-box sidenav-sm:hidden sidenav-md:hidden sidenav-hover:hidden text-[--tw-menu-item-color] p-6 bg-black/5 text-center rounded-md">
                      <div class="flex justify-center mb-4">
                         <svg width="30" height="18" aria-hidden="true">
                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15 0c-4 0-6.5 2-7.5 6 1.5-2 3.25-2.75 5.25-2.25 1.141.285 1.957 1.113 2.86 2.03C17.08 7.271 18.782 9 22.5 9c4 0 6.5-2 7.5-6-1.5 2-3.25 2.75-5.25 2.25-1.141-.285-1.957-1.113-2.86-2.03C20.42 1.728 18.718 0 15 0ZM7.5 9C3.5 9 1 11 0 15c1.5-2 3.25-2.75 5.25-2.25 1.141.285 1.957 1.113 2.86 2.03C9.58 16.271 11.282 18 15 18c4 0 6.5-2 7.5-6-1.5 2-3.25 2.75-5.25 2.25-1.141-.285-1.957-1.113-2.86-2.03C12.92 10.729 11.218 9 7.5 9Z" fill="#38BDF8"></path>
@@ -694,9 +695,9 @@
          <!-- ============================================================== -->
          <!-- Start Page Content here -->
          <!-- ============================================================== -->
-         <div class="page-content w-full flex flex-col min-h-screen">
+         <div class="page-content sidenav-hover:ms-[--tw-sidenav-width-sm] sidenav-hover:transition-all sidenav-hover:duration-300 sidenav-hover:ease-in-out sidenav-hover-active:ms-[--tw-sidenav-width] sidenav-hover-active:transition-all sidenav-hover-active:duration-300 sidenav-hover-active:ease-in-out w-full flex flex-col min-h-screen">
             <!-- Topbar Start -->
-            <header id="app-header" class="app-header flex items-center px-4 gap-3 sticky top-0 shadow-header z-[35] h-[--tw-topbar-height]">
+            <header id="app-header" class="app-header flex items-center px-4 gap-3 sticky top-0 shadow-header z-[35] h-[--tw-topbar-height] scrollable:unset">
                <!-- Sidenav Menu Toggle Button -->
                <button id="button-toggle-menu" class="nav-link text-[--tw-topbar-item-color] rounded-full bg-transparent transition transition-color delay-75 group hover:bg-[var(--tw-topbar-item-hover-bg)] p-2">
                   <span class="sr-only transition transition-color delay-75 group-hover:text-[--tw-topbar-item-hover-color]">Menu Toggle Button</span>
@@ -709,16 +710,16 @@
                   </span>
                </button>
                <!-- Topbar Brand Logo -->
-               <a href="index.html" class="logo-box">
+               <a href="index.html" class="logo-box md:flex lg:hidden sidenav-mobile:flex">
                   <!-- Light Brand Logo -->
-                  <div class="logo-light">
-                     <img src="assets/images/logo-light.png" class="logo-lg h-6" alt="Light logo">
-                     <img src="assets/images/logo-sm.png" class="logo-sm" alt="Small logo">
+                  <div class="logo-light hidden dark:block topbar-color-brand:block topbar-color-dark:block topbar-color-gradient:block">
+                     <img src="assets/images/logo-light.png" class="logo-lg hidden lg:block h-6" alt="Light logo">
+                     <img src="assets/images/logo-sm.png" class="logo-sm block h-8 lg:hidden" alt="Small logo">
                   </div>
                   <!-- Dark Brand Logo -->
-                  <div class="logo-dark">
-                     <img src="assets/images/logo-dark.png" class="logo-lg h-6" alt="Dark logo">
-                     <img src="assets/images/logo-sm.png" class="logo-sm" alt="Small logo">
+                  <div class="logo-dark block dark:hidden topbar-color-brand:hidden topbar-color-dark:hidden topbar-color-gradient:hidden lg:block">
+                     <img src="assets/images/logo-dark.png" class="logo-lg hidden lg:block h-6" alt="Dark logo">
+                     <img src="assets/images/logo-sm.png" class="logo-sm block h-8 lg:hidden" alt="Small logo">
                   </div>
                </a>
                <!-- Topbar Search Modal Button -->
@@ -943,7 +944,8 @@
                </div>
             </div>
             <!-- Topbar Search Modal End -->
-            <main class="flex-grow p-6">
+             <!-- Main Start -->
+            <main class="data-layout-boxed:mx-auto data-layout-boxed:w-full data-layout-boxed:max-w-[1440px] flex-grow p-6">
                <!-- Page Title Start -->
                <div class="flex justify-between items-center mb-6">
                   <h4 class="text-slate-900 dark:text-slate-200 text-lg font-medium">Charts</h4>
@@ -1057,6 +1059,7 @@
                 </div>
             </div>
             </main>
+            <!-- Main End -->
             <!-- Footer Start -->
             <footer class="footer h-16 flex items-center px-6 bg-white shadow dark:bg-gray-800">
                <div class="flex md:justify-between justify-center w-full gap-4">
